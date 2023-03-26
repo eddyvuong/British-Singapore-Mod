@@ -1,0 +1,241 @@
+﻿#The Merlion look outward
+merlion_outward_1 = {
+	icon = "gfx/interface/icons/generic_icons/mobilize_icon_single.dds"
+
+	is_shown_when_inactive = {
+		NOT = { has_variable = merlion_outward_1_done }
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+
+	possible = {
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
+	}
+
+	complete = {
+		owns_entire_state_region = STATE_MALAYA
+		has_law = law_type:law_professional_army
+		custom_tooltip = {
+			text = merlion_outward_1_tt
+			has_variable = a_new_singapore_done
+		}
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = merlion_outward.1 }
+		set_variable = merlion_outward_1_done
+	}
+	
+	weight = 10000
+}
+
+#Indochina foothold
+merlion_outward_2 = {
+	icon = "gfx/interface/icons/generic_icons/secession_culture_possible.dds"
+
+	immediate = {
+	}
+
+	complete = {
+		calc_true_if = {
+			amount >= 7
+			owns_entire_state_region = STATE_TENASSERIM
+			owns_entire_state_region = STATE_BANGKOK
+			owns_entire_state_region = STATE_NAKHON_RATCHASIMA
+			owns_entire_state_region = STATE_CAMBODIA
+			owns_entire_state_region = STATE_MEKONG
+			owns_entire_state_region = STATE_ANNAM
+			owns_entire_state_region = STATE_TONKIN
+			owns_entire_state_region = STATE_LAOS
+			owns_entire_state_region = STATE_CHIANG_MAI
+			owns_entire_state_region = STATE_PEGU
+			owns_entire_state_region = STATE_SHAN_STATES
+			owns_entire_state_region = STATE_BURMA
+			owns_entire_state_region = STATE_KACHIN
+		}
+		
+		is_subject = no
+		
+		country_rank >= rank_value:major_power
+		
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {	
+		#German Path
+		if={
+			limit ={
+				country_has_primary_culture = cu:ger_sgp
+			}
+			trigger_event = { id = merlion_outward.14 }
+		}
+		
+		#Chinese Path
+		if={
+			limit ={
+				country_has_primary_culture = cu:chi_sgp
+			}
+			trigger_event = { id = merlion_outward.11 }
+		}
+		
+		#Tamil Path
+		if={
+			limit ={
+				country_has_primary_culture = cu:tam_sgp
+			}
+			trigger_event = { id = merlion_outward.13 }
+		}
+	}
+	
+	weight = 10000
+}
+
+#Indochina foothold
+merlion_outward_2_mirror = {
+	icon = "gfx/interface/icons/generic_icons/secession_culture_possible.dds"
+
+	immediate = {
+	}
+
+	complete = {
+		calc_true_if = {
+			amount >= 7
+			owns_entire_state_region = STATE_TENASSERIM
+			owns_entire_state_region = STATE_BANGKOK
+			owns_entire_state_region = STATE_NAKHON_RATCHASIMA
+			owns_entire_state_region = STATE_CAMBODIA
+			owns_entire_state_region = STATE_MEKONG
+			owns_entire_state_region = STATE_ANNAM
+			owns_entire_state_region = STATE_TONKIN
+			owns_entire_state_region = STATE_LAOS
+			owns_entire_state_region = STATE_CHIANG_MAI
+			owns_entire_state_region = STATE_PEGU
+			owns_entire_state_region = STATE_SHAN_STATES
+			owns_entire_state_region = STATE_BURMA
+			owns_entire_state_region = STATE_KACHIN
+		}
+		
+		is_subject = yes
+		
+		top_overlord = c:GBR
+		
+		country_rank >= rank_value:major_power
+		
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {
+		#English Path
+		trigger_event = { id = merlion_outward.10 }
+	}
+	
+	weight = 10000
+}
+
+
+#Indonesia foothold
+merlion_outward_3 = {
+	icon = "gfx/interface/icons/generic_icons/secession_culture_possible.dds"
+
+	immediate = {
+	}
+
+	complete = {
+		calc_true_if = {
+			amount >= 6
+			owns_entire_state_region = STATE_ACEH
+			owns_entire_state_region = STATE_NORTH_SUMATRA
+			owns_entire_state_region = STATE_SOUTH_SUMATRA
+			owns_entire_state_region = STATE_WEST_JAVA
+			owns_entire_state_region = STATE_CENTRAL_JAVA
+			owns_entire_state_region = STATE_EAST_JAVA
+			owns_entire_state_region = STATE_SUNDA_ISLANDS
+			owns_entire_state_region = STATE_NORTH_BORNEO
+			owns_entire_state_region = STATE_WEST_BORNEO
+			owns_entire_state_region = STATE_EAST_BORNEO
+			owns_entire_state_region = STATE_CELEBES
+			owns_entire_state_region = STATE_MOLUCCAS
+		}
+		
+		is_subject = no
+		
+		country_rank >= rank_value:major_power
+		
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {
+		#German Path
+		if={
+			limit ={
+				country_has_primary_culture = cu:ger_sgp
+			}
+			trigger_event = { id = merlion_outward.14 }
+		}
+		
+		#Malay Path
+		if={
+			limit ={
+				country_has_primary_culture = cu:mal_sgp
+			}
+			trigger_event = { id = merlion_outward.12 }
+		}
+	}
+	
+	weight = 10000
+}
+
+#Indonesia foothold
+merlion_outward_3_mirror = {
+	icon = "gfx/interface/icons/generic_icons/secession_culture_possible.dds"
+
+	immediate = {
+	}
+
+	complete = {
+		calc_true_if = {
+			amount >= 6
+			owns_entire_state_region = STATE_ACEH
+			owns_entire_state_region = STATE_NORTH_SUMATRA
+			owns_entire_state_region = STATE_SOUTH_SUMATRA
+			owns_entire_state_region = STATE_WEST_JAVA
+			owns_entire_state_region = STATE_CENTRAL_JAVA
+			owns_entire_state_region = STATE_EAST_JAVA
+			owns_entire_state_region = STATE_SUNDA_ISLANDS
+			owns_entire_state_region = STATE_NORTH_BORNEO
+			owns_entire_state_region = STATE_WEST_BORNEO
+			owns_entire_state_region = STATE_EAST_BORNEO
+			owns_entire_state_region = STATE_CELEBES
+			owns_entire_state_region = STATE_MOLUCCAS
+		}
+		
+		is_subject = yes
+		
+		top_overlord = c:GBR
+		
+		country_rank >= rank_value:major_power
+		
+		ig:ig_armed_forces = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {
+		#English Path
+		trigger_event = { id = merlion_outward.10 }
+		
+	}
+	
+	weight = 10000
+}

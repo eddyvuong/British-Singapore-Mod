@@ -1,0 +1,374 @@
+﻿tenassarim_sgp_payment = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 2000
+}
+
+tenassarim_bic_money = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_tax_income_add = 2000
+}
+
+indo_malaya_test_modifier = {
+	icon = gfx/interface/icons/commander_order_icons/standby.dds
+}
+
+merlion_look_south= {
+	icon = gfx/interface/icons/ideology_icons/unused/no_ideology.dds
+	country_prestige_add = 10
+}
+
+merlion_look_north= {
+	icon = gfx/interface/icons/ideology_icons/unused/no_ideology.dds
+	country_prestige_add = 10
+}
+
+merlion_roar_eternity= {
+	icon = gfx/interface/icons/ideology_icons/unused/ethno_nationalist.dds
+	country_prestige_add = 20
+}
+
+
+
+#Education
+massive_uneducated_population= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+	state_assimilation_mult = -0.25
+	state_education_access_add = -0.15
+	state_poor_standard_of_living_add = -1
+}
+
+streaming_education_system= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+	country_weekly_innovation_add = 15
+	country_tech_spread_add = 10
+	state_assimilation_mult = 0.25
+	state_education_access_add = 0.25
+}
+
+holistic_education_system_in_progress= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+	country_bureaucracy_mult = -0.10
+}
+
+holistic_education_system= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+	country_weekly_innovation_add = 15
+	country_tech_spread_add = 10
+	state_assimilation_mult = 0.25
+	state_education_access_add = 0.25
+	country_bureaucracy_mult = -0.10
+}
+
+stressful_society={
+	icon = gfx/interface/icons/generic_icons/employment_not_full.dds
+	state_birth_rate_mult = -0.65
+	building_throughput_mult = 0.15
+}
+
+european_exchange_programme={
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+	country_prestige_add = 5
+	country_weekly_innovation_add = 7.5
+	country_tech_spread_add = 5
+}
+
+singapore_exchange_programme={
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+	country_prestige_add = 10
+	country_weekly_innovation_add = 15
+	country_tech_spread_add = 10
+}
+
+#Racial Tension
+r_tension_0_a= {
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	country_prestige_add = 15
+	country_legitimacy_govt_size_add = 10
+	state_assimilation_mult = 0.20
+	state_education_access_add = 0.10
+	state_construction_mult = 0.10
+	state_accepted_birth_rate_mult = 0.10
+	state_birth_rate_mult = 0.05
+	state_standard_of_living_add = 2
+	building_throughput_mult = 0.1
+	
+	custom_tooltip = r_tension_0_a_tt
+	desc = r_tension_0_a_tt
+	flavor = r_tension_0_a_tt
+}
+
+r_tension_0_b= {
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	country_prestige_add = 15
+	country_legitimacy_govt_size_add = 10
+	state_assimilation_mult = 0.20
+	state_education_access_add = 0.10
+	state_construction_mult = 0.10
+	state_accepted_birth_rate_mult = 0.10
+	state_mortality_turmoil_mult = 0.025
+	state_standard_of_living_add = 2
+	building_throughput_mult = 0.1
+	
+	custom_tooltip = r_tension_0_b_tt
+}
+
+r_tension_1_a={
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	country_prestige_add = 7.5
+	country_legitimacy_govt_size_add = 5
+	state_assimilation_mult = 0.10
+	state_education_access_add = 0.05
+	state_construction_mult = 0.05
+	state_accepted_birth_rate_mult = 0.05
+	state_birth_rate_mult = 0.025
+	state_standard_of_living_add = 1
+	building_throughput_mult = 0.05
+
+	custom_tooltip = r_tension_1_a_tt
+}
+
+r_tension_1_b={
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	country_prestige_add = 7.5
+	country_legitimacy_govt_size_add = 5
+	state_assimilation_mult = 0.10
+	state_education_access_add = 0.05
+	state_construction_mult = 0.05
+	state_accepted_birth_rate_mult = 0.05
+	state_mortality_turmoil_mult = 0.025
+	state_standard_of_living_add = 1
+	building_throughput_mult = 0.05
+
+	custom_tooltip = r_tension_1_b_tt
+}
+
+r_tension_2={
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	state_radicals_from_sol_change_mult = 0.05
+	state_mortality_turmoil_mult = 0.05
+	state_tax_waste_add = 0.05
+	state_migration_pull_mult = -0.05
+	state_standard_of_living_add = -0.5
+	state_poor_standard_of_living_add = -0.5
+	state_mortality_mult = 0.025
+	
+}
+
+r_tension_3={
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	state_radicals_from_sol_change_mult = 0.1
+	state_mortality_turmoil_mult = 0.1
+	state_tax_waste_add = 0.1
+	state_migration_pull_mult = -0.1
+	state_standard_of_living_add = -1
+	state_poor_standard_of_living_add = -1
+	state_middle_standard_of_living_add = -0.5
+	state_mortality_mult = 0.05
+	state_birth_rate_mult = -0.0625
+}
+
+r_tension_4={
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	state_radicals_from_sol_change_mult = 0.25
+	state_mortality_turmoil_mult = 0.25
+	state_tax_waste_add = 0.25
+	state_migration_pull_mult = -0.25
+	state_standard_of_living_add = -2.5
+	state_poor_standard_of_living_add = -2.5
+	state_middle_standard_of_living_add = -1
+	state_middle_standard_of_living_add = -0.5
+	state_mortality_mult = 0.1
+	country_prestige_add = -12.5
+	country_legitimacy_govt_size_add = -12.5
+	state_assimilation_mult = -0.25
+	state_education_access_add = -0.25
+	state_construction_mult = -0.05
+	building_throughput_mult = -0.125
+	state_birth_rate_mult = -0.125
+}
+
+r_tension_5={
+	icon = gfx/interface/icons/ai_attitude_icons/cooperative.dds
+	state_radicals_from_sol_change_mult = 0.5
+	state_mortality_turmoil_mult = 0.5
+	state_tax_waste_add = 0.5
+	state_migration_pull_mult = -0.5
+	state_standard_of_living_add = -5
+	state_poor_standard_of_living_add = -5
+	state_middle_standard_of_living_add = -2.5
+	state_rich_standard_of_living_add = -1
+	state_mortality_mult = 0.25
+	country_prestige_add = -25
+	country_legitimacy_govt_size_add = -25
+	state_assimilation_mult = -0.5
+	state_education_access_add = -0.5
+	state_construction_mult = -0.25
+	building_throughput_mult = -0.25
+	state_birth_rate_mult = -0.25
+}
+
+#Languages of Singapore
+l_ger={
+	icon = gfx/interface/icons/ideology_icons/loyalist.dds
+}
+
+l_eng={
+	icon = gfx/interface/icons/ideology_icons/loyalist.dds
+}
+
+l_chi={
+	icon = gfx/interface/icons/ideology_icons/loyalist.dds
+}
+
+l_mal={
+	icon = gfx/interface/icons/ideology_icons/loyalist.dds
+}
+
+l_tam={
+	icon = gfx/interface/icons/ideology_icons/loyalist.dds
+}
+
+l_otl={
+	icon = gfx/interface/icons/ideology_icons/loyalist.dds
+}
+
+#Cultures of Singapore
+c_ger={
+	icon = gfx/interface/icons/ideology_icons/paternalistic.dds
+}
+
+c_eng={
+	icon = gfx/interface/icons/ideology_icons/paternalistic.dds
+}
+
+c_chi={
+	icon = gfx/interface/icons/ideology_icons/paternalistic.dds
+}
+
+c_mal={
+	icon = gfx/interface/icons/ideology_icons/paternalistic.dds
+}
+
+c_tam={
+	icon = gfx/interface/icons/ideology_icons/paternalistic.dds
+}
+
+#Racial Riot
+racial_riot = {
+	icon = gfx/interface/icons/alert_icons/radicalized.dds
+	state_standard_of_living_add = -4
+	state_construction_mult = -0.20
+	building_throughput_mult = -0.20
+}
+
+racial_riot_lockdown = {
+	icon = gfx/interface/icons/alert_icons/radicalized.dds
+	state_standard_of_living_add = -2
+	state_construction_mult = -0.40
+	building_throughput_mult = -0.40
+	country_authority_add = -100
+}
+
+#Ig modifiers
+questionable_decision= {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -1
+	interest_group_pol_str_mult = -0.05
+}
+
+break_status_quo={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -5
+	interest_group_pol_str_mult = -0.25
+}
+
+wasted_reform_opportunity={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -3
+	interest_group_pol_str_mult = -0.15
+}
+
+maximise_reform_opportunity={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 5
+	interest_group_pol_str_mult = 0.25
+}
+
+uphold_status_quo={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 3
+	interest_group_pol_str_mult = 0.15
+}
+
+racial_inclusivity_good={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_approval_add = 2
+	interest_group_pol_str_mult = 0.1
+}
+
+racial_inclusivity_bad={
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_approval_add = -2
+	interest_group_pol_str_mult = -0.1
+}
+
+#Legacy
+payment_original_plan = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 500
+}
+
+payment_expand_plan = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1500
+	
+}
+
+finish_expand_plan = {
+	icon = gfx/interface/icons/event_icons/event_map.dds
+	state_standard_of_living_add = 2
+	building_throughput_mult = 0.05
+}
+
+finish_original_plan= {
+	icon = gfx/interface/icons/event_icons/event_map.dds
+	state_standard_of_living_add = 2
+	country_bureaucracy_mult = 0.05
+}
+
+#Racial Tension
+singapore_crackdown= {
+	icon = gfx/interface/icons/ai_attitude_icons/rebellious.dds
+	state_mortality_turmoil_mult = 0.10
+	state_tax_waste_add = 0.15
+	state_standard_of_living_add = -2
+	state_mortality_mult = 0.10
+	building_throughput_mult = -0.05
+	country_authority_mult = -0.10
+
+}
+
+expand_mrt= {
+	icon = gfx/interface/icons/pops_icons/laborers.dds
+	state_construction_mult = 0.15
+}
+
+#Testing Items
+testing_singapore_5= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+}
+testing_singapore_4= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+}
+testing_singapore_3= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+}
+testing_singapore_2= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+}
+testing_singapore_1= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+}
+testing_singapore_0= {
+	icon = gfx/interface/icons/event_icons/tutorial_icon.dds
+}

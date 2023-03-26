@@ -1,0 +1,12 @@
+﻿#Singapore
+SGP = {
+	color = { 239 51 64 }
+
+	country_type = colonial
+
+	tier = city_state
+
+	cultures = { british }
+	religion = protestant
+	capital = STATE_MALAYA
+}

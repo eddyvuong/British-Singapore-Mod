@@ -1,0 +1,82 @@
+namespace = mrt_events
+
+#First MRT
+mrt_events.1 = {
+	type = country_event
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	duration = 3
+
+	placement = scope:railway_state
+
+	title = mrt_events.1.t
+	desc = mrt_events.1.d
+	flavor = mrt_events.1.f
+
+	trigger = {
+		any_scope_state = {
+			has_building = building_railway
+		}
+		exists = c:SGP
+		ROOT = c:SGP
+		NOT = { has_variable = first_mrt_complete }
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				has_building = building_railway
+			}
+			save_scope_as = railway_state
+			random_scope_building = {
+				limit = {
+					is_building_type = building_railway
+				}
+				save_scope_as = railway_building
+			}
+		}
+		
+		
+	}
+
+	option = {
+		name = mrt_events.1.a
+		scope:railway_state = {
+			add_modifier = {
+				name = railway_production_modifier
+				months = normal_modifier_time
+			}
+		}
+		set_variable = first_mrt_complete
+	}
+	
+	option = {
+		name = mrt_events.1.b
+		scope:railway_state = {
+			add_modifier = {
+				name = expand_mrt
+				months = normal_modifier_time
+			}
+		}
+		set_variable = first_mrt_complete
+	}
+
+	option = {
+		name = mrt_events.1.c
+		trigger = {
+			NOT = { has_technology_researched = steel_railway_cars }
+			can_research = steel_railway_cars
+		}
+		add_technology_progress = { progress = 3000 technology = steel_railway_cars }
+		
+		set_variable = first_mrt_complete
+	}
+}

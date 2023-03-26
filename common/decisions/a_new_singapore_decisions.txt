@@ -1,0 +1,122 @@
+﻿a_new_singapore_language_decision = {
+	is_shown = {
+		NOT = { has_variable = a_new_singapore_language_done }
+		NOT = { has_variable = a_new_singapore_done }
+		has_variable = a_new_singapore_in_progress
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+	
+	possible = {
+		OR= {
+			has_technology_researched = nationalism
+			has_law = law_type:law_cultural_exclusion
+			has_technology_researched = egalitarianism
+			has_law = law_type:law_multicultural
+		}
+    }
+	
+	when_taken = {
+		custom_tooltip = {
+			text = a_new_singapore_language
+			set_variable = a_new_singapore_language_done
+			trigger_event = {
+				id = singapore.10
+				days = 0
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+a_new_singapore_culture_decision = {
+	is_shown = {
+		NOT = { has_variable = a_new_singapore_culture_done }
+		NOT = { has_variable = a_new_singapore_done }
+		has_variable = a_new_singapore_language_done
+		has_variable = a_new_singapore_in_progress
+		OR= {
+			has_modifier = l_ger
+			has_modifier = l_eng
+			has_modifier = l_chi
+			has_modifier = l_mal
+			has_modifier = l_tam
+			has_modifier = l_otl
+		}
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+	when_taken = {
+		custom_tooltip = {
+			text = a_new_singapore_culture
+			set_variable = a_new_singapore_culture_done
+			trigger_event = {
+				id = singapore.20
+				days = 0
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+a_new_singapore_legacy_decision = {
+	is_shown = {
+		NOT = { has_variable = a_new_singapore_legacy_done }
+		NOT = { has_variable = a_new_singapore_done }
+		has_variable = a_new_singapore_in_progress
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+	when_taken = {
+		custom_tooltip = {
+			text = a_new_singapore_legacy
+			set_variable = a_new_singapore_legacy_done
+			trigger_event = {
+				id = singapore.30
+				days = 0
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}
+
+
+a_new_singapore_name_decision = {
+	is_shown = {
+		has_variable = a_new_singapore_culture_done_2
+		has_variable = a_new_singapore_culture_done
+		has_variable = a_new_singapore_language_done
+		has_variable = a_new_singapore_in_progress
+		NOT = { has_variable = a_new_singapore_name_done }
+		NOT = { has_variable = a_new_singapore_done }
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+	when_taken = {
+		custom_tooltip = {
+			text = a_new_singapore_name
+			set_variable = a_new_singapore_name_done
+			trigger_event = {
+				id = singapore.40
+				days = 0
+				popup = yes
+			}
+		}
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

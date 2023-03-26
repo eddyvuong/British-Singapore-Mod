@@ -1,0 +1,81 @@
+﻿namespace = indo_malaya
+
+# Singapore colony absorbs a poorer neighbor
+indo_malaya.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = indo_malaya.1.t
+	desc = indo_malaya.1.d
+	flavor = indo_malaya.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		random_neighbouring_state = {
+			limit = {
+				owner = {
+					is_ai = yes
+					relations:root >= relations_threshold:cordial
+					OR = {
+						country_has_primary_culture=cu:malay
+						country_has_primary_culture=cu:vietnamese
+						country_has_primary_culture=cu:khmer
+						country_has_primary_culture=cu:khmu
+						country_has_primary_culture=cu:lao
+						country_has_primary_culture=cu:thai
+						country_has_primary_culture=cu:shan
+						country_has_primary_culture=cu:mon
+						country_has_primary_culture=cu:burmese
+						country_has_primary_culture=cu:karen
+						country_has_primary_culture=cu:kachin
+						country_has_primary_culture = cu:sumatran
+						country_has_primary_culture = cu:batak
+						country_has_primary_culture = cu:javan
+						country_has_primary_culture = cu:moluccan
+						country_has_primary_culture = cu:balinese
+						country_has_primary_culture = cu:bornean
+						country_has_primary_culture = cu:dayak
+						country_has_primary_culture = cu:ger_sgp
+						country_has_primary_culture = cu:eng_sgp
+						country_has_primary_culture = cu:chi_sgp
+						country_has_primary_culture = cu:mal_sgp
+						country_has_primary_culture = cu:tam_sgp
+						c:SGP = ROOT
+					}
+					is_subject = yes
+					NOT = { THIS = ROOT }
+					top_overlord = {
+						THIS = root.top_overlord
+					}
+					this.gdp < root.gdp
+				}
+			}
+			owner = { save_scope_as = indo_malaya_annex_scope }
+		}
+		top_overlord = {
+			save_scope_as = indo_malaya_overlord_country
+			ruler = {
+				save_scope_as = indo_malaya_overlord_ruler
+			}
+		}
+	}
+
+	option = {
+		name = indo_malaya.1.a
+		default_option = yes
+		annex = scope:indo_malaya_annex_scope
+	}
+}

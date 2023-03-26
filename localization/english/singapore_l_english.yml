@@ -1,0 +1,551 @@
+﻿l_english:
+ SGP:0 "Singapore"
+ SGP_ADJ:0 "Singaporean"
+ 
+ #Dynamic Names
+ #ger
+ dyn_c_singapore_ger_1:0 "Sincapur"
+ dyn_c_singapore_ger_1_adj:0 "Sincapurer"
+ dyn_c_singapore_ger_2:0 "Löwenstadt"
+ dyn_c_singapore_ger_2_adj:0 "Löwenstadter"
+ dyn_c_singapore_ger_3:0 "Viontana"
+ dyn_c_singapore_ger_3_adj:0 "Viontaner"
+ 
+ #chi
+ dyn_c_singapore_chi_1:0 "Longyamen"
+ dyn_c_singapore_chi_1_adj:0 "Longyamener"
+ dyn_c_singapore_chi_2:0 "Danmaxi"
+ dyn_c_singapore_chi_2_adj:0 "Danmaxier"
+ dyn_c_singapore_chi_3:0 "Puluozhong"
+ dyn_c_singapore_chi_3_adj:0 "Puluozhonger"
+ 
+ #mal
+ dyn_c_singapore_mal_1:0 "Temasek"
+ dyn_c_singapore_mal_1_adj:0 "Temasekean"
+ dyn_c_singapore_mal_2:0 "Singapura"
+ dyn_c_singapore_mal_2_adj:0 "Singapuran"
+ dyn_c_singapore_mal_3:0 "Pulau Ujong"
+ dyn_c_singapore_mal_3_adj:0 "Pulau Ujonger"
+ dyn_c_singapore_mal_4:0 "Ujong Tanah"
+ dyn_c_singapore_mal_4_adj:0 "Ujong Tanaher"
+ 
+ #tam
+ dyn_c_singapore_tam_1:0 "Bargimgaparaa"
+ dyn_c_singapore_tam_1_adj:0 "Bargimgaparaan"
+ dyn_c_singapore_tam_2:0 "Cinkappur"
+ dyn_c_singapore_tam_2_adj:0 "Cinkappurer"
+ dyn_c_singapore_tam_3:0 "Rajendrapur"
+ dyn_c_singapore_tam_3_adj:0 "Rajendrapurer"
+ 
+ #Culture
+ eurasian:0 "Eurasian"
+ #Germanophone
+ ger_sgp:0 "Germano-Singaporean"
+ ger_eng:0 "Germano-English"
+ ger_chi:0 "Germano-Chinese"
+ ger_mal:0 "Germano-Indian"
+ ger_tam:0 "Germano-Malay"
+ #Anglophone
+ eng_sgp:0 "Anglo-Singaporean"
+ eng_chi:0 "Anglo-Chinese"
+ eng_mal:0 "Anglo-Malay"
+ eng_tam:0 "Anglo-Indian"
+ #Sinophone
+ chi_sgp:0 "Sino-Singaporean"
+ chi_eng:0 "Sino-English"
+ chi_tam:0 "Sino-Indian"
+ chi_mal:0 "Sino-Malay"
+ #Malayophone
+ mal_sgp:0 "Malayo-Singaporean"
+ mal_eng:0 "Malayo-English"
+ mal_tam:0 "Malayo-Indian"
+ mal_chi:0 "Malayo-Chinese"
+ #Indophone
+ tam_sgp:0 "Indo-Singaporean"
+ tam_eng:0 "Indo-English"
+ tam_chi:0 "Indo-Chinese"
+ tam_mal:0 "Indo-Malay"
+ #OTL Singapore
+ otl_chi_sgp:0 "Sino-Singaporean"
+ otl_mal_sgp:0 "Malayo-Singaporean"
+ #For Anglo use eng_sgp it's the same
+ otl_tam_sgp:0 "Indo-Singaporean"
+
+#Finalise Straits Settlements Act of 1826 decision (Previously Act of Singapore)
+ straits_settlements_act_decision:0 "Finalise Straits Settlements Act of 1826"
+ straits_settlements_act_decision_desc:0 "In 1826, the central government passed the Straits Settlements Act, merging British territories in Southeast Asia into a single entity under the administration of the British India Company. However, due to its slow implementation, many colonies haven't been integrated yet.\nAnd as we, Singapore, rise to prominence. Many in the government suggest amending the act, thus giving Singapore the autonomy and prestige she deserved."
+ straits_settlements_act_decision_tooltip:0 "Greater autonomy for an even greater Singapore."
+ straits_settlements_act_event_tt:0 "Singapore will annex 2 nearby treaty ports and become a Dominion."
+ 
+ #Act of Singapore event
+ singapore.1.t:0 "Finalise Straits Settlements Act of 1826"
+ singapore.1.d:0 "Through masterful negotiation, our team managed to eke out meaningful concessions from the central government in London. Thus, the revised act was shortly signed into law by [SCOPE.sCharacter('bic_overlord_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('bic_overlord_ruler').GetFullName]."
+ singapore.1.f:0 ""From henceforth, the Colony of [ROOT.GetCountry.GetNameNoFlag] will exist no more. In its place, an even stronger entity will arise."\n"Glory To The [SCOPE.sCharacter('bic_overlord_ruler').GetPrimaryRoleTitle]!"\n"Glory to the Dominion of [ROOT.GetCountry.GetNameNoFlag].""
+ singapore.1.a:0 "God save the [SCOPE.sCharacter('bic_overlord_ruler').GetPrimaryRoleTitle]!"
+ 
+ 
+ #Unite the Indo-malaya decision
+ unite_indo_malaya:0 "Unite the Colonies"
+ unite_indo_malaya_desc:0 "As more and more colonies joined the fold, Britain slowly lost control over some of her wayward colonies. However, this is also a golden opportunity for us to expand. Via a dominant economy and good relations with the central government, we could petition to annex nearby weaker neighbouring colonies."
+ indo_malaya_test_modifier:0 "Colony Unifier"
+ unite_indo_malaya_t_m_tt:0 "Have not recently unified with another colony"
+ unite_indo_malaya_tt:0 "Two neighbouring colonies will be unified."
+ unite_indo_malaya_je_can_tt:0 "Have at least Cordial relations and greater GDP than a neighboring colony with the same overlord."
+ 
+ #Unite the Indo-malaya event
+ indo_malaya.1.t:0 "Unified with [SCOPE.sCountry('indo_malaya_annex_scope').GetName]"
+ indo_malaya.1.d:0 "[SCOPE.sCharacter('indo_malaya_overlord_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('indo_malaya_overlord_ruler').GetFullName] has signed into law the unification between [ROOT.GetCountry.GetName] and [SCOPE.sCountry('indo_malaya_annex_scope').GetName] thus marking a great milestone in our country's history."
+ indo_malaya.1.f:0 "With every document signed and stamped, we come one step closer to achieving our ambition. The colonies haven't always seen eye-to-eye, but via masterful negotiation and economic coercion, anything is possible."
+ indo_malaya.1.a:0 "God save the [SCOPE.sCharacter('indo_malaya_overlord_ruler').GetPrimaryRoleTitle]!"
+ 
+ #Tenassarim Purchase
+ singapore_purchase_tenasserim:0 "Negotiate the Tenassarim Purchase"
+ singapore_purchase_tenasserim_desc:0 "As the Merlion looks northward, she is met with a significant blockage, the Tenasserim strip held by the East India Company. It separates the rest of Malaya from Indochina and us from our ambition.\nWith the East India Company currently embroiled in turmoil, many in the government suggest we propose a buyout."
+ 
+ singapore.2.t:0 "The Tenassarim Purchase"
+ singapore.2.d:0 "[SCOPE.sCountry('bic_scope').GetName] has agreed to our terms. A treaty for the purchase of Tenassarim has been drafted."
+ singapore.2.f:0 ""Tomorrow, if you like, I will come to the department, and we can enter upon the treaty."\n"Why wait until tomorrow, Sir. Thomas? Let us make the treaty tonight!""
+ singapore.2.a:0 "Forward we march!"
+ 
+ tenassarim_sgp_payment:0 "Tenassarim Payment"
+ tenassarim_bic_money:0 "Tenassarim Payment"
+ 
+ #Merlion Outward
+ merlion_outward_1:0 "Merlion Looks Outward"
+ merlion_outward_1_reason:0 "[ROOT.GetCountry.GetNameNoFlag] is small. Ridiculously so for such a large population. As she continues to industrialise, sooner or later, she would eventually run out of living space.\nTo secure her future, many members of the government have recommended that we expand into our less civilised neighbours.\nOur first target should be uniting Malaya."
+ 
+ merlion_outward_1_tt:0 "Complete Reform Singapore"
+ 
+ merlion_outward.1.t:0 "Merlion Continues Its Gaze"
+ merlion_outward.1.d:0 "With Malaya fully under our control, those previous vocal members now suggest that we continue our conquest."
+ merlion_outward.1.f:0 ""We should go South and unite the entire Indonesia proper!"\n"No! Northward shall be our future!"\n"Why should mighty [ROOT.GetCountry.GetNameNoFlag] even consider these lesser options?"\nThe Merlion Roar for Eternity!"
+ 
+ merlion_outward.1.z:0 "The Merlion Shall March Southward!"
+ merlion_outward.1.z.tt:0 "The countries of Indonesia disapprove of our imperial rhetoric (-25 Relation)"
+ merlion_outward.1.y:0 "The Merlion Shall March Northward!"
+ merlion_outward.1.y.tt:0 "The countries of Indochina disapprove of our imperial rhetoric (-25 Relation)"
+ merlion_outward.1.x:0 "The Merlion Roar for Eternity!"
+ merlion_outward.1.x.tt:0 "The countries of Indonesia and Indochina disapprove of our imperial rhetoric (-25 Relation)"
+ merlion_outward.1.v:0 "A peaceful coexistence is a better option"
+ 
+ merlion_look_south:0 "Merlion Southward March"
+ merlion_look_north:0 "Merlion Northward March"
+ merlion_roar_eternity:0 "Merlion Roar for Eternity"
+ 
+ merlion_outward_2:0 "Secure Indochina"
+ merlion_outward_2_reason:0 "In order for us to look further, we must first secure a firm foothold in Indochina.\nAt least half of the claimed states must be conquered before we set our sight on grander ambitions."
+ 
+ merlion_outward_3:0 "Secure Indonesia"
+ merlion_outward_3_reason:0 "In order for us to look further, we must first secure a firm foothold in Indonesia.\nAt least half of the claimed states must be conquered before we set our sight on grander ambitions."
+ 
+ #Mirror
+ merlion_outward_2_mirror:0 "Secure Indochina"
+ merlion_outward_2_mirror_reason:0 "In order for us to look further, we must first secure a firm foothold in Indochina.\nAt least half of the claimed states must be conquered before we set our sight on grander ambitions."
+ 
+ merlion_outward_3_mirror:0 "Secure Indonesia"
+ merlion_outward_3_mirror_reason:0 "In order for us to look further, we must first secure a firm foothold in Indonesia.\nAt least half of the claimed states must be conquered before we set our sight on grander ambitions."
+ 
+ 
+ #Expand the Empire
+ merlion_outward.10.t:0 "Expand the Empire"
+ merlion_outward.10.d:0 "With [ROOT.GetCountry.GetNameNoFlag]'s foothold firmly secured, it's time for us to look outward once more"
+ merlion_outward.10.f:0 ""We move Northward and break the Chinese monopoly!"\n"Strike at the Crippled Dragon!"\n"Expand the British Empire!""
+
+ merlion_outward.10.z:0 "For Queen and Country!!"
+ merlion_outward.10.v:0 "Perhaps We Should Give Peace a Chance!"
+ 
+ #Expand the Empire
+ merlion_outward.11.t:0 "Reclaim the Mandate of Heaven"
+ merlion_outward.11.d:0 "With [ROOT.GetCountry.GetNameNoFlag]'s foothold firmly secured, it's time for us to look at [SCOPE.sCountry('chi_name').GetNameNoFlag]"
+ merlion_outward.11.f:0 "The failing state of [SCOPE.sCountry('chi_name').GetNameNoFlag] barely claims the Mandate of Heaven with its ailing economy and backwards institutions.\nIt's time for us, the descendant of dragons, to return home and write what's wrong."
+
+ merlion_outward.11.z:0 "Reclaim the Mandate of Heaven!!"
+ merlion_outward.11.v:0 "Perhaps We Should Give Peace a Chance!"
+ 
+ #All Trade Lead to Malaya
+ merlion_outward.12.t:0 "All Trade Lead to Malaya"
+ merlion_outward.12.d:0 "With [ROOT.GetCountry.GetNameNoFlag]'s foothold firmly secured, it's time for us expand our trade empire"
+ merlion_outward.12.f:0 "With our strategic position at the crossroad between East and West, every trade must go through us. However, local tariffs still eat away at our bottom line.\nNow, with enough strength to contest with powerhouses across the globe, it's prime time for us to cut away the middleman."
+
+ merlion_outward.12.z:0 "All Trade Lead to Malaya!!"
+ merlion_outward.12.v:0 "Perhaps We Should Give Peace a Chance!"
+
+ #Raja of India
+ merlion_outward.13.t:0 "Raja of India"
+ merlion_outward.13.d:0 "With [ROOT.GetCountry.GetNameNoFlag]'s foothold firmly secured, it's time for us to look at our long lost home"
+ merlion_outward.13.f:0 "Since first landing on the Indian Subcontinent in 1608, India, rich with natural resources and manpower, had slowly become the crown jewel of the empire. Using it as a foundation, [SCOPE.sCountry('gbr_name').GetNameNoFlag] managed to colonise much of the known world.\nNow, with our strength rivalling even powerhouses in the west, it's time to liberate India from the oppression of [SCOPE.sCountry('gbr_name').GetNameNoFlag]."
+
+ merlion_outward.13.z:0 "Liberate India!!"
+ merlion_outward.13.v:0 "Perhaps We Should Give Peace a Chance!"
+
+ #Neu Kaiserreich
+ merlion_outward.14.t:0 "Neu Kaiserreich"
+ merlion_outward.14.d:0 "With [ROOT.GetCountry.GetNameNoFlag]'s foothold firmly secured, it's time for us to look at our fatherland"
+ merlion_outward.14.f:0 "Plagued with squabbling princes, external pressure and internal forces, the fatherland remained divided and weakened.\nHowever, this presents a wonderful opportunity for the sons of Singapore to unite the fatherland."
+
+ merlion_outward.14.z:0 "Für Gott und Vaterland!!"
+ merlion_outward.14.v:0 "Perhaps We Should Give Peace a Chance!"
+
+ #Singapore Education Reform
+ reform_singapore_education_1:0 "Reform [ROOT.GetCountry.GetNameNoFlag] Education System"
+ reform_singapore_education_1_reason:0 "The system that we inherited from Britain was lop-sided. Too much emphasis was laid on the examination and the paper qualification. That is not good enough. We have to give our own people the orders. And you have to throw up a whole generation capable of that leadership, conscious of its responsibilities, jealous of its rights, not allowing anyone to bully it and push it around, prepared to stand up and fight and die. That kind of a generation will endure till the end of time. And that is what we can do and will do."
+
+ reform_singapore_education_1_tt:0 "Complete Exchange Programme Decision"
+
+ european_exchange_programme:0 "Studying European Education System"
+ singapore_exchange_programme:0 "Hosting Exchange Programme"
+ 
+ exchange_programme_decision:0 "Exchange Programme"
+ exchange_programme_decision_desc:0 "Our existing education system is wholly inadequate to educate a nation. Thus, members of the government suggest that we send delegates back to Europe, analyse their education system and adapt it to fit our situation."
+ 
+ singapore.6.t:0 "Exchange Programme Destination"
+ singapore.6.d:0 "As this is not a sensitive mission, our delegation has a wider range of options to choose from"
+ singapore.6.f:0 ""Our roots are British, and we shall choose England!"\n"Hmmm, Denmark is a better choice as they have long perfected their system!"\n"The rising Prussia is a better option as we can learn how they produce military officers."\n..."
+ 
+ singapore.6.z:0 "We are coming home!"
+ singapore.6.y:0 "France"
+ singapore.6.x:0 "Prussia"
+ singapore.6.w:0 "Austria"
+ singapore.6.v:0 "Denmark"
+ 
+ singapore.7.t:0 "The Arrival of [SCOPE.sCountry('singapore_name').GetName]'s Exchange Programme Delegates"
+ singapore.7.d:0 "[SCOPE.sCountry('singapore_name').GetName]'s delegates are already in talks with local universities"
+ singapore.7.f:0 "Although their education system is backward, they bring with them valuable knowledge, gathered from trading in the East.\nNo doubt, this foreign knowledge will boost our technological capabilities."
+ 
+ singapore.7.z:0 "Interesting"
+ 
+ reform_singapore_education.1.t:0 "The Reform Direction"
+ reform_singapore_education.1.d:0 "With much of the groundwork completed, it's the penultimate time for us to finalise the reform direction."
+ reform_singapore_education.1.f:0 ""My countrymen look around you. Look at the resource that [ROOT.GetCountry.GetNameNoFlag] have. We have nought but the will and the strength of our people.\nThat's why the streaming system is necessary. Children with better academic potential should be given better resources. However, that doesn't mean children with weaker academic potential should be discarded. No! They would only move to the lower stream. With hardwork and determination, no doubt, one day, they too would join the upper stream.\nThis is a meritocracy! And this is what [ROOT.GetCountry.GetNameNoFlag] need!\nUnlike that sham proposal, Holistic Education? It's just typical British Education with a fresh coat of paint.""
+
+ reform_singapore_education_2:0 "Construct new universities"
+ reform_singapore_education_2_reason:0 "The only educational institution available across [ROOT.GetCountry.GetNameNoFlag] is Raffles Institution. Frankly, it is not enough to educate a growing nation. We need more.\nNational University of [ROOT.GetCountry.GetNameNoFlag]\nNanyang Technological University\n[ROOT.GetCountry.GetNameNoFlag] Management University\n[ROOT.GetCountry.GetNameNoFlag] University of Technology and Design\n[ROOT.GetCountry.GetNameNoFlag] Institute of Technology\nThese shall be the bastion, the lighthouse, the guiding light, educating our population toward a better future."
+ 
+ reform_singapore_education.1.a:0 "The Streaming System Is The Correct Choice"
+ reform_singapore_education.1.a.a:0 "Choosing this option will have future ramifications."
+ reform_singapore_education.1.b:0 "A Traditional Holistic System Is The Correct Choice"
+ 
+ reform_singapore_education.2.t:0 "The fruit of our labour"
+ reform_singapore_education.2.d:0 "With so much manpower, money and time invested, our dream has finally become a reality"
+ reform_singapore_education.2.f:0 "[ROOT.GetCountry.GetNameNoFlag] is no longer a backward society. We are enlightened men.\nNow, we stand toe to toe with our European brethren.\nWith time, we might even eclipse them."
+ 
+ reform_singapore_education.2.a:0 "A brighter future for [ROOT.GetCountry.GetNameNoFlag]"
+ 
+ massive_uneducated_population:0 "Massive Uneducated Population"
+ streaming_education_system:0 "Streaming Education System"
+ holistic_education_system:0 "Holistic Education System"
+ holistic_education_system_in_progress:0 "Holistic Education System"
+
+ #Stressful Society 
+ stressful_society:0 "Stressful Society"
+ 
+ singapore.8.t:0 "A Decade Of Progress"
+ singapore.8.d:0 "Despite our immense progress over the past decade, it was built on toil and blood of [ROOT.GetCountry.GetAdjectiveNoFlag]"
+ singapore.8.f:0 "For [ROOT.GetCountry.GetNameNoFlag] to flourish, for the machines of industrialisation to churn out products, and for her to stand toe to toe with giants across the globe, [ROOT.GetCountry.GetNameNoFlag] needs a workforce.\nTo protect her sovereignty, protect her interest, and protect her destiny Singapore needs commitment and determination.\nThus this lofty reponsibility fall upon the common [ROOT.GetCountry.GetAdjectiveNoFlag].\nA shocking headline echoed across the nation, yet its citizens weren't surprised."
+ 
+ singapore.8.z:0 "A price of progress"
+ 
+ #Racial Tension Modifier
+ r_tension_0_a:0 "Racial Tension 0: Harmony\nThe major and minor cultures that constitute Singapore actively work together to create an intricately yet harmonious environment regardless of their differences."
+ #r_tension_0_a_tt:0 "The major and minor cultures that constitute Singapore actively work together to create an intricately yet harmonious environment regardless of their differences."
+ r_tension_0_b:0 "Racial Tension 0: Harmony At Gunpoint\nUnder the persuasion of gunpoint, the major and minor cultures of Singapore finally learnt how to work together to create a conducive environment for everyone."
+ #r_tension_0_b_tt:0 "Under the persuasion of gunpoint, the major and minor cultures of Singapore finally learnt how to work together to create a conducive environment for everyone."
+ r_tension_1_a:0 "Racial Tension 1: Delicate Balance\nUnder the delicate balance of the government, everyone learns their position in this society."
+ #r_tension_1_a_tt:0 "Under the delicate balance of the government, everyone learns their position in this society."
+ r_tension_1_b:0 "Racial Tension 1: Delicate Balance At Gunpoint\nUnder the delicate balance of the government and active persuasion of guns, everyone learns their position in this society."
+ #r_tension_1_b_tt:0 "Under the delicate balance of the government and active persuasion of weapons, everyone learns their position in this society."
+ r_tension_2:0 "Racial Tension 2: Minor Racial Disturbance\nUnder the delicate balance of the government, everyone learns their position in this society. However, in the dark, the whispers of racial discrimination and oppression linger the air."
+ #r_tension_2_tt:0 "Under the delicate balance of the government, everyone learns their position in this society. However, in the dark, the whispers of racial discrimination and oppression linger the air."
+ r_tension_3:0 "Racial Tension 3: Escalating Racial Disturbance\nNeighbours, colleagues, workers. You will never know if one of those bastards will aim for your earnings."
+ #r_tension_3_tt:0 "Neighbours, colleagues, workers. You will never know if one of those bastards will aim for your earnings." 
+ r_tension_4:0 "Racial Tension 4: Active Racial Disturbance\nRacial gangs have become a normal occurrence. Their greedy hands split Singapore into racial territories whilst sucking on the blood of immigration workers under the guise of protection fees."
+ #r_tension_4_tt:0 "Racial gangs have become a normal occurrence. Their greedy hands split Singapore into racial territories whilst sucking on the blood of immigration workers under the guise of protection fees." 
+ r_tension_5:0 "Racial Tension 5: Societial Breakdown\nRiots and demonstrations filled the street as gunfire and black powder filled the air. Singapore is no longer a functioning society. It has become a graveyard. Workers, colleagues and neighbours, those who once come here seeking a better life. Now dead, strewn across the street, no different from roadside garbage."
+ #r_tension_5_tt:0 "Riots and demonstrations filled the street as gunfire and black powder filled the air. Singapore is no longer a functioning society. It has become a graveyard. Workers, colleagues and neighbours, those who once come here seeking a better life. Now dead, strewn across the street, no different from roadside garbage." 
+ 
+ #Singapore in 1836s
+ singapore.0.t:0 "[ROOT.GetCountry.GetName] in the 1836s"
+ singapore.0.d:0 "The storm of new and old."
+ singapore.0.f:0 "In 1819, Stamford Raffles established [ROOT.GetCountry.GetNameNoFlag] as an entrepôt trading post of the British Empire. Now, decades later, it has become the gateway connecting Europe with Asia making [ROOT.GetCountry.GetNameNoFlag] extremely rich. Yet this miracle came with a price, the exploitation of immigrants with little to no rights.\nUltimately, this culminates in a racially diverse yet tense environment, with the majority of [ROOT.GetCountry.GetNameNoFlag]'s population being poor and uneducated.\nHow [ROOT.GetCountry.GetNameNoFlag] would fare in this new age is now in our hands."
+ singapore.0.a:0 "God save the King!\nGod save [ROOT.GetCountry.GetNameNoFlag]!"
+ 
+ #A New Singapore
+ a_new_singapore:0 "Reform Singapore"
+ a_new_singapore_reason:0 "With the deteriorating health of King William of Hanover, many in and out of Government could feel the advent of a new age, one of sweeping changes, social reform, industrial revolutions, and so many more.\nMany fear that our fledgling colony will not weather the incoming storm.\nThus although not an outright demand for massive reform, they suggested that we somewhat liberalise and grant more rights to the immigrants who make up more than 97% of our population."
+
+ a_new_singapore_language:0 "Complete Debate on the Languages of Singapore Decision"
+ a_new_singapore_culture:0 "Complete Debate on the Cultures of Singapore Decision"
+ a_new_singapore_name:0 "Complete Dabate on A New Nation Name Decision"
+ a_new_singapore_legacy:0 "Complete Stamford Raffles' Legacy Decision"
+ 
+ a_new_singapore_complete:0 "Birth of a new Singapore"
+ 
+ #R_tension increase and decrease
+ ans.r.tension.1.decrease:0 "Racial Tension will decrease by 1 by the end of the reform\n"
+ ans.r.tension.2.decrease:0 "Racial Tension will decrease by 2 by the end of the reform\n"
+ ans.r.tension.3.decrease:0 "Racial Tension will decrease by 3 by the end of the reform\n"
+ ans.r.tension.4.decrease:0 "Racial Tension will decrease by 4 by the end of the reform\n"
+ ans.r.tension.5.decrease:0 "Racial Tension will decrease by 5 by the end of the reform\n"
+ 
+ ans.r.tension.1.increase:0 "Racial Tension will increase by 1 by the end of the reform\n"
+ ans.r.tension.2.increase:0 "Racial Tension will increase by 2 by the end of the reform\n"
+ ans.r.tension.3.increase:0 "Racial Tension will increase by 3 by the end of the reform\n"
+ ans.r.tension.4.increase:0 "Racial Tension will increase by 4 by the end of the reform\n"
+ ans.r.tension.5.increase:0 "Racial Tension will increase by 5 by the end of the reform\n"
+ 
+ 
+ #A New Singapore Languages
+ a_new_singapore_language_decision:0 "Debate on the Languages of Singapore"
+ a_new_singapore_language_decision_desc:0 "We, a colony of Britain, should only have English as our official language. Sure, the local administrator uses their colloquial tongues. However, what does that have to do with us?\nHint: Certain technologies and/or laws will unlock more choices."
+ 
+ a_new_singapore_language_tt:0 "Let the debate begins!"
+ 
+ singapore.10.t:0 "Debate on the Languages of Singapore"
+ singapore.10.d:0 "Banging, cheering and yelling echoed across the hall as great men debated the necessity of reforming the language of the government."
+ singapore.10.f:0 "A right honourable gentleman spoke to the divisive crowd, "Why must we include their tounges? This is the crown's colony and they should learn how to speak the crown's language!" Followed by a blaring mixture of cheers, yells and indiscernible noises."
+
+ singapore.10.a:0 "With our relationship with the Home Counties rapidly deteriorating, we need a different alternative, perhaps a german alternative."
+ singapore.10.a.tt:0 "Hint: This path will allow you to consolidate "Indonesia / Indochina" and ultimately proclaim "Neu Kaiserreich"."
+ singapore.10.b:0 "English remain the official language by a landslide"
+ singapore.10.b.tt:0 "Hint: This path will allow you to consolidate "Indonesia / Indochina" and ultimately "Expand the Empire"."
+ singapore.10.c1:0 "The official language should be based on the majority"
+ singapore.10.c1.tt:0 "Hint: This path will allow you to consolidate "Indochina" and ultimately "Reclaim the Mandate of Heaven!!"."
+ singapore.10.c2:0 "Malaya is the land of the Malay"
+ singapore.10.c2.tt:0 "Hint: This path will allow you to consolidate "Indonesia" and ultimately "All Trade Lead to Malaya"."
+ singapore.10.c3:0 "With many of our officers previously working for BIC, the choice was obvious"
+ singapore.10.c3.tt:0 "Hint: This path will allow you to consolidate "Indochina" and ultimately "Raja of India"."
+ singapore.10.z:0 "Singapore is a place that welcomes trade from all across the world. We should make it our duty to welcome those that wish to come here"
+ singapore.10.z.tt:0 "Hint: This path will allow you to consolidate "Indonesia / Indochina / Both"."
+ singapore.10.e:0 "The meeting is adjourned and will resume later"
+ singapore.10.e.tt:0 "You can choose again later.\nHint: Certain technologies and/or laws will unlock more choices"
+ 
+ wasted_reform_opportunity:0 "Wasted Reform Opportunity"
+ uphold_status_quo:0 "Uphold Status Quo"
+ maximise_reform_opportunity:0 "Maximise Reform Opportunity"
+ break_status_quo:0 "Break Status Quo"
+ questionable_decision:0 "Questionable Decision"
+ 
+ l_ger:0 "Official Language: German"
+ l_eng:0 "Official Language: English"
+ l_chi:0 "Official Language: Hokkien"
+ l_mal:0 "Official Language: Malay"
+ l_tam:0 "Official Language: Tamil"
+ l_otl:0 "Official Languages: Malay, English, Tamil, Hokkien"
+
+
+ #A New Singapore Culture
+ a_new_singapore_culture_decision:0 "Debate on the Cultures of Singapore"
+ a_new_singapore_culture_decision_desc:0 "To call Singapore a racially diverse place is an understatement. It is a hotpot of different cultures and ethnicities. Maybe it's time for us to debate how to manage all these people.\nHint: You can select more than one culture"
+ 
+ singapore.20.t:0 "Debate on the Cultures of Singapore"
+ singapore.20.d:0 "Once more, banging, cheering and yelling echo across the hall. The long debate stretches on."
+ singapore.20.f:0 "A radical right honourable gentleman expressed his opinion to the crowd, "We should allow all ... " Even before he could finish his sentence, his voice was drowned out by a cacophony of indiscernible noises."
+ 
+ singapore.20.a:0 "Singapur für Deutscher"
+ singapore.20.b:0 "The ruling culture shall remain"
+ singapore.20.c1:0 "The majority of the population should be welcome"
+ singapore.20.c2:0 "Malaya is the land of Malay. They too should be welcome"
+ singapore.20.c3:0 "Agree to BIC officers' proposal"
+ singapore.20.e:0 "Hear, Hear! I hereby declare the debate over"
+ singapore.20.g:0 "The meeting is adjourned and will resume later"
+ 
+ singapore.20.e.tt.1:0 "Selected: German"
+ singapore.20.e.tt.2:0 "Selected: English"
+ singapore.20.e.tt.3:0 "Selected: Chinese"
+ singapore.20.e.tt.4:0 "Selected: Malay"
+ singapore.20.e.tt.5:0 "Selected: Tamil"
+ 
+ singapore.20.g.tt:0 "You can choose again later.\nHint: You can select more than one culture"
+ 
+ c_ger:0 "Official Culture: German"
+ c_eng:0 "Official Culture: English"
+ c_chi:0 "Official Culture: Chinese"
+ c_mal:0 "Official Culture: Malay"
+ c_tam:0 "Official Culture: Tamil"
+ 
+ racial_inclusivity_good:0 "Approve Racial Inclusivity"
+ racial_inclusivity_bad:0 "Disapprove Racial Inclusivity"
+ 
+ #A New Singapore Legacy
+ a_new_singapore_legacy_decision:0 "Stamford Raffles' Legacy"
+ a_new_singapore_legacy_decision_desc:0 "Before leaving for his final voyage back to England, Stamford Raffles left behind Raffles Town Plan, an urban development plan intending to expand the fledgling but thriving colony.\nThe plan was later renamed Jackson Plan as we slowly completed it over the years.\nNow, as the wind of reform rages on, a lot of divisive opinions emerges regarding the plan."
+
+ singapore.30.t:0 "Raffles Town Plan"
+ singapore.30.d:0 "Unlike the usual divisive topics that wreck the discussing chamber, the conversation regarding urban planning is rather tamed"
+ singapore.30.f:0 ""I say we just continue with the original plan"\n"HEAR!" "HEAR!" "HEAR!""
+ 
+ singapore.30.a:0 "For the future, let's tighten our belts and expand the original plan"
+ singapore.30.a.tt:0 "The expanded plan will bring us great benefits."
+ singapore.30.b:0 "Continue the original plan"
+ singapore.30.b.tt:0 "The original plan will bring us many benefits."
+ singapore.30.c:0 "This is too expensive. The government won't pay for this"
+
+ payment_expand_plan:0 "Expanded Raffles Town Plan Payment"
+ payment_original_plan:0 "Original Raffles Town Plan Payment"
+ 
+ singapore.31.t:0 "Completed Raffles Town Plan"
+ singapore.31.d:0 "Years of hard work and dedication have finally paid off, and the legacy left behind by the late Governor is finally complete."
+ singapore.31.f:0 "From Fort Canning to the Singapore River and beyond the Padang is now strictly for government use.\nThe European town stretched from the seafront east of the cantonment to the southwest bank of the Singapore River.\nThe southwest of the Singapore River, shall be the new Chinese settlement.\n..."
+
+ singapore.31.a:0 "Hurrah! For Singapore!"
+ 
+ finish_expand_plan:0 "Completed Raffles Town Plan"
+ finish_original_plan:0 "Completed Raffles Town Plan"
+ 
+ #A New Singapore Languages
+ a_new_singapore_name_decision:0 "Dabate on A New Nation Name"
+ a_new_singapore_name_decision_desc:0 "Through the last two debates, we have long departed from the beaten path. As such, the name Singapore is longer suitatable to call our colony. Thus, many suggest we start a new debate regarding the new name."
+ 
+ a_new_singapore_name_tt:0 "Let the debate begins!"
+ 
+ singapore.40.t:0 "Dabate on A New Nation Name"
+ singapore.40.d:0 "The debate hall is rowdy today, with people cheering and yelling, trying to cast their favourite name in the lot"
+ singapore.40.f.a:0 "A loud cheer for "Sincapur"\nAnother aye for "Löwenstadt"\nAnother call for "Viontana""
+ singapore.40.f.b:0 "Do I hear an aye for "Lóngyámén"\nA loud cheer for "Danmaxi"\nAnother aye for "Puluozhong""
+ singapore.40.f.c:0 "Do I hear an aye for "Temasek"\nA loud cheer for "Singapura"\nAnother aye for "Pulau Ujong"\nAnother call for "Ujong Tanah""
+ singapore.40.f.d:0 "Do I hear an aye for "Bargimgaparaa"\nA loud cheer for "Cinkappur"\nAnother aye for "Rajendrapur""
+ 
+ singapore.40.ger.1:0 "Sincapur (tip of the Malay Peninsula) from the Grosses vollständiges Universal-Lexicon"
+ singapore.40.ger.2:0 "Löwenstadt a direct translation of "Lion City""
+ singapore.40.ger.3:0 "Viontana, a name often used in Portuguese and Spanish sources"
+ 
+ singapore.40.chi.1:0 "Lóngyámén after a port described by a Chinese traveller Wang Dayuan"
+ singapore.40.chi.2:0 "Danmaxi after the island described by the same Chinese traveller Wang Dayuan."
+ singapore.40.chi.3:0 "Puluozhong, after a 3rd century Chinese written record"
+
+ singapore.40.mal.1:0 "Temasek, from the Sejarah Melayu "
+ singapore.40.mal.2:0 "Singapura, from Sanskrit meaning "Lion City""
+ singapore.40.mal.3:0 "Pulau Ujong, which directly translates as the "Island at the end""
+ singapore.40.mal.4:0 "Ujong Tanah, or "Land at the Furthest", often use in European sources"
+ 
+ singapore.40.tam.1:0 "Bargimgaparaa, a name from old Portuguese sources"
+ singapore.40.tam.2:0 "Cinkappur, a direct translation"
+ singapore.40.tam.3:0 "Rajendrapur, named after Rajendra Chola I of the Chola Empire who once conquered Malaya"
+ 
+ singapore.40.otl:0 "Let's keep the old name. We shouldn't rock the boat too hard after such radical reforms"
+ 
+ #A new Singapore done
+ singapore.50.t:0 "A New [ROOT.GetCountry.GetNameNoFlag]"
+ singapore.50.d:0 ""Perhaps it is inevitable!"\n"Perhaps so.""
+ singapore.50.f.a:0 "As the government representative announced the reform, boos erupted as the crowd rapidly descended into chaos"
+ singapore.50.f.b:0 "Before the government representative even announced the reform, everyone had already expected it. Nothing changes."
+ singapore.50.f.c:0 "Cheers erupted across the street as positive reform had somehow leaked before the government could announce it."
+ 
+ singapore.50.ger:0 "Three Hurrahs!"
+ singapore.50.eng:0 "History Repeats Itself"
+ singapore.50.utl:0 "For [ROOT.GetCountry.GetNameNoFlag]!"
+ singapore.50.otl:0 "A Bright Future For a United [ROOT.GetCountry.GetNameNoFlag]!"
+ 
+ nearby.malay.approve.25.tt:0 "Nearby Malay Nations Strongly Approve Your Decision" 
+ nearby.malay.approve.15.tt:0 "Nearby Malay Nations Approve Your Decision" 
+ nearby.malay.disapprove.25.tt:0 "Nearby Malay Nations Strongly Disapprove Your Decision"
+ nearby.malay.disapprove.15.tt:0 "Nearby Malay Nations Disapprove Your Decision"
+ 
+ #Public response to the new law
+ singapore.3.t:0 "Public response to the new law"
+ singapore.3.d:0 "Large crowds filled the street as the government representative announce the new law"
+ singapore.3.f:0 ""Move out of the way, I can't hear anything!"\n"What did he say?"\n"Is it about tariff break?""
+ 
+ singapore.3.z:0 "A brighter future for [ROOT.GetCountry.GetNameNoFlag]!"
+ 
+ #Singapore crackdown
+ singapore_crackdown_decision:0 "Racial Crackdown"
+ singapore_crackdown_decision_desc:0 "With rising racial tension all across the nation, many radical members of government thus suggest that we issue a crackdown, forcing them back in line.\nHowever, the opposition denounced such a folly idea as it could potentially blowback, destabilising the situation even more."
+
+ singapore_crackdown_decision_p:0 "Racial Tension is higher or equal to 1" 
+
+ singapore_crackdown_decision_tt:0 "Racial Crackdown will be unavailable for 5 years"
+ 
+ singapore_crackdown:0 "Crackdown in progress"
+ 
+ #Crackdown result
+ singapore.4.t:0 "The crackdown was a success"
+ singapore.4.d:0 "With precision and targetted strike, our enforcer managed to destroy many racial hotspots"
+ singapore.4.f:0 ""Alright, lads, move them back to the station!"\n"Aye!""
+ 
+ singapore.4.z:0 "This is a momentous victory!"
+ 
+ singapore.5.t:0 "The crackdown was a failure"
+ singapore.5.d:0 "Our enforcers were overwhelmed, running in circle and unable to stem the rising racial situation"
+ singapore.5.f:0 "The enforcers moved back dispirited and tired, under mocking of incoming crowds."
+ 
+ singapore.5.z:0 "Crackdown on the paper! I don't want to hear any of this tomorrow."
+ 
+ #Fund Singapore Racial Riot
+ pop_culture_equal:0 = "Has Pop Culture"
+ 
+ fund_singapore_riot_north:0 "Fund Singapore Racial Riot"
+ fund_singapore_riot_north_desc:0 "With Singapore's recent expansionist rhetoric, it's undeniable that they must be stopped.\nHowever, war is expensive and could gather the ire of their European overload.\nThus, members of the government suggest an alternative route, destabilising Singapore from within using our the population in their country."
+ 
+ fund_singapore_riot_north.tt:0 "Singapore will be vigilant for 5 years."
+ 
+ fund_singapore_riot_south:0 "Fund Singapore Racial Riot"
+ fund_singapore_riot_south_desc:0 "With Singapore's recent expansionist rhetoric, it's undeniable that they must be stopped.\nHowever, war is expensive and could gather the ire of their European overload.\nThus, members of the government suggest an alternative route, destabilising Singapore from within using our the population in their country."
+ 
+ fund_singapore_riot_south.tt:0 "Singapore will be vigilant for 5 years."
+ 
+ 
+ #Racial Riot
+ singapore.60.t:0 "[SCOPE.sCulture('riot_culture').GetNameNoFormatting] Racial Riot"
+ singapore.60.d:0 "Local Celebration Turned Into Racial Riot"
+ singapore.60.f:0 "Afternoon yesterday, crowds of [SCOPE.sCulture('riot_culture').GetNameNoFormatting] gathered for a local celebration. What began as a celebratory event rapidly devolved into full racial fighting, leaving behind vandalised shops, injured civilians and many more."
+ 
+ singapore.60.z:0 "Ignore It"
+ singapore.60.y:0 "Institute a Lockdown"
+ 
+ racial_riot:0 "Ongoing Racial Riot"
+ racial_riot_lockdown:0 "Ongoing Racial Riot Lockdown"
+ 
+ #Racial Riot Investigation & Aftermath
+ singapore.61.t:0 "Racial Riot Investigation & Aftermath"
+ singapore.61.d.z:0 "Thanks to our agents' best efforts, we managed to identify and pin down the perpetrator. We have clear evidence that last week's racial riot was funded by the [SCOPE.sCountry('suspect_one').GetAdjective]."
+ singapore.61.d.y:0 "Despite our best effort, we weren't able to pin down the perpetrator.\nHowever, we manage to close it down to three prime suspects [SCOPE.sCountry('suspect_one').GetName], [SCOPE.sCountry('suspect_two').GetName] and [SCOPE.sCountry('suspect_three').GetName]."
+ singapore.61.d.x:0 "Despite our best effort, we weren't able to identify the perpetrator"
+ singapore.61.f:0 "As the dust and destruction of the recent racial riot settle down, our investigator begins to uncover details and clues about the situation.\n\n"Madam, please step aside. This is an ongoing investigation!"\n"Charles, disperse the crowd!"\n"Aye, sir.""
+ 
+ singapore.61.z:0 "[ROOT.GetCountry.GetNameNoFlag] will remember this!"
+ 
+ racial_riot_investigation_tt:0 "The chance of catching the perpetrator depends on Singapore's home affairs institution."
+ 
+ racial_riot_caught_tt:0 "Perpetrator is caught"
+ racial_riot_suspect_tt:0 "Find a list of suspect"
+ racial_riot_free_tt:0 "Perpetrator is got away"
+ 
+ #Racial Tension
+ r.tension.events.1.decrease:0 "Racial Tension will decrease by 1"
+ r.tension.events.2.decrease:0 "Racial Tension will decrease by 2"
+ r.tension.events.3.decrease:0 "Racial Tension will decrease by 3"
+ r.tension.events.4.decrease:0 "Racial Tension will decrease by 4"
+ r.tension.events.5.decrease:0 "Racial Tension will decrease by 5"
+ 
+ r.tension.events.0.5.increase:0 "Racial Tension will increase by 0.5"
+ r.tension.events.1.increase:0 "Racial Tension will increase by 1"
+ r.tension.events.2.increase:0 "Racial Tension will increase by 2"
+ r.tension.events.3.increase:0 "Racial Tension will increase by 3"
+ r.tension.events.4.increase:0 "Racial Tension will increase by 4"
+ r.tension.events.5.increase:0 "Racial Tension will increase by 5"
+ 
+ #Merlion Statue
+ building_merlion_statue:0 "Merlion Statue"
+ pm_default_building_merlion_statue:0 "Merlion Statue"
+ pmg_base_building_merlion_statue:0 "Merlion Statue"
+ 
+ #Tech Events
+ #MRT events
+ mrt_events.1.t:0 "The First MRT"
+ mrt_events.1.d:0 "Today the first Mass Rapid Transit (MRT) station opens for the public"
+ mrt_events.1.f:0 ""Despite the station being small in size, it marks a monumental achievement for our colony, a statement to the world that we, the colony of [ROOT.GetCountry.GetNameNoFlag], are no weaker than any European country technologically.""
+ 
+ mrt_events.1.a:0 "The railroads of [SCOPE.sState('railway_state').GetName] shall prosper."
+ mrt_events.1.b:0 "It's not yet time to celebrate. We must double our effort to expand the MRT system."
+ mrt_events.1.c:0 "Let us not rest on our laurels, but anticipate the future!"
+ 
+ expand_mrt:0 "Expand MRT"
+ 
+ #Testing
+ testing_singapore_5:0 "Testing Singapore 5"
+ testing_singapore_4:0 "Testing Singapore 4"
+ testing_singapore_3:0 "Testing Singapore 3"
+ testing_singapore_2:0 "Testing Singapore 2"
+ testing_singapore_1:0 "Testing Singapore 1"
+ testing_singapore_0:0 "Testing Singapore 0"

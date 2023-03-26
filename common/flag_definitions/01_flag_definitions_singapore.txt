@@ -1,0 +1,60 @@
+﻿SGP = {
+	flag_definition = {
+		coa = SGP
+		subject_canton = SGP
+		priority = 1
+	}
+	
+	flag_definition = {
+		coa = SGP_absolute_monarchy
+		subject_canton = SGP_absolute_monarchy
+		priority = 5
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SGP_absolute_monarchy
+		subject_canton = SGP_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SGP_subject
+		allow_overlord_canton = yes
+		priority = 20
+		trigger = { 
+			coa_def_colonial_ensign_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SGP_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SGP_anarchy
+		priority = 1500
+		trigger = { 
+			coa_def_anarchy_flag_trigger = yes
+		}
+	}
+	
+	flag_definition = {
+		coa = SGP_theocracy
+		allow_overlord_canton = yes
+		priority = 1500
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+

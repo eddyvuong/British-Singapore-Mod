@@ -1,0 +1,58 @@
+﻿#Reform Singapore Education
+reform_singapore_education_1 = {
+	icon = "gfx/interface/icons/invention_icons/academia.dds"
+
+	is_shown_when_inactive = {
+		NOT = { has_variable = reform_singapore_education_1_done }
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+
+	possible = {
+		has_modifier = massive_uneducated_population
+			
+		
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = reform_singapore_education_1_tt
+			has_variable = exchange_programme_done
+		}
+		has_law = law_type:law_public_schools
+		institution_investment_level = {
+			institution = institution_schools
+			value >= 3
+		}
+		ig:ig_intelligentsia = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = reform_singapore_education.1 }
+		set_variable = reform_singapore_education_1_done
+	}
+	
+	weight = 10000
+}
+
+reform_singapore_education_2 = {
+	icon = "gfx/interface/icons/invention_icons/academia.dds"
+
+	complete = {
+		any_scope_building = {
+			is_building_type = building_university
+			level >= 5
+		}
+		ig:ig_intelligentsia = {
+			is_in_government = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = { id = reform_singapore_education.2 }
+	}
+	
+	weight = 10000
+}

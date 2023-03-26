@@ -1,0 +1,617 @@
+﻿update_r_law = {
+	#Check Cultural Law
+	if = {
+		limit = { has_law = law_type:law_ethnostate }
+		change_variable = {
+			name = r_tension_law
+			add = 4
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_national_supremacy }
+		change_variable = {
+			name = r_tension_law
+			add = 3
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_racial_segregation }
+		change_variable = {
+			name = r_tension_law
+			add = 2
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_cultural_exclusion }
+		change_variable = {
+			name = r_tension_law
+			add = 1
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_multicultural }
+		change_variable = {
+			name = r_tension_law
+			add = -1
+		}
+	}
+		
+	#Check Religous law
+	if = {
+		limit = { has_law = law_type:law_state_religion }
+		change_variable = {
+			name = r_tension_law
+			add = 2
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_freedom_of_conscience }
+		change_variable = {
+			name = r_tension_law
+			add = 1
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_total_separation }
+		change_variable = {
+			name = r_tension_law
+			add = -1
+		}
+	}
+
+	#Check Internal Security law
+	if = {
+		limit = { has_law = law_type:law_national_guard }
+		change_variable = {
+			name = r_tension_law
+			add = -1
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 1
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_secret_police }
+		change_variable = {
+			name = r_tension_law
+			add = -2
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 2
+		}
+	}
+
+	
+	#Check Policing law
+	if = {
+		limit = { has_law = law_type:law_no_police }
+		change_variable = {
+			name = r_tension_law
+			add = 1
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_local_police }
+		change_variable = {
+			name = r_tension_law
+			add = -1
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 1
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_dedicated_police }
+		change_variable = {
+			name = r_tension_law
+			add = -2
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 2
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_militarized_police }
+		change_variable = {
+			name = r_tension_law
+			add = -3
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 3
+		}
+	}
+	
+	#Check Education law
+	if = {
+		limit = { has_law = law_type:law_religious_schools }
+		change_variable = {
+			name = r_tension_law
+			add = 1
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_public_schools }
+		change_variable = {
+			name = r_tension_law
+			add = -1
+		}
+	}
+	
+	#Check Freedom of Speech law
+	if = {
+		limit = { has_law = law_type:law_outlawed_dissent }
+		change_variable = {
+			name = r_tension_law
+			add = -2
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 2
+		}
+	}
+	if = {
+		limit = { has_law = law_type:law_censorship }
+		change_variable = {
+			name = r_tension_law
+			add = -1
+		}
+		change_variable = {
+			name = r_suppression_law
+			add = 1
+		}
+	}
+}
+
+#Tally r_tension
+update_r_tension_total = {
+	change_variable = {
+        name = r_tension_total
+        add = var:r_tension_law
+    }
+	change_variable = {
+        name = r_tension_total
+		subtract = var:r_tension_suppression
+    }
+	change_variable = {
+        name = r_tension_total
+		add = var:r_tension_events
+    }
+}
+
+#Tally r_suppression
+update_r_suppression_total = {
+	change_variable = {
+        name = r_suppression_total
+        add = var:r_suppression_law
+    }
+	change_variable = {
+        name = r_suppression_total
+		add = var:r_suppression_crackdown
+    }
+}
+
+remove_r_tension_modifier = {
+	hidden_effect = {
+		remove_modifier = r_tension_0_a
+		remove_modifier = r_tension_0_b
+		remove_modifier = r_tension_1_b
+		remove_modifier = r_tension_1_a
+		remove_modifier = r_tension_2
+		remove_modifier = r_tension_3
+		remove_modifier = r_tension_4
+		remove_modifier = r_tension_5
+	}
+}
+
+update_r_tension_modifier = {
+	ROOT = {
+		if = {
+			limit = { var:r_tension_total <= 0.99 }
+			if = { 
+				limit = { var:r_suppression_total >= 5 }
+				add_modifier = {
+					name = r_tension_0_b
+				}
+			}
+			else = {
+				add_modifier = {
+					name = r_tension_0_a
+				}
+			}
+		}
+		else_if = {
+			limit = { 
+				AND = {
+					var:r_tension_total >= 1
+					var:r_tension_total <= 1.99
+				}
+			}
+			if = { 
+				limit = { var:r_suppression_total >= 5 }
+				add_modifier = {
+					name = r_tension_1_b
+				}
+			}
+			else = {
+				add_modifier = {
+					name = r_tension_1_a
+				}
+			}
+		}	
+		else_if = {
+			limit = { 
+				AND = {
+					var:r_tension_total >= 2
+					var:r_tension_total <= 2.99
+				}
+			}
+			add_modifier = {
+				name = r_tension_2
+			}
+		}
+		else_if = {
+			limit = { 
+				AND = {
+					var:r_tension_total >= 3
+					var:r_tension_total <= 3.99
+				}
+			}
+			add_modifier = {
+				name = r_tension_3
+			}
+		}	
+		else_if = {
+			limit = { 
+				AND = {
+					var:r_tension_total >= 4
+					var:r_tension_total <= 4.99
+				}
+			}
+			add_modifier = {
+				name = r_tension_4
+			}
+		}	
+		else_if = {
+			limit = {var:r_tension_total >= 5}
+			add_modifier = {
+				name = r_tension_5
+			}
+		}
+	}
+}
+
+#Reset r_tension back to default
+reset_r_tension = {
+	set_variable = {
+        name = r_tension_total
+        value = 0
+    }
+	
+	set_variable = {
+        name = r_tension_law
+        value = 0
+    }
+}
+
+#Reset r_suppression back to default
+reset_r_suppression = {
+	set_variable = {
+        name = r_suppression_total
+        value = 0
+    }
+	
+	set_variable = {
+        name = r_suppression_law
+        value = 0
+    }
+}
+
+update_country={
+	if={
+		limit={
+			 has_variable = a_new_singapore_lagacy_expand
+		}
+	}
+}
+
+run_r_controller_setup={
+		#Reset Totals
+		reset_r_tension = yes
+		reset_r_suppression = yes
+	
+		#Run Script
+		update_r_law = yes
+		update_r_tension_total = yes
+		update_r_suppression_total = yes	
+}
+
+l_ig_modifier = {
+	ig:ig_intelligentsia = {
+				add_modifier = {
+					name = questionable_decision
+					months = 36
+			}
+		}
+		ig:ig_devout = {
+				add_modifier = {
+					name = break_status_quo
+					months = 36
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+				add_modifier = {
+					name = break_status_quo
+					months = 36
+			}
+		}
+}
+
+c_ig_modifier = {
+	ig:ig_intelligentsia = {
+				add_modifier = {
+					name = racial_inclusivity_good
+					months = 36
+			}
+		}
+	ig:ig_devout = {
+				add_modifier = {
+					name = racial_inclusivity_bad
+					months = 36
+			}
+		}
+	ig:ig_petty_bourgeoisie = {
+				add_modifier = {
+					name = racial_inclusivity_bad
+					months = 36
+			}
+		}
+}
+
+nearby_malay_disapprove_15={
+	every_country = {
+		limit = {
+			NOT = { this = c:SGP }
+			country_has_primary_culture = cu:malay
+		}
+		change_relations = {
+			country = c:SGP
+			value = -50
+		}
+	}
+}
+
+nearby_malay_disapprove_25={
+	every_country = {
+		limit = {
+			NOT = { this = c:SGP }
+			country_has_primary_culture = cu:malay
+		}
+		change_relations = {
+			country = c:SGP
+			value = -25
+		}
+	}
+}
+
+
+nearby_malay_approve_15={
+	every_country = {
+		limit = {
+			NOT = { this = c:SGP }
+			country_has_primary_culture = cu:malay
+		}
+		change_relations = {
+			country = c:SGP
+			value = 15
+		}
+	}
+}
+
+nearby_malay_approve_25={
+	every_country = {
+		limit = {
+			NOT = { this = c:SGP }
+			country_has_primary_culture = cu:malay
+		}
+		change_relations = {
+			country = c:SGP
+			value = 25
+		}
+	}
+}
+
+racial_riot_investigation_and_aftermath = {
+	custom_tooltip = {
+	text = racial_riot_investigation_tt
+	if = {
+		limit = {
+			institution_investment_level = {
+				institution = institution_home_affairs
+				value = 5	
+			}
+		}
+		random_list = {
+			85 = {
+				set_variable = racial_riot_caught		
+			}
+			10 = {
+				set_variable = racial_riot_suspect			
+			}
+			5 = {
+				set_variable = racial_riot_free	
+			}	
+		}
+	}
+	else_if = {
+		limit = {
+			institution_investment_level = {
+				institution = institution_home_affairs
+				value = 4	
+			}
+		}
+		random_list = {
+			65 = {
+				set_variable = racial_riot_caught		
+			}
+			25 = {
+				set_variable = racial_riot_suspect				
+			}
+			5 = {
+				set_variable = racial_riot_free	
+			}	
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_law = law_type:law_secret_police
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 3
+				}
+			}
+		}
+		random_list = {
+			45 = {
+				set_variable = racial_riot_caught		
+			}
+			45 = {
+				set_variable = racial_riot_suspect			
+			}
+			10 = {
+				set_variable = racial_riot_free	
+			}	
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				OR = {
+					has_law = law_type:law_guaranteed_liberties
+					has_law = law_type:law_national_guard
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 2
+				}
+			}
+		}
+		random_list = {
+			30 = {
+				set_variable = racial_riot_caught			
+			}
+			50 = {
+				set_variable = racial_riot_suspect				
+			}
+			20 = {
+				set_variable = racial_riot_free	
+			}	
+		}
+	}
+	else_if = {
+		limit = {
+			AND = {
+				OR = {
+					has_law = law_type:law_guaranteed_liberties
+					has_law = law_type:law_national_guard
+				}
+				institution_investment_level = {
+					institution = institution_home_affairs
+					value = 1
+				}
+			}
+		}
+		random_list = {
+			25 = {
+				set_variable = racial_riot_caught			
+			}
+			45 = {
+				set_variable = racial_riot_suspect				
+			}
+			30 = {
+				set_variable = racial_riot_free
+			}	
+		}
+	}
+	else_if = {
+		limit = {
+			has_law = law_type:law_no_home_affairs
+		}
+		random_list = {
+			5 = {
+				set_variable = racial_riot_caught			
+			}
+			20 = {
+				set_variable = racial_riot_suspect				
+			}
+			75 = {
+				set_variable = racial_riot_free	
+			}	
+		}
+	}
+	}
+	
+	if = {
+		limit = {
+			has_modifier = merlion_look_north
+		}
+		trigger_event = {
+			id = singapore.61
+			days = 7
+			popup = yes
+		}
+	}
+	if = {
+		limit = {
+			has_modifier = merlion_look_south
+		}
+		trigger_event = {
+			id = singapore.62
+			days = 7
+			popup = yes
+		}
+	}
+	if = {
+		limit = {
+			has_modifier = merlion_roar_eternity
+		}
+		trigger_event = {
+			id = singapore.63
+			days = 7
+			popup = yes
+		}
+	}
+}
+
+all_r_tension_modifier = {
+	add_modifier = {
+		name = r_tension_0_a
+	}
+	add_modifier = {
+		name = r_tension_0_b
+	}
+	add_modifier = {
+		name = r_tension_1_a
+	}
+	add_modifier = {
+		name = r_tension_1_b
+	}
+	add_modifier = {
+		name = r_tension_2
+	}
+	add_modifier = {
+		name = r_tension_3
+	}
+	add_modifier = {
+		name = r_tension_4
+	}
+	add_modifier = {
+		name = r_tension_5
+	}
+}
+

@@ -1,0 +1,41 @@
+﻿exchange_programme_decision = {
+	is_shown = {
+		NOT = { has_variable = exchange_programme_done }
+		NOT = { has_variable = reform_singapore_education_1_done }
+		has_modifier = massive_uneducated_population
+		exists = c:SGP
+		c:SGP = ROOT
+	}
+	possible = {
+		OR={
+			c:GBR = {
+				relations:root >= relations_threshold:neutral
+			}
+			c:FRA = {
+				relations:root >= relations_threshold:neutral
+			}
+			c:AUS = {
+				relations:root >= relations_threshold:neutral
+			}
+			c:PRU = {
+				relations:root >= relations_threshold:neutral
+			}
+			c:DEN = {
+				relations:root >= relations_threshold:neutral
+			}
+		}
+	}
+	when_taken = {
+		set_variable = exchange_programme_done
+		trigger_event = {
+			id = singapore.6
+			days = 0
+			popup = yes
+		}
+
+	}
+
+	ai_chance = {
+		base = 100
+	}
+}

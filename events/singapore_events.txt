@@ -1,0 +1,2313 @@
+﻿namespace = singapore
+
+singapore.0 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.0.t
+	desc = singapore.0.d
+	flavor = singapore.0.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/poor_people_moving"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		#Supression
+		set_variable = {
+				name = r_suppression_law
+				value = 0
+		}
+		set_variable = {
+				name = r_suppression_crackdown
+				value = 0
+		}
+		set_variable = {
+				name = r_suppression_total
+				value = 0
+		}
+		
+		#Racial Tension
+		set_variable = {
+				name = r_tension_law
+				value = 0
+		}
+		set_variable = {
+				name = r_tension_events
+				value = 0
+		}
+		set_variable = {
+				name = r_tension_total
+				value = 0
+		}
+		
+		#Run Script
+		update_r_law = yes
+		update_r_tension_total = yes
+		update_r_suppression_total = yes
+		
+	}
+
+	option = {
+		name = singapore.0.a
+		default_option = yes
+		
+		
+		update_r_tension_modifier = yes
+		
+		add_modifier = {
+			name = massive_uneducated_population
+		}
+		
+		add_journal_entry = { type = a_new_singapore }
+		
+	}
+	
+}
+
+#Finalise Straits Settlements Act of 1826
+singapore.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.1.t
+	desc = singapore.1.d
+	flavor = singapore.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		top_overlord = {
+			ruler = {
+				save_scope_as = bic_overlord_ruler
+			}
+		}
+	}
+
+	option = {
+		name = singapore.1.a
+		default_option = yes
+		
+		s:STATE_MALAYA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = { x8080B0 }
+			}
+		}
+		
+		s:STATE_MALAYA = {
+			set_owner_of_provinces = {
+				country = ROOT
+				provinces = { x08673B }
+			}
+		}
+		
+		if = {
+			limit = {
+				NOT = { is_subject_type = subject_type_dominion }
+			}
+			change_subject_type = subject_type_dominion
+		}
+	}
+}
+
+# The Tenassarim Purchase
+singapore.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.2.t
+	desc = singapore.2.d
+	flavor = singapore.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		c:BIC = {
+			save_scope_as = bic_scope
+		}
+		s:STATE_TENASSERIM = {
+			save_scope_as = tenassarim_scope
+		}
+	}
+
+	option = {
+		name = singapore.2.a
+		default_option = yes
+		add_modifier = {
+			name = tenassarim_sgp_payment 
+			months = 10
+		}
+		c:BIC = {
+			add_modifier = {
+				name = tenassarim_bic_money 
+				months = 10
+			}
+		}
+		
+		s:STATE_TENASSERIM = {
+				set_owner_of_provinces = {
+					country = ROOT
+					provinces = { x9381F1 xB36203 x94B7B9 x3911C1 xFE3639 xD0EF60 x1BB979 x169A4D x9F6BAC x958E99 x59E0CA x3F4145 }
+				}
+		}
+		
+		change_relations = {
+			country = c:BIC
+			value = 10
+		}
+	}
+}
+
+#Law Update
+singapore.3 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "gfx/event_pictures/southamerica_election.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/election"
+
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	
+	title = singapore.3.t
+	desc = singapore.3.d
+	flavor = singapore.3.f
+
+	duration = 3
+
+	trigger = {
+		exists = c:SGP
+		ROOT = c:SGP																																								
+	}
+
+	immediate = {
+		run_r_controller_setup = yes
+	}
+
+	option = {
+		name = singapore.3.z
+		default_option = yes
+	
+		remove_r_tension_modifier = yes
+		
+		update_r_tension_modifier = yes
+	}	
+}
+
+#Crackdown Success
+singapore.4 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "gfx/event_pictures/middleeast_police_breaking_door.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/police_breaking_door"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	title = singapore.4.t
+	desc = singapore.4.d
+	flavor = singapore.4.f
+
+	duration = 3
+
+	trigger = {																																								
+	}
+
+	immediate = {
+		change_variable = {
+			name = r_tension_events
+			add = -1
+		}
+		change_variable = {
+			name = r_suppression_crackdown
+			add = 1
+		}
+		run_r_controller_setup = yes
+	}
+
+	option = {
+		name = singapore.4.z
+		default_option = yes
+	
+		remove_r_tension_modifier = yes
+		
+		update_r_tension_modifier = yes
+	}	
+}
+
+#Crackdown Failure
+singapore.5 = {
+	type = country_event
+	placement = ROOT
+	event_image = {
+		video = "gfx/event_pictures/middleeast_police_breaking_door.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/police_breaking_door"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+	
+	title = singapore.5.t
+	desc = singapore.5.d
+	flavor = singapore.5.f
+
+	duration = 3
+
+	trigger = {																																								
+	}
+
+	immediate = {
+		change_variable = {
+			name = r_tension_events
+			add = 1
+		}
+		change_variable = {
+			name = r_suppression_crackdown
+			add = 2
+		}
+		run_r_controller_setup = yes
+	}
+
+	option = {
+		name = singapore.5.z
+		
+		default_option = yes
+	
+		remove_r_tension_modifier = yes
+		
+		update_r_tension_modifier = yes
+	}	
+}
+
+#Exchange Programme
+singapore.6 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_engineer_blueprint.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/engineer_blueprint"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	title = singapore.6.t
+	desc = singapore.6.d
+	flavor = singapore.6.f
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = {
+		name = singapore.6.z
+		
+		default_option = yes
+		
+		trigger = {
+			c:GBR = {
+				relations:root >= relations_threshold:neutral
+			}
+		}
+		
+		add_modifier = {
+			name = european_exchange_programme
+			years = 5
+		}
+		
+		c:GBR = {
+			change_relations = {
+				country = c:SGP
+				value = 25
+			}
+			hidden_effect = {
+				trigger_event = {
+					id = singapore.7
+					days = 0
+					popup = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.6.y
+		
+		trigger = {
+			c:FRA = {
+				relations:root >= relations_threshold:neutral
+			}
+		}
+		
+		add_modifier = {
+			name = european_exchange_programme
+			years = 5
+		}
+		
+		c:FRA = {
+			change_relations = {
+				country = c:SGP
+				value = 25
+			}
+			hidden_effect = {
+				trigger_event = {
+					id = singapore.7
+					days = 0
+					popup = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.6.x
+		
+		trigger = {
+			c:PRU = {
+				relations:root >= relations_threshold:neutral
+			}
+		}
+		
+		add_modifier = {
+			name = european_exchange_programme
+			years = 5
+		}
+		
+		c:PRU = {
+			change_relations = {
+				country = c:SGP
+				value = 25
+			}
+			hidden_effect = {
+				trigger_event = {
+					id = singapore.7
+					days = 0
+					popup = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.6.w
+		
+		trigger = {
+			c:AUS = {
+				relations:root >= relations_threshold:neutral
+			}
+		}
+		
+		add_modifier = {
+			name = european_exchange_programme
+			years = 5
+		}
+		
+		c:AUS = {
+			change_relations = {
+				country = c:SGP
+				value = 25
+			}
+			hidden_effect = {
+				trigger_event = {
+					id = singapore.7
+					days = 0
+					popup = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.6.v
+		
+		trigger = {
+			c:DEN = {
+				relations:root >= relations_threshold:neutral
+			}
+		}
+		
+		add_modifier = {
+			name = european_exchange_programme
+			years = 5
+		}
+		
+		c:DEN = {
+			change_relations = {
+				country = c:SGP
+				value = 25
+			}
+			hidden_effect = {
+				trigger_event = {
+					id = singapore.7
+					days = 0
+					popup = yes
+				}
+			}
+		}
+	}
+}
+
+#Exchange Programme European
+singapore.7 = {
+	type = country_event
+	placement = ROOT
+	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_engineer_blueprint.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/engineer_blueprint"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+	
+	title = singapore.7.t
+	desc = singapore.7.d
+	flavor = singapore.7.f
+
+	duration = 3
+
+	immediate = {
+		c:SGP = {
+			save_scope_as = singapore_name
+		}
+	}
+
+	option = {
+		name = singapore.7.z
+		
+		default_option = yes
+		
+		add_modifier = {
+			name = singapore_exchange_programme
+			years = 5
+		}
+	}
+}
+
+#Stressful Society
+singapore.8 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+	}
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	title = singapore.8.t
+	desc = singapore.8.d
+	flavor = singapore.8.f
+
+	immediate = {
+	}
+
+	option = {
+		name = singapore.8.z
+		default_option = yes
+		add_modifier = stressful_society
+	}
+}
+
+# The Lanuages of Singapore
+singapore.10 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.10.t
+	desc = singapore.10.d
+	flavor = singapore.10.f
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+	
+	}
+	
+	option = {
+		name = singapore.10.a
+
+		trigger = {
+			OR= {
+				c:PRU = {relations:root >= relations_threshold:cordial}
+				c:AUS = {relations:root >= relations_threshold:cordial}
+				}
+			c:GBR = {relations:root <= relations_threshold:poor}
+		}
+		
+		custom_tooltip = singapore.10.a.tt
+		
+		add_modifier = l_ger
+		add_modifier = c_ger
+		
+		l_ig_modifier= yes
+		
+		custom_tooltip = ans.r.tension.4.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 4
+		}
+	}
+	
+	
+	option = {
+		name = singapore.10.b
+		
+		custom_tooltip = singapore.10.b.tt
+		
+		default_option = yes
+		add_modifier = l_eng
+		add_modifier = c_eng
+		ig:ig_intelligentsia = {
+				add_modifier = {
+					name = wasted_reform_opportunity
+					months = 36
+			}
+		}
+		ig:ig_devout = {
+				add_modifier = {
+					name = uphold_status_quo
+					months = 36
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+				add_modifier = {
+					name = uphold_status_quo
+					months = 36
+			}
+		}
+		
+		set_variable = a_new_singapore_name_done
+		custom_tooltip = ans.r.tension.1.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 1
+		}
+	}
+	
+	option = {
+		name = singapore.10.c1
+
+		trigger = {
+			OR= {
+					has_technology_researched = nationalism
+					has_law = law_type:law_cultural_exclusion
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+		}
+		
+		custom_tooltip = singapore.10.c1.tt
+		
+		add_modifier = l_chi
+		add_modifier = c_chi
+		
+		l_ig_modifier= yes
+		custom_tooltip = ans.r.tension.4.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 4
+		}
+	}
+	
+	option = {
+		name = singapore.10.c2
+
+		trigger = {
+			OR= {
+					has_technology_researched = nationalism
+					has_law = law_type:law_cultural_exclusion
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+		}
+		
+		custom_tooltip = singapore.10.c2.tt
+		
+		add_modifier = l_mal
+		add_modifier = c_mal
+		
+		l_ig_modifier= yes
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.10.c3
+
+		trigger = {
+			OR= {
+					has_technology_researched = nationalism
+					has_law = law_type:law_cultural_exclusion
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+		}
+		
+		custom_tooltip = singapore.10.c3.tt
+		
+		add_modifier = l_tam
+		add_modifier = c_tam
+		
+		l_ig_modifier= yes
+		
+		custom_tooltip = ans.r.tension.4.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 4
+		}
+	}
+	
+	option = {
+		name = singapore.10.z
+		trigger = {
+			OR= {
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+		}
+		
+		custom_tooltip = singapore.10.z.tt
+		
+		set_variable = a_new_singapore_name_done
+		set_variable = a_new_singapore_culture_done
+		
+		add_modifier = l_otl
+		add_modifier = c_eng
+		add_modifier = c_chi
+		add_modifier = c_mal
+		add_modifier = c_tam
+
+		ig:ig_intelligentsia = {
+				add_modifier = {
+					name = maximise_reform_opportunity
+					months = 36
+			}
+		}
+		ig:ig_devout = {
+				add_modifier = {
+					name = break_status_quo
+					months = 36
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+				add_modifier = {
+					name = break_status_quo
+					months = 36
+			}
+		}
+		custom_tooltip = ans.r.tension.3.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -3
+		}
+	}
+	
+	option = {
+		name = singapore.10.e
+		custom_tooltip = {
+				text = singapore.10.e.tt
+				remove_variable = a_new_singapore_language_done
+		}
+	}
+}
+
+
+# The Cultures of Singapore
+singapore.20 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.20.t
+	desc = singapore.20.d
+	flavor = singapore.20.f
+
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+	
+	}
+	
+	option = {
+		name = singapore.20.b
+		trigger = {
+			NOT = { has_modifier = c_eng }
+		}
+		
+		add_modifier = c_eng 
+		
+		ig:ig_devout = {
+				add_modifier = {
+					name = racial_inclusivity_good
+					months = 36
+			}
+		}
+		ig:ig_petty_bourgeoisie = {
+				add_modifier = {
+					name = racial_inclusivity_good
+					months = 36
+			}
+		}
+		
+		hidden_effect = {
+			trigger_event = {
+				id = singapore.20
+				days = 0
+				popup = yes
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.20.c1
+		trigger = {
+			OR= {
+					has_technology_researched = nationalism
+					has_law = law_type:law_cultural_exclusion
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+			NOT = { has_modifier = c_chi }
+		}
+		
+		add_modifier = c_chi
+		c_ig_modifier= yes
+		
+		custom_tooltip = ans.r.tension.1.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -1
+		}
+		
+		hidden_effect = {
+			trigger_event = {
+				id = singapore.20
+				days = 0
+				popup = yes
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.20.c2
+		trigger = {
+			OR= {
+					has_technology_researched = nationalism
+					has_law = law_type:law_cultural_exclusion
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+			NOT = { has_modifier = c_mal }
+		}
+		
+		add_modifier = c_mal
+		
+		c_ig_modifier= yes
+		
+		custom_tooltip = ans.r.tension.1.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -1
+		}
+		
+		hidden_effect = {
+			trigger_event = {
+				id = singapore.20
+				days = 0
+				popup = yes
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.20.c3
+		trigger = {
+			OR= {
+					has_technology_researched = nationalism
+					has_law = law_type:law_cultural_exclusion
+					has_technology_researched = egalitarianism
+					has_law = law_type:law_multicultural
+				}
+			NOT = { has_modifier = c_tam }
+		}
+		
+		add_modifier = c_tam
+		
+		c_ig_modifier= yes
+		
+		custom_tooltip = ans.r.tension.1.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -1
+		}
+		
+		hidden_effect = {
+			trigger_event = {
+				id = singapore.20
+				days = 0
+				popup = yes
+			}
+		}
+	}
+		
+	option = {
+		name = singapore.20.e
+		default_option = yes
+		if = {
+			limit = { has_modifier = c_ger}
+			custom_tooltip = singapore.20.e.tt.1
+		}
+		if = {
+			limit = { has_modifier = c_eng}
+			custom_tooltip = singapore.20.e.tt.2
+		}
+		if = {
+			limit = { has_modifier = c_chi}
+			custom_tooltip = singapore.20.e.tt.3
+		}
+		if = {
+			limit = { has_modifier = c_mal}
+			custom_tooltip = singapore.20.e.tt.4
+		}
+		if = {
+			limit = { has_modifier = c_tam}
+			custom_tooltip = singapore.20.e.tt.5
+		}
+		
+		set_variable = a_new_singapore_culture_done_2
+		
+	}	
+		
+	option = {
+		name = singapore.20.g
+		custom_tooltip = {
+				text = singapore.20.g.tt
+				remove_variable = a_new_singapore_culture_done
+			}
+
+	}
+}
+
+
+# The legacy of Singapore
+singapore.30 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.30.t
+	desc = singapore.30.d
+	flavor = singapore.30.f
+
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+	
+	}
+	
+	option = {
+		name = singapore.30.a
+		custom_tooltip = {
+				text = singapore.30.a.tt
+				trigger_event = {
+					id = singapore.31
+					months = 60
+					popup = yes
+				}
+		}
+		
+		add_modifier = {
+			name = payment_expand_plan 
+			months = 60
+		}
+		
+		set_variable = a_new_singapore_lagacy_expand
+		
+		custom_tooltip = ans.r.tension.2.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -2
+		}
+	}
+	
+	option = {
+		name = singapore.30.b
+		default_option = yes
+		custom_tooltip = {
+				text = singapore.30.b.tt
+				trigger_event = {
+					id = singapore.31
+					months = 60
+					popup = yes
+				}
+		}
+		
+		add_modifier = {
+			name = payment_original_plan 
+			months = 60
+		}
+		
+		set_variable = a_new_singapore_lagacy_original
+		
+		custom_tooltip = ans.r.tension.1.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -1
+		}
+	}
+	
+	option = {
+		name = singapore.30.c
+		custom_tooltip = ans.r.tension.1.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 1
+		}
+
+	}
+	
+}
+
+
+#Raffles town plan complete
+singapore.31 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.31.t
+	desc = singapore.31.d
+	flavor = singapore.31.f
+
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	immediate = {
+	
+	}
+	
+	option = {
+		name = singapore.31.a
+		
+		if = {
+			limit = { has_variable = a_new_singapore_lagacy_expand}
+			add_modifier = {
+				name = finish_expand_plan 
+			}
+		}
+		
+		if = {
+			limit = { has_variable = a_new_singapore_lagacy_original}
+			add_modifier = {
+				name = finish_original_plan 
+			}
+		}
+		
+		remove_variable = a_new_singapore_lagacy_expand
+		remove_variable = a_new_singapore_lagacy_original
+	}
+	
+}
+
+
+# The name of Singapore
+singapore.40 = {
+	type = country_event
+	placement = ROOT
+
+	title = singapore.40.t
+	flavor = singapore.40.d
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = singapore.40.f.a
+				trigger = {
+					has_modifier = l_ger
+				}
+			}
+			triggered_desc = {
+				desc = singapore.40.f.b
+				trigger = {
+					has_modifier = l_chi
+				}
+			}
+			triggered_desc = {
+				desc = singapore.40.f.c
+				trigger = {
+					has_modifier = l_mal
+				}
+			}
+			triggered_desc = {
+				desc = singapore.40.f.d
+				trigger = {
+					has_modifier = l_tam
+				}
+			}
+		}
+	}
+
+	
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_politicians_arguing.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	immediate = {
+	
+	}
+	
+	#German options
+	option = {
+		name = singapore.40.ger.1
+		
+		trigger = {
+			has_modifier = l_ger
+		}
+		
+		set_variable = singapore.40.ger.1v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.40.ger.2
+		
+		trigger = {
+			has_modifier = l_ger
+		}
+		
+		set_variable = singapore.40.ger.2v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.40.ger.3
+		
+		trigger = {
+			has_modifier = l_ger
+		}
+		
+		set_variable = singapore.40.ger.3v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	#Chinese options
+	option = {
+		name = singapore.40.chi.1
+		
+		trigger = {
+			has_modifier = l_chi
+		}
+		
+		set_variable = singapore.40.chi.1v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.40.chi.2
+		
+		trigger = {
+			has_modifier = l_chi
+		}
+		
+		set_variable = singapore.40.chi.2v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.40.chi.3
+		
+		trigger = {
+			has_modifier = l_chi
+		}
+		
+		set_variable = singapore.40.chi.3v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	#Malay options
+	option = {
+		name = singapore.40.mal.1
+		
+		trigger = {
+			has_modifier = l_mal
+		}
+		
+		set_variable = singapore.40.mal.1v
+		
+		custom_tooltip = ans.r.tension.2.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 2
+		}
+	}
+	
+	option = {
+		name = singapore.40.mal.2
+		
+		trigger = {
+			has_modifier = l_mal
+		}
+		
+		set_variable = singapore.40.mal.2v
+		
+		custom_tooltip = ans.r.tension.2.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 2
+		}
+	}
+	
+	option = {
+		name = singapore.40.mal.3
+		
+		trigger = {
+			has_modifier = l_mal
+		}
+		
+		set_variable = singapore.40.mal.3v
+		
+		custom_tooltip = ans.r.tension.2.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 2
+		}
+	}
+	
+	option = {
+		name = singapore.40.mal.4
+		
+		trigger = {
+			OR={
+					has_modifier = l_mal
+					has_modifier = l_ger
+					has_modifier = l_tam
+				}
+		}
+		
+		set_variable = singapore.40.mal.4v
+		
+		custom_tooltip = ans.r.tension.2.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 2
+		}
+	}
+	
+	#Tamil options
+	option = {
+		name = singapore.40.tam.1
+		
+		trigger = {
+			has_modifier = l_tam
+		}
+		
+		set_variable = singapore.40.tam.1v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.40.tam.2
+		
+		trigger = {
+			has_modifier = l_tam
+		}
+		
+		set_variable = singapore.40.tam.2v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	option = {
+		name = singapore.40.tam.3
+		
+		trigger = {
+			has_modifier = l_tam
+		}
+		
+		set_variable = singapore.40.tam.3v
+		
+		custom_tooltip = ans.r.tension.3.increase
+		change_variable = {
+				name = r_tension_ans
+				add = 3
+		}
+	}
+	
+	#OTL
+	option = {
+		name = singapore.40.otl
+		
+		custom_tooltip = ans.r.tension.1.decrease
+		change_variable = {
+				name = r_tension_ans
+				add = -1
+		}
+	}
+}
+
+
+#A new singapore done
+singapore.50 = {
+type = country_event
+
+	title = singapore.50.t
+	flavor = singapore.50.d
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = singapore.50.f.a
+				trigger = {
+					OR = {
+						has_modifier = l_ger
+						has_modifier = l_chi
+						has_modifier = l_mal
+						has_modifier = l_tam
+					}
+				}
+			}
+			triggered_desc = {
+				desc = singapore.50.f.b
+				trigger = {
+					has_modifier = l_eng
+				}
+			}
+			triggered_desc = {
+				desc = singapore.50.f.c
+				trigger = {
+					has_modifier = l_otl
+				}
+			}
+			
+		}
+	}
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/poor_people_moving"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		change_variable = {
+			name = r_tension_events
+			add = var:r_tension_ans
+		}
+		
+		#Run Script
+		run_r_controller_setup = yes
+		
+		#Remove var
+		remove_variable = r_tension_ans
+	}
+
+	option = {
+		name = singapore.50.ger
+		trigger = {
+			has_modifier = l_ger
+		}
+		
+		hidden_effect = {
+			remove_modifier = l_ger
+			remove_modifier = c_ger
+			remove_primary_culture = cu:british
+		}
+		
+		s:STATE_MALAYA = {
+			add_homeland = ger_sgp
+		}
+		
+		add_primary_culture = cu:ger_sgp
+		
+		if = {
+			limit={
+				has_modifier = c_eng
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_eng
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = ger_eng
+			}
+			add_primary_culture = cu:ger_eng
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_chi
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_chi
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = ger_chi
+			}
+			add_primary_culture = cu:ger_chi
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_mal
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_mal
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = ger_mal
+			}
+			add_primary_culture = cu:ger_mal
+			custom_tooltip = {
+				text = nearby.malay.disapprove.15.tt
+				nearby_malay_disapprove_15 = yes
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = nearby.malay.disapprove.25.tt
+				nearby_malay_disapprove_25 = yes
+			}
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_tam
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_tam
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = ger_tam
+			}	
+			add_primary_culture = cu:ger_tam
+		}
+		
+		remove_r_tension_modifier = yes
+		update_r_tension_modifier = yes
+		
+	}
+	
+	option = {
+		name = singapore.50.eng
+		trigger = {
+			has_modifier = l_eng
+		}
+		
+		hidden_effect = {
+			remove_modifier = l_eng
+			remove_modifier = c_eng
+			remove_primary_culture = cu:british
+		}
+		
+		s:STATE_MALAYA = {
+			add_homeland = eng_sgp
+		}
+		
+		add_primary_culture = cu:eng_sgp
+		
+		if = {
+			limit={
+				has_modifier = c_chi
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_chi
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = eng_chi
+			}
+			add_primary_culture = cu:eng_chi
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_mal
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_mal
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = eng_mal
+			}
+			add_primary_culture = cu:eng_mal
+			custom_tooltip = {
+				text = nearby.malay.approve.15.tt
+				nearby_malay_approve_15 = yes
+			}
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_tam
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_tam
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = eng_tam
+			}	
+			add_primary_culture = cu:eng_tam
+		}
+		
+		remove_r_tension_modifier = yes
+		update_r_tension_modifier = yes
+		
+	}
+
+	option = {
+		name = singapore.50.utl
+		trigger = {
+			has_modifier = l_chi
+		}
+		
+		hidden_effect = {
+			remove_modifier = l_chi
+			remove_modifier = c_chi
+			remove_primary_culture = cu:british
+		}
+		
+		s:STATE_MALAYA = {
+			add_homeland = chi_sgp
+		}
+		
+		add_primary_culture = cu:chi_sgp
+		
+		if = {
+			limit={
+				has_modifier = c_eng
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_eng
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = chi_eng
+			}
+			add_primary_culture = cu:chi_eng
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_mal
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_mal
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = chi_mal
+			}
+			add_primary_culture = cu:chi_mal
+			custom_tooltip = {
+				text = nearby.malay.disapprove.15.tt
+				nearby_malay_disapprove_15 = yes
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = nearby.malay.disapprove.25.tt
+				nearby_malay_disapprove_25 = yes
+			}
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_tam
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_tam
+			}
+				
+			s:STATE_MALAYA = {
+				add_homeland = chi_tam
+			}	
+			add_primary_culture = cu:chi_tam
+		}
+		
+		remove_r_tension_modifier = yes
+		update_r_tension_modifier = yes
+		
+	}
+	
+	option = {
+		name = singapore.50.utl
+		trigger = {
+			has_modifier = l_mal
+		}
+		
+		hidden_effect = {
+			remove_modifier = l_mal
+			remove_modifier = c_mal
+			remove_primary_culture = cu:british
+		}
+		
+		s:STATE_MALAYA = {
+			add_homeland = mal_sgp
+			remove_homeland = malay
+		}
+		
+		add_primary_culture = cu:mal_sgp
+		
+		custom_tooltip = {
+			text = nearby.malay.approve.25.tt
+			nearby_malay_approve_25 = yes
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_eng
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_eng
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = mal_eng
+			}
+			add_primary_culture = cu:mal_eng
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_chi
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_chi
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = mal_chi
+			}
+			add_primary_culture = cu:mal_chi
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_tam
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_tam
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = mal_tam
+			}	
+			add_primary_culture = cu:mal_tam
+		}
+		
+		remove_r_tension_modifier = yes
+		update_r_tension_modifier = yes
+		
+	}
+	
+	option = {
+		name = singapore.50.utl
+		trigger = {
+			has_modifier = l_tam
+		}
+		
+		hidden_effect = {
+			remove_modifier = l_tam
+			remove_modifier = c_tam
+			remove_primary_culture = cu:british
+		}
+		
+		s:STATE_MALAYA = {
+			add_homeland = tam_sgp
+		}
+		
+		add_primary_culture = cu:tam_sgp
+		
+		if = {
+			limit={
+				has_modifier = c_eng
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_eng
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = tam_eng
+			}
+			add_primary_culture = cu:tam_eng
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_chi
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_chi
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = tam_chi
+			}
+			add_primary_culture = cu:tam_chi
+		}
+		
+		if = {
+			limit={
+				has_modifier = c_mal
+			}
+			
+			hidden_effect = {
+				remove_modifier = c_mal
+			}
+			
+			s:STATE_MALAYA = {
+				add_homeland = tam_mal
+			}
+			add_primary_culture = cu:tam_mal
+			custom_tooltip = {
+				text = nearby.malay.disapprove.15.tt
+				nearby_malay_disapprove_15 = yes
+			}
+		}
+		else = {
+			custom_tooltip = {
+				text = nearby.malay.disapprove.25.tt
+				nearby_malay_disapprove_25 = yes
+			}
+		}
+		
+		remove_r_tension_modifier = yes
+		update_r_tension_modifier = yes
+	}
+	
+	option = {
+		name = singapore.50.otl
+		trigger = {
+			has_modifier = l_otl
+		}
+		
+		custom_tooltip = {
+			text = nearby.malay.approve.15.tt
+			nearby_malay_approve_15 = yes
+		}
+		
+		hidden_effect = {
+			remove_modifier = l_otl
+		
+			remove_modifier = c_eng
+			remove_modifier = c_chi
+			remove_modifier = c_mal
+			remove_modifier = c_tam
+			remove_primary_culture = cu:british
+		}
+		
+		s:STATE_MALAYA = {
+			add_homeland = otl_chi_sgp
+			add_homeland = otl_mal_sgp
+			add_homeland = otl_tam_sgp
+			add_homeland = eng_sgp
+			remove_homeland = malay
+		}
+		
+		add_primary_culture = cu:otl_chi_sgp
+		add_primary_culture = cu:otl_mal_sgp
+		add_primary_culture = cu:otl_tam_sgp
+		add_primary_culture = cu:eng_sgp
+		
+
+		
+		remove_r_tension_modifier = yes
+		update_r_tension_modifier = yes
+	}
+}
+
+#Racial Riot
+singapore.60 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+	}
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_springtime_of_nations.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/springtime_of_nation"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	title = singapore.60.t
+	desc = singapore.60.d
+	flavor = singapore.60.f
+
+	immediate = {
+		global_var:singapore_racial_riot_perpetrator = {
+			random_primary_culture = {
+				save_scope_as = riot_culture
+			}
+		}
+	}
+	
+	option = {
+		name = singapore.60.y
+		default_option = yes
+		add_modifier = {
+			name = racial_riot_lockdown 
+			days = 15
+		}
+		every_scope_state ={
+			add_culture_standard_of_living_modifier = {
+				culture = scope:riot_culture
+				months = normal_modifier_time
+				multiplier = -1
+			}
+		}
+		custom_tooltip = {
+				text = r.tension.events.0.5.increase
+				change_variable = {
+					name = r_tension_events
+					add = 0.5
+			}
+		}
+		
+		racial_riot_investigation_and_aftermath = yes
+	}
+
+	option = {
+		name = singapore.60.z
+		add_modifier = {
+			name = racial_riot
+			days = 30
+		}
+		every_scope_state ={
+			add_culture_standard_of_living_modifier = {
+				culture = scope:riot_culture
+				months = normal_modifier_time
+				multiplier = -2
+			}
+		}
+		custom_tooltip = {
+				text = r.tension.events.1.increase
+				change_variable = {
+					name = r_tension_events
+					add = 1
+			}
+		}
+		
+		racial_riot_investigation_and_aftermath = yes
+	}
+}
+
+#Racial Riot Investigation & Aftermath North
+singapore.61 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+	}
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/africa_soldiers_breaking_protest.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/soldiers_breaking_protest"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	title = singapore.61.t
+	flavor = singapore.61.f
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = singapore.61.d.z
+				trigger = {
+					has_variable = racial_riot_caught
+				}
+			}
+			
+			triggered_desc = {
+				desc = singapore.61.d.y
+				trigger = {
+					has_variable = racial_riot_suspect
+				}
+			}
+			
+			triggered_desc = {
+				desc = singapore.61.d.x
+				trigger = {
+					has_variable = racial_riot_free
+				}
+			}
+		}
+	}
+
+	immediate = {
+		run_r_controller_setup = yes
+
+		global_var:singapore_racial_riot_perpetrator = {
+			save_scope_as = suspect_one
+		}
+		random_country = {
+			limit = {
+				AND = {
+					NOT = { THIS = ROOT }
+					NOT = { THIS = scope:suspect_one}
+				}
+				OR = {
+					country_has_primary_culture=cu:vietnamese
+					country_has_primary_culture=cu:khmer
+					country_has_primary_culture=cu:khmu
+					country_has_primary_culture=cu:lao
+					country_has_primary_culture=cu:thai
+					country_has_primary_culture=cu:shan
+					country_has_primary_culture=cu:mon
+					country_has_primary_culture=cu:burmese
+					country_has_primary_culture=cu:karen
+					country_has_primary_culture=cu:kachin
+				}
+			}
+			save_scope_as = suspect_two
+		}
+		random_country = {
+			limit = {
+				AND = {
+					NOT = { THIS = ROOT }
+					NOT = { THIS = scope:suspect_one}
+					NOT = { THIS = scope:suspect_two}
+				}
+				OR = {
+					country_has_primary_culture=cu:vietnamese
+					country_has_primary_culture=cu:khmer
+					country_has_primary_culture=cu:khmu
+					country_has_primary_culture=cu:lao
+					country_has_primary_culture=cu:thai
+					country_has_primary_culture=cu:shan
+					country_has_primary_culture=cu:mon
+					country_has_primary_culture=cu:burmese
+					country_has_primary_culture=cu:karen
+					country_has_primary_culture=cu:kachin
+				}
+			}
+			save_scope_as = suspect_three
+		}
+		
+	}
+
+	option = {
+		name = singapore.61.z
+		default_option = yes
+		
+		remove_global_variable = singapore_racial_riot_perpetrator
+		
+		remove_variable = racial_riot_caught
+		remove_variable = racial_riot_suspect
+		remove_variable = racial_riot_free
+		
+		remove_r_tension_modifier = yes
+		
+		hidden_effect = {
+			update_r_tension_modifier = yes
+		}
+	}
+}
+
+#Racial Riot Investigation & Aftermath South
+singapore.62 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+	}
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/africa_soldiers_breaking_protest.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/soldiers_breaking_protest"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	title = singapore.61.t
+	flavor = singapore.61.f
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = singapore.61.d.z
+				trigger = {
+					has_variable = racial_riot_caught
+				}
+			}
+			
+			triggered_desc = {
+				desc = singapore.61.d.y
+				trigger = {
+					has_variable = racial_riot_suspect
+				}
+			}
+			
+			triggered_desc = {
+				desc = singapore.61.d.x
+				trigger = {
+					has_variable = racial_riot_free
+				}
+			}
+		}
+	}
+
+	immediate = {
+		run_r_controller_setup = yes
+
+		global_var:singapore_racial_riot_perpetrator = {
+			save_scope_as = suspect_one
+		}
+		random_country = {
+			limit = {
+				AND = {
+					NOT = { THIS = ROOT }
+					NOT = { THIS = scope:suspect_one}
+				}
+				OR = {
+					country_has_primary_culture = cu:sumatran
+					country_has_primary_culture = cu:batak
+					country_has_primary_culture = cu:javan
+					country_has_primary_culture = cu:moluccan
+					country_has_primary_culture = cu:balinese
+					country_has_primary_culture = cu:bornean
+					country_has_primary_culture = cu:dayak
+				}
+			}
+			save_scope_as = suspect_two
+		}
+		random_country = {
+			limit = {
+				AND = {
+					NOT = { THIS = ROOT }
+					NOT = { THIS = scope:suspect_one}
+					NOT = { THIS = scope:suspect_two}
+				}
+				OR = {
+					country_has_primary_culture = cu:sumatran
+					country_has_primary_culture = cu:batak
+					country_has_primary_culture = cu:javan
+					country_has_primary_culture = cu:moluccan
+					country_has_primary_culture = cu:balinese
+					country_has_primary_culture = cu:bornean
+					country_has_primary_culture = cu:dayak
+				}
+			}
+			save_scope_as = suspect_three
+		}
+		
+	}
+
+	option = {
+		name = singapore.61.z
+		default_option = yes
+		
+		remove_global_variable = singapore_racial_riot_perpetrator
+		
+		remove_variable = racial_riot_caught
+		remove_variable = racial_riot_suspect
+		remove_variable = racial_riot_free
+		
+		remove_r_tension_modifier = yes
+		
+		hidden_effect = {
+			update_r_tension_modifier = yes
+		}
+	}
+}
+
+#Racial Riot Investigation & Aftermath Roar
+singapore.63 = {
+	type = country_event
+	placement = ROOT
+
+	trigger = {
+	}
+
+	duration = 3
+
+	event_image = {
+		video = "gfx/event_pictures/africa_soldiers_breaking_protest.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/soldiers_breaking_protest"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	title = singapore.61.t
+	flavor = singapore.61.f
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				desc = singapore.61.d.z
+				trigger = {
+					has_variable = racial_riot_caught
+				}
+			}
+			
+			triggered_desc = {
+				desc = singapore.61.d.y
+				trigger = {
+					has_variable = racial_riot_suspect
+				}
+			}
+			
+			triggered_desc = {
+				desc = singapore.61.d.x
+				trigger = {
+					has_variable = racial_riot_free
+				}
+			}
+		}
+	}
+
+	immediate = {
+		run_r_controller_setup = yes
+
+		global_var:singapore_racial_riot_perpetrator = {
+			save_scope_as = suspect_one
+		}
+		random_country = {
+			limit = {
+				AND = {
+					NOT = { THIS = ROOT }
+					NOT = { THIS = scope:suspect_one}
+				}
+				OR = {
+					country_has_primary_culture=cu:vietnamese
+					country_has_primary_culture=cu:khmer
+					country_has_primary_culture=cu:khmu
+					country_has_primary_culture=cu:lao
+					country_has_primary_culture=cu:thai
+					country_has_primary_culture=cu:shan
+					country_has_primary_culture=cu:mon
+					country_has_primary_culture=cu:burmese
+					country_has_primary_culture=cu:karen
+					country_has_primary_culture=cu:kachin
+					country_has_primary_culture = cu:sumatran
+					country_has_primary_culture = cu:batak
+					country_has_primary_culture = cu:javan
+					country_has_primary_culture = cu:moluccan
+					country_has_primary_culture = cu:balinese
+					country_has_primary_culture = cu:bornean
+					country_has_primary_culture = cu:dayak
+				}
+			}
+			save_scope_as = suspect_two
+		}
+		random_country = {
+			limit = {
+				AND = {
+					NOT = { THIS = ROOT }
+					NOT = { THIS = scope:suspect_one}
+					NOT = { THIS = scope:suspect_two}
+				}
+				OR = {
+					country_has_primary_culture=cu:vietnamese
+					country_has_primary_culture=cu:khmer
+					country_has_primary_culture=cu:khmu
+					country_has_primary_culture=cu:lao
+					country_has_primary_culture=cu:thai
+					country_has_primary_culture=cu:shan
+					country_has_primary_culture=cu:mon
+					country_has_primary_culture=cu:burmese
+					country_has_primary_culture=cu:karen
+					country_has_primary_culture=cu:kachin
+					country_has_primary_culture = cu:sumatran
+					country_has_primary_culture = cu:batak
+					country_has_primary_culture = cu:javan
+					country_has_primary_culture = cu:moluccan
+					country_has_primary_culture = cu:balinese
+					country_has_primary_culture = cu:bornean
+					country_has_primary_culture = cu:dayak
+				}
+			}
+			save_scope_as = suspect_three
+		}
+		
+	}
+
+	option = {
+		name = singapore.61.z
+		default_option = yes
+		
+		remove_global_variable = singapore_racial_riot_perpetrator
+		
+		remove_variable = racial_riot_caught
+		remove_variable = racial_riot_suspect
+		remove_variable = racial_riot_free
+		
+		remove_r_tension_modifier = yes
+		
+		hidden_effect = {
+			update_r_tension_modifier = yes
+		}
+	}
+}

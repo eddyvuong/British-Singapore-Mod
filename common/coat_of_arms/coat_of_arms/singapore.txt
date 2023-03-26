@@ -1,0 +1,105 @@
+SGP={
+	pattern="pattern_solid.tga"
+	color1="red_light"
+	colored_emblem={
+		texture="ce_bicolor_bottom.dds"
+		color1="white"
+		color2="white"
+	}
+	colored_emblem={
+		texture="ce_sgp_crescent.dds"
+		color1="white"
+		color2="white"
+	}
+}
+
+SGP_subject = {	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_sgp_crown_circle.dds"
+		instance = { position = { 0.75 0.51 } scale = { 0.5 0.5 } }
+	}
+}
+
+SGP_absolute_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	
+	colored_emblem = {
+		texture = "ce_crown_tudor.dds"
+		color1 = "yellow"
+		color2 = "black"
+		instance = { scale = { 0.12 0.12 } position = { 0.511 0.345 } }
+	}
+
+	textured_emblem = {
+		texture = "te_sgp_state_crest.dds"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.4955 } }
+	}
+}
+
+SGP_communist={
+	pattern="pattern_solid.tga"
+	color1="red_light"
+	
+	colored_emblem={
+		texture="ce_sgp_rising_stars.dds"
+		color1="yellow_light"
+		color2="yellow_light"
+	}
+	
+}
+
+
+
+SGP_anarchy={
+	pattern = "pattern_per_bend_senester.dds"
+	color1 = "red"
+	color2 = "black"
+
+	colored_emblem={
+		texture="ce_sgp_merlion_sickle.dds"
+		color1="white"
+		color2="white"
+		instance={
+			position={0.290000 0.260000}
+			scale={0.350000 0.350000}
+		}	
+	}
+	
+	colored_emblem={
+		texture="ce_sgp_falling_stars.dds"
+		color1="white"
+		color2="white"
+		instance={
+			position={0.314500 0.440000}
+			scale={0.400000 0.400000}
+		}	
+	}
+	
+}
+
+SGP_theocracy={
+	pattern="pattern_solid.tga"
+	color1="white"
+	colored_emblem={
+		texture="ce_bicolor_bottom.dds"
+		color1="red_light"
+		color2="red_light"
+	}
+	colored_emblem={
+		texture="ce_sgp_cross.dds"
+		color1="white"
+		color2="white"
+	}
+	
+}

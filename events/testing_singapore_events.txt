@@ -1,0 +1,162 @@
+﻿namespace = testing_singapore
+
+testing_singapore.1 = {
+	type = country_event
+
+	title = merlion_outward.1.t
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia" 
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	
+	
+	
+	
+	option = {
+		every_state  ={
+			limit ={
+				state_region = {
+					is_homeland=cu:thai
+				}
+				NOT = {owner = ROOT}
+			}
+			state_region = {
+				add_claim = ROOT 
+			}
+		}
+	} 
+	
+	option = {
+		every_state_region  ={
+			limit ={
+				is_homeland=cu:thai
+				NOT = {owner = ROOT}
+			}
+			add_claim = ROOT 
+		}
+	} 
+		
+	option = {
+		c:BIC = {
+			random_primary_culture = {
+				save_scope_as = culture_stuff
+			}
+		}
+		c:GBR = {
+			country_has_primary_culture = scope:culture_stuff
+			
+		}
+	} 
+
+		
+			
+			
+
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+testing_singapore.2 = {
+	type = country_event
+
+	title = merlion_outward.1.t
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia" 
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		run_r_controller_setup = yes
+	}
+	
+	option = {
+		remove_r_tension_modifier = yes
+		
+		update_r_tension_modifier = yes
+		
+
+			
+			
+	}
+	option = {
+		remove_r_tension_modifier = yes
+
+	}
+	
+	option = {
+		
+		all_r_tension_modifier = yes
+		
+	}
+	
+	option = {
+		name = singapore.0.c
+		
+		add_modifier = {
+			name = r_tension_5
+		}
+	}
+	
+}
+
+testing_singapore.3 = {
+	type = country_event
+
+	title = merlion_outward.1.t
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia" 
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+	}
+	
+	
+	
+	
+	option = {
+		c:SGP = {
+			c:ROOT = {save_scope_as = root_name}
+		}
+	
+	} 
+	
+	option = {		
+			change_tag = ENG
+	
+	}
+	
+}

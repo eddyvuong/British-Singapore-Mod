@@ -1,0 +1,184 @@
+﻿SGP = {
+	#Sincapur
+	dynamic_country_name = {
+		name = dyn_c_singapore_ger_1
+		adjective = dyn_c_singapore_ger_1_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.ger.1v
+			}
+		}
+	}
+	#Löwenstadt
+	dynamic_country_name = {
+		name = dyn_c_singapore_ger_2
+		adjective = dyn_c_singapore_ger_2_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.ger.2v
+			}
+		}
+	}
+	#Viontana
+	dynamic_country_name = {
+		name = dyn_c_singapore_ger_3
+		adjective = dyn_c_singapore_ger_3_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.ger.3v
+			}
+		}
+	}
+	#Lóngyámén
+	dynamic_country_name = {
+		name = dyn_c_singapore_chi_1
+		adjective = dyn_c_singapore_chi_1_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.chi.1v
+			}
+		}
+	}
+	#Danmaxi
+	dynamic_country_name = {
+		name = dyn_c_singapore_chi_2
+		adjective = dyn_c_singapore_chi_2_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.chi.2v
+			}
+		}
+	}
+	#Puluozhong
+	dynamic_country_name = {
+		name = dyn_c_singapore_chi_3
+		adjective = dyn_c_singapore_chi_3_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.chi.3v
+			}
+		}
+	}
+	#Temasek
+	dynamic_country_name = {
+		name = dyn_c_singapore_mal_1
+		adjective = dyn_c_singapore_mal_1_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.mal.1v
+			}
+		}
+	}
+	#Singapura
+	dynamic_country_name = {
+		name = dyn_c_singapore_mal_2
+		adjective = dyn_c_singapore_mal_2_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.mal.2v
+			}
+		}
+	}
+	#Pulau Ujong
+	dynamic_country_name = {
+		name = dyn_c_singapore_mal_3
+		adjective = dyn_c_singapore_mal_3_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.mal.3v
+			}
+		}
+	}
+	#Ujong Tanah
+	dynamic_country_name = {
+		name = dyn_c_singapore_mal_4
+		adjective = dyn_c_singapore_mal_4_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.mal.4v
+			}
+		}
+	}
+	#Bargimgaparaa
+	dynamic_country_name = {
+		name = dyn_c_singapore_tam_1
+		adjective = dyn_c_singapore_tam_1_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.tam.1v
+			}
+		}
+	}
+	#Cinkappur
+	dynamic_country_name = {
+		name = dyn_c_singapore_tam_2
+		adjective = dyn_c_singapore_tam_2_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.tam.2v
+			}
+		}
+	}
+	#Rajendrapur
+	dynamic_country_name = {
+		name = dyn_c_singapore_tam_3
+		adjective = dyn_c_singapore_tam_3_adj
+		
+		priority = 0
+		
+		trigger = {
+			scope:actor = { 
+				has_variable = a_new_singapore_done
+				has_variable = singapore.40.tam.3v
+			}
+		}
+	}
+}

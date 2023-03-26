@@ -1,0 +1,1913 @@
+﻿eurasian={ 
+	color= 	rgb(0 105 148)
+	religion = protestant
+	traits = { anglophone east_asian_heritage european_heritage}
+	
+	obsessions = {
+		tea
+	}
+	
+	male_common_first_names={
+		Ryan Nicholas Joshua Alex Shane Lee Joseph Darren Ian
+		Sean Lim Eric Jonathan Benjamin Jason Daniel Darryl Adriel Adrian Michael Ken Vincent Roy
+		Ayden Andrew Ethan Norman Ben Martin Christopher Timothy Xavier Eugene	Wei 
+	}
+	female_common_first_names = {
+		Chloe Luna Avery Sylvia Zoe Ashley Evelyn Amber Valerie Sarah Nicole Samantha 
+		Joyce Kim Amelia Alexis Jasmine Isabelle Emily Michelle Grace Jermaine Hazel Eunice Sofia Joanne
+		Elizabeth Amanda Yi Jia Rachael Jing Yi
+	}
+	common_last_names={
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+		
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_regal_first_names = {
+		Yusof Benjamin Devan Kim Ong Tony Alexander William John Robert Kenneth Samuel Edmund Orfeur Harry
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+#German speaking
+ger_sgp={
+	color= rgb{ 62 77 100 }
+	religion = protestant
+	traits = { german_speaking european_heritage }
+	male_common_first_names={
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno		
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor
+		Wilhelm Wolfgang
+	}
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+	noble_last_names = {
+		Herwarth_von_Bittenfeld
+		Vogel_von_Falkenstein
+		von_Falkenstein
+		von_Alten von_Anhalt von_Arentschildt von_Arens
+		von_Bismarck-Bohlen von_Bittenfeld von_Blomberg von_Blumenthal von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Bulow von_Boyneburg-Lengsfeld von_Breidbach-BUrresheim
+		von_Clemm von_Cramm
+		von_Doenhoff von_Dieskau
+		von_Eck
+		von_Fritsch Firnhaber_von_Eberstein
+		von_Gebser von_Gagern de_Greiff von_GO_rtz von_GU_nderrode von_der_Gabelentz
+		von_Halkett von_Hannover von_Hessen-Darmstadt von_Hessen-Kassel von_Hindenburg von_Hohenzollern von_Holstein-Gottorp von_Hennig von_der_Heydt von_Haupt von_Heyden
+		von_Isenburg-BU_dingen-Meerholz
+		von_Kleefeld von_Knorr von_dem_Knesebeck
+		zur_Lippe
+		MU_ller_von_KO_nigswinter von_Manteuffel von_Mecklenburg-Schwerin von_Mecklenburg-Strelitz von_Moltke von_Madai
+		von_Niezychowski von_Nordeck_zur_Rabenau
+		von_Oldenburg
+		von_PlO_nnies
+		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach
+		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt
+		Treusch_von_Butlar von_Tirpitz von_ThU_nen
+		von_Vahlkampf
+		von_Waldeck_und_Pyrmont von_Wettin von_Wrangel von_Willich von_Watzdorf Waitz_von_Eschen
+		von_Zieten von_Zwierlein
+		
+		von_Jons
+	}	
+	common_last_names={
+		Abegg Anger Arendt Ackermann Arntz
+		Behncke Boermel Borsig Brill Brommy Blum Baltzer Bever BA_hren Bischoff Brauweiler BrockmU_ller Broix BU_rgers BO_cking Biedermann BlO_de BO_hler Brockhaus Bauer Birnbaum Brunck Buff Bolten Briegleb Bardorf
+		Clebsch Cordemann Culemeyer Caspers Cetto Clossett Colonius Compes Carriere Cretzschmar Cratz Cropp
+		Dahlmann Dieffenbach Diestel Dreyer Droste Depre Dietze Detering Dietz DuprE_ Dresel
+		Ehlert Eichelbaum Eckert Eisenstuck Eissengarthen Elwert Emmerling Ettlinger Erichson
+		Feyerabend Fritsch Friedenthal Fabarius Forst Frings Freudentheil Felsing FlU_gge
+		Garbe Gerlach Gloger Goerdeler Goetz Grebe Groener Groth Gerlich Giersberg Glaubrech Gail GU_lich
+		Hagen Harkort Harych Hassenpflug Heppendorf Hirschfeld Hoffmann Hubatsch Hammer Hecker Herrmann HO_nninghaus Haustein Hensel Henkel Hildebrand Hallwachs Heldmann Hestermann Hesse Hoffmann HU_gel Hollandt
+		Jastrow Johow Junghans Jahn Jordan Jungbluth Jungblutte Jucho
+		Katz Kempner Kirchweger Koffka Krohn Krummnow Knocke Kehl Keiffenheim Kullich KU_hne Kahlert Kinscherf Kloch Kierulff Kriegk Kugler
+		Lasker Leistikow Leonhardt Ludendorff Lehmkuhl Laist Lamberts Landfermann Leue Lingmann Lintz Lederer Lehne Lotheissen Leisler Lang
+		Mittwoch Moll Mallmann Marcks Maurer MU_lhens Minckwitz Mohr Manecke Marktscheffel Mappes
+		NettstrA_tter Neuerburg Neunzig Nohl
+		Olbers Oetker
+		Pelz Pax Peiser Plange Pagenstecher Peters Pfeiffer Philippi Prinzen Proff PflU_ger Pitschaft PrA_torius Preusser Pogge Pohle
+		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum
+		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay
+		Treibe TU_rke Theyssen Thilmany Trombetta
+		Umbscheiden
+		Venedy Vogt Volhard Varrentrapp Vorwerck
+		Weydemeyer Wittfeld Woehlert Wiesner Wislicenus Wachendorf Waldschmidt Weckbecker Welcker WerlE_ Wesendonck Weilhelmi Winneritz Wirtz Wolfermann Wigard Wuttke Wippermann Wentorp Wendhausen
+		Zerrahn ZO_ller Zell Zimmermann ZachariA_ Zulauf Zais
+	}
+
+	male_regal_first_names = {
+		Adalbert
+		Friedrich Friedrich_Wilhelm
+		Georg
+		Heinrich
+		Joachim
+		Oskar
+		Sigismund
+		Wilhelm Waldermar
+	}
+	female_regal_first_names = {
+		Augusta
+		Charlotte
+		Elisabeth
+		Luise
+		Margarethe
+		Sophie
+		Victoria
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+ger_eng={ 
+	color= 	rgb(168 125 125)
+	religion = protestant
+	traits = { german_speaking european_heritage }
+	male_common_first_names={
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno		
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor
+		Wilhelm Wolfgang
+	}
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+	common_last_names={
+		Allenby Anstruther Abercromby Annesley Assheton Arkwright Acland Armistead Archdale Anderson Akroyd Adair Aytoun Amcotts Allen Amherst Ashton Aytoun
+		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen
+		Cory Chard Courtney Coward Cowell Craufurd Cave Collins Cadogan Chambers Conolly Callan Coleridge Cole Carnegie Cholmeley Clive Croft Cowper Cameron Castlerosse Clay Cogan Colthurst Colebrooke Cross Chaplin Cowen Cartwright Cardwell Corrance Cochrane Conroy Cotton Calthorpe
+		Duff Dalrymple Dixon Dalway Dilke Downing Dickson Davison Dalglish Dimsdale Dyott Dowse Dawson Dease Denison Dillwyn Dow Dunnell Despard Day Darter Selkirk
+		Edge Ennis Edwards Eaton Elliot Elcho Eastwick Eddowes
+		Fortescue Finnie Fordyce Feilden Forster Fowler Fagan Fletcher Fellowes Fothergill Fetherstonhaugh Fanshawe Flowerdew Fullteron Fleming Follows
+		Gresley Gooch Grenfell Glass Gilpin Gilbert Grosvenor Goldney Graham Grieve Goschen Gimbert Gardener Grimstead Greenwell
+		Howard Hornby Hick Hughes Hardcastle Hope Hibbert Hoare Hodgson Henderson Hanmer Hughes Hutt Holford Holms Hurst Holmesdale Holt Harris Heygate Hodgkinson Headlam Hutton Haig
+		Illingworth Ivatt Irby Inchbald Ingelow Inglis
+		Jones Johnston Jessel Jardine Jackson Jolliffe
+		Kennard Kavanagh Kekewich Keown Knox Kingscote Knightley Kinnaird Kinglake
+		Lovelace Laird Lambert Lawson Legh Lennox Lowther Lopes Lefroy Lusk Leatham Lowe Leslie Lane Letby Larwood
+		Moore Macfarlane Mellor McClure Muntz Murphy Maguire Matthews Miller Merry Moncreiff Monk Marling Mackintosh McArthur Manners Macfie McLagan Moore McEvoy Mitford McMahon Matheson Moynihan Majendie Mansfield Marindin Markham Maxse McBean McCorrie McDermond McMurdo McWheeney Mouat
+		Northcote North Nicol Norwood Nightall Notcott Newdegate Napier
+		Otway Ogilvy Onslow Ord Owens
+		Primrose Plunket Potter Plimsoll Pakington Pim Pease Playfair Price Pell Pelham Palmer Ponsonby Peppercorn Pennefather Plumptre Pitblado Pardoe Palliser Pardon
+		Rawlinson Robertson Ripley Richards Raikes Rebow Round Reed Ramsden Pennington Ross Rumbold Raines Ramage Ridley Rowlands Russell Reddish Ridding
+		Stephenson Stanhope Seymour Stronge Sullivan Shaftoe Samuelson Shaw Stapleton Sartoris Saunderson Staveley Strutt Sheridan Stacpoole Scargill Salomons Stansfeld Smith Starkie Synan Seely Shirley Sidebottom Scratchley Sargent Shields Shute Sandbach Sellon Squire Snodgrass Stanger Sibthorp Sparks
+		Tite Traill Torrens Tollemache Trehawke Taylor Talbot Tomline Tolman Trevelyan Temple Thornycroft Troubridge Templeton Teesdale Tottenhame Tremayne Titmus Tyldesley
+		Upton Underdown
+		Veitch Vance Verner Vandeleur Vivian Vicars
+		Woollcombe Wedderburn Whitbread Whitmore Willyams Whitworth Waterlow Williamson Wethered Wyllie Wheelhouse Whatman Waterhouse Walsh Winterbotham Weguelin Wedgwood Whitelaw Wheatley Wingate Willan Waugh Wisden
+		Young
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+		
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Agar-Ellis Althorp
+		Baden-Powell Brudenell-Bruce Bolingbroke Bridport Butler-Henderson Bowes-Lyon Bulwer-Lytton Bertie
+		Churchill Cromwell Cavendish Crichton-Stuart Cowell-Stepney Cowper-Temple Crum-Ewing Campbell-Bannerman Cobham Courtenay Caversham
+		Dawson-Damer Dalrymple-Hay
+		Enfield
+		FitzGerald FitzMaurice Ferguson-Davie Falmouth Fane Foley
+		Grey Gordon-Lennox Greville-Nugent Graham-Montgomery Goldsmid Green-Price Gathorne-Hardy Glencorse
+		Hamilton Haviland-Burke Hill-Trevor Hanbury-Tracy Henley Hampden Hume-Campbell
+		Jones-Parry Jervis-White-Jervis
+		Keppel
+		Loyd-Lindsay Leveson-Gower Launceston Lane
+		Maynard Manningham-Buller Meynell-Ingram Montgomery-Cuninghame Mure-Campbell
+		Newport Newark 
+		Orr-Ewing Ormsby-Gore
+		Pleydell-Bouverie Pelham-Clinton
+		Rosebery Ruggles-Brise Ramsay-Gibson-Maitland Rawdon-Hastings
+		Salisbury Salusbury-Trelawny Smith-Barry Selwin-Ibeetson Sclater-Booth Somerset Stopford-Sackville Shaw-Lefevre Spencer-Churchill
+		Thoroton-Hildyard Torrington Trevor Tadcaster Trematon Townsend
+		Walpole Williams-Wynn Wingfield-Baker Wilson-Patten Welby-Gregory Windsor-Clive Wentworth-FitzWilliam Waldegrave Withers-Lancashire
+	}
+	
+	male_regal_first_names = {
+		Adalbert
+		Friedrich Friedrich_Wilhelm
+		Georg
+		Heinrich
+		Joachim
+		Oskar
+		Sigismund
+		Wilhelm Waldermar
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Augusta
+		Charlotte
+		Luise
+		Margarethe
+		Sophie
+		Victoria
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+ger_chi={ 
+	color= 	rgb(	23	134	68)
+	religion = protestant
+	traits = { german_speaking east_asian_heritage}
+	
+	male_common_first_names={
+		Adelbert Adolf Albrecht Alexander Alfred August
+		Bernhard Burkhard Bruno		
+		Dieter
+		Eduard Edwin Erich Ernst Erwin Esaias
+		Florian Franz Friedrich Fritz
+		Georg Gustav Gunther Giesebert
+		Hasso Heinrich Helmuth Hermann Hugo Haubold Hillart
+		Ignatz
+		Joachim Johann Jurgen
+		Karl Konrad
+		Leonhard Leopold Ludwig Lukas
+		Manfred Maximilian Markus Michael Moritz
+		Nikolaus
+		Otto Oskar
+		Pascal Paul Peter Philipp
+		Reinhard Rudolf Ruprecht
+		Stefan
+		Theodor
+		Wilhelm Wolfgang
+	}
+	
+	female_common_first_names = {
+		Adelheid Armgard Adolphine Albertine Anna Amalie Anna_Dorothea Anna_Sophia Anna_Erika Aurora Agnes
+		Beatrix
+		Charlotte Cecilia Caroline Christina Clara
+		Dorothea_Sophia Dorothea
+		Elisabeth Erika
+		Friederike 
+		Hilda Henriette Hedwig
+		Ingeborg
+		Julia Johanna
+		Luise
+		Mathilde Margarethe Maria Marie_Elisabeth Magdalene
+		Sigrid Sophie Sophie_Albertine
+		Therese
+		Viktoria
+	}
+	
+	common_last_names={
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+		
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_regal_first_names = {
+		Adalbert
+		Friedrich Friedrich_Wilhelm
+		Georg
+		Heinrich
+		Joachim
+		Oskar
+		Sigismund
+		Wilhelm Waldermar
+	}
+	female_regal_first_names = {
+		Augusta
+		Charlotte
+		Elisabeth
+		Luise
+		Margarethe
+		Sophie
+		Victoria
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+ger_mal={
+	color=rgb{ 112 128 144 }
+	religion = protestant
+	traits = { southeast_asian_heritage german_speaking }
+	male_common_first_names = {
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
+	}
+	female_common_first_names = {
+		Adibah
+		Aishah
+		Faridah
+		Fatimah
+		Maimunah 
+		Nur_Maznah
+		Rafidah
+		Zaharah
+		Zaleha
+	}	
+	noble_last_names = {
+		Bendahara
+		bin_Nik
+		Jamalullail
+	}
+	common_last_names = {
+		Aadzam
+		Bendahara
+		Muadzam
+		Murshidul
+		Raja_Ahmad
+		Raja_Inu
+		Riayat_Shah
+		al-Khairat
+		al-Marhum
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+ger_tam={
+	color= rgb{117 69 105}
+	religion = protestant
+	traits = { south_asian_heritage german_speaking }
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+
+
+#English speaking
+eng_sgp={
+	color= rgb{231	31	127 }
+	religion = protestant
+	traits = { anglophone european_heritage }
+	
+	obsessions = {
+		tea
+	}
+	
+	male_common_first_names={
+		Algernon Alexander Adam Andrew Albert Alphonse Arthur Augustus Anthony Archibald Adolphus Abel Alfred Acton Aylmer Ambrose Austen Adrian Alan Arnold Auberon Allen
+		Bruce Benedict Beauchamp Benjamin Byron Bartholomew Barnaby Basil Bertram Bertrand
+		Charles Christopher Cecil Chichester Collingwood Cornelius Caleb Clarence Claude
+		David Daniel Donald Dudley
+		Ebenezer Edward Edmund Edgar Evelyn Egerton Edwin Eustace Eric
+		Francis Frederick Frederic Fairfax
+		George Gregory Garnet Guildford Gathorne Gerard Gipps Granville Geoffrey Gonville Godfrey
+		Harold Henry Hugh Horatio Hedworth Humphrey Harold Harcourt Hedley Herbert
+		Isambard Isaac
+		John James Jacob Jeremy Joseph Julian Josslyn Joshua
+		Kenelm
+		Laurence Leonard_2 Lyon Lionel Lewis
+		Mark Michael Matthew Massey Montague Myles Murrough Maurice Martin Maxwell
+		Nigel Nicholas Nathaniel Neville
+		Oliver Octavius Oscar Oswald
+		Peter Paul Patrick Poulett Philip Percy
+		Richard Robert Roger Rudyard Redvers Rowland Reginald Roundell Rupert Rufus Ross
+		Stephen Simon Spencer Stanley Samuel Stafford Sewallis Sackville Sutherland
+		Theodore_2 Tristan Theobald Thomas Terence Teignmouth Timothy
+		Victor Valentine_2
+		Winston Walter William Wilfred Watkin Wellwood Weston Wentworth Wilbraham Wyndham Weetman
+		Zachary
+	}
+	female_common_first_names = {
+		Alice Anne Ada Arabella Amelia Adelaide Agnes Alethea Augusta Adela Annot Amabel
+		Barbarina Bertha Beatrice Barbara
+		Catherine Charlotte Constance Clara Caroline Clementina Cecilia Christabel Camilla Christina
+		Dorothea Diana
+		Edith Emma Elizabeth Eleanor Eliza Emmeline Esther Euphemia Ella
+		Frances Flora Florence Favell Felicia
+		Georgia Gertrude Georgiana Geraldine Grace Grisell
+		Hannah Harriette Harriet Henrietta
+		Isabella Ivy
+		Jane Josephine Joanna Julia Jeanette Janet
+		Lucy Lydia Louisa Laura Laetitia Lillian
+		Mary Marianne Mathilde Margaret May Marian Madeleine Menella Mariana
+		Nona Nora
+		Olivia
+		Phoebe Pauline
+		Rachel Rhoda Rosina Rosaline Regina Ruth 
+		Sarah Sophia Selina Sibella Susan
+		Theodora
+		Victoria Violet Virginia
+		Wilhelmine
+	}
+	common_last_names={
+		Allenby Anstruther Abercromby Annesley Assheton Arkwright Acland Armistead Archdale Anderson Akroyd Adair Aytoun Amcotts Allen Amherst Ashton Aytoun
+		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen
+		Cory Chard Courtney Coward Cowell Craufurd Cave Collins Cadogan Chambers Conolly Callan Coleridge Cole Carnegie Cholmeley Clive Croft Cowper Cameron Castlerosse Clay Cogan Colthurst Colebrooke Cross Chaplin Cowen Cartwright Cardwell Corrance Cochrane Conroy Cotton Calthorpe
+		Duff Dalrymple Dixon Dalway Dilke Downing Dickson Davison Dalglish Dimsdale Dyott Dowse Dawson Dease Denison Dillwyn Dow Dunnell Despard Day Darter Selkirk
+		Edge Ennis Edwards Eaton Elliot Elcho Eastwick Eddowes
+		Fortescue Finnie Fordyce Feilden Forster Fowler Fagan Fletcher Fellowes Fothergill Fetherstonhaugh Fanshawe Flowerdew Fullteron Fleming Follows
+		Gresley Gooch Grenfell Glass Gilpin Gilbert Grosvenor Goldney Graham Grieve Goschen Gimbert Gardener Grimstead Greenwell
+		Howard Hornby Hick Hughes Hardcastle Hope Hibbert Hoare Hodgson Henderson Hanmer Hughes Hutt Holford Holms Hurst Holmesdale Holt Harris Heygate Hodgkinson Headlam Hutton Haig
+		Illingworth Ivatt Irby Inchbald Ingelow Inglis
+		Jones Johnston Jessel Jardine Jackson Jolliffe
+		Kennard Kavanagh Kekewich Keown Knox Kingscote Knightley Kinnaird Kinglake
+		Lovelace Laird Lambert Lawson Legh Lennox Lowther Lopes Lefroy Lusk Leatham Lowe Leslie Lane Letby Larwood
+		Moore Macfarlane Mellor McClure Muntz Murphy Maguire Matthews Miller Merry Moncreiff Monk Marling Mackintosh McArthur Manners Macfie McLagan Moore McEvoy Mitford McMahon Matheson Moynihan Majendie Mansfield Marindin Markham Maxse McBean McCorrie McDermond McMurdo McWheeney Mouat
+		Northcote North Nicol Norwood Nightall Notcott Newdegate Napier
+		Otway Ogilvy Onslow Ord Owens
+		Primrose Plunket Potter Plimsoll Pakington Pim Pease Playfair Price Pell Pelham Palmer Ponsonby Peppercorn Pennefather Plumptre Pitblado Pardoe Palliser Pardon
+		Rawlinson Robertson Ripley Richards Raikes Rebow Round Reed Ramsden Pennington Ross Rumbold Raines Ramage Ridley Rowlands Russell Reddish Ridding
+		Stephenson Stanhope Seymour Stronge Sullivan Shaftoe Samuelson Shaw Stapleton Sartoris Saunderson Staveley Strutt Sheridan Stacpoole Scargill Salomons Stansfeld Smith Starkie Synan Seely Shirley Sidebottom Scratchley Sargent Shields Shute Sandbach Sellon Squire Snodgrass Stanger Sibthorp Sparks
+		Tite Traill Torrens Tollemache Trehawke Taylor Talbot Tomline Tolman Trevelyan Temple Thornycroft Troubridge Templeton Teesdale Tottenhame Tremayne Titmus Tyldesley
+		Upton Underdown
+		Veitch Vance Verner Vandeleur Vivian Vicars
+		Woollcombe Wedderburn Whitbread Whitmore Willyams Whitworth Waterlow Williamson Wethered Wyllie Wheelhouse Whatman Waterhouse Walsh Winterbotham Weguelin Wedgwood Whitelaw Wheatley Wingate Willan Waugh Wisden
+		Young
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Agar-Ellis Althorp
+		Baden-Powell Brudenell-Bruce Bolingbroke Bridport Butler-Henderson Bowes-Lyon Bulwer-Lytton Bertie
+		Churchill Cromwell Cavendish Crichton-Stuart Cowell-Stepney Cowper-Temple Crum-Ewing Campbell-Bannerman Cobham Courtenay Caversham
+		Dawson-Damer Dalrymple-Hay
+		Enfield
+		FitzGerald FitzMaurice Ferguson-Davie Falmouth Fane Foley
+		Grey Gordon-Lennox Greville-Nugent Graham-Montgomery Goldsmid Green-Price Gathorne-Hardy Glencorse
+		Hamilton Haviland-Burke Hill-Trevor Hanbury-Tracy Henley Hampden Hume-Campbell
+		Jones-Parry Jervis-White-Jervis
+		Keppel
+		Loyd-Lindsay Leveson-Gower Launceston Lane
+		Maynard Manningham-Buller Meynell-Ingram Montgomery-Cuninghame Mure-Campbell
+		Newport Newark 
+		Orr-Ewing Ormsby-Gore
+		Pleydell-Bouverie Pelham-Clinton
+		Rosebery Ruggles-Brise Ramsay-Gibson-Maitland Rawdon-Hastings
+		Salisbury Salusbury-Trelawny Smith-Barry Selwin-Ibeetson Sclater-Booth Somerset Stopford-Sackville Shaw-Lefevre Spencer-Churchill
+		Thoroton-Hildyard Torrington Trevor Tadcaster Trematon Townsend
+		Walpole Williams-Wynn Wingfield-Baker Wilson-Patten Welby-Gregory Windsor-Clive Wentworth-FitzWilliam Waldegrave Withers-Lancashire
+	}
+	
+	male_regal_first_names = {
+		Alexander Albert Augustus
+		Edward Edmund
+		Frederick
+		George
+		Henry
+		Leopold
+		William
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	regal_last_names = {
+		Brydges Brudenell-Bruce
+		Child_Villiers Conroy
+		FitzClarence
+		Rawdon-Hastings
+		Seymour
+	}	
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+eng_chi={ 
+	color= 	rgb(224	153	116)
+	religion = protestant
+	traits = { anglophone east_asian_heritage}
+	
+	obsessions = {
+		tea
+	}
+	
+	male_common_first_names={
+		Ryan Nicholas Joshua Alex Shane Lee Joseph Darren Ian
+		Sean Lim Eric Jonathan Benjamin Jason Daniel Darryl Adriel Adrian Michael Ken Vincent Roy
+		Ayden Andrew Ethan Norman Ben Martin Christopher Timothy Xavier Eugene	Wei 
+	}
+	female_common_first_names = {
+		Chloe Luna Avery Sylvia Zoe Ashley Evelyn Amber Valerie Sarah Nicole Samantha 
+		Joyce Kim Amelia Alexis Jasmine Isabelle Emily Michelle Grace Jermaine Hazel Eunice Sofia Joanne
+		Elizabeth Amanda Yi Jia Rachael Jing Yi
+	}
+	common_last_names={
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+		
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_regal_first_names = {
+		Yusof Benjamin Devan Kim Ong Tony Alexander William John Robert Kenneth Samuel Edmund Orfeur Harry
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = asian
+	}
+}
+
+eng_mal={
+	color=rgb{ 	73 48 185 }
+	religion = protestant
+	traits = { southeast_asian_heritage anglophone }
+	obsessions = {
+		tea
+	}
+	male_common_first_names = {
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
+	}
+	female_common_first_names = {
+		Adibah
+		Aishah
+		Faridah
+		Fatimah
+		Maimunah 
+		Nur_Maznah
+		Rafidah
+		Zaharah
+		Zaleha
+	}	
+	noble_last_names = {
+		Bendahara
+		bin_Nik
+		Jamalullail
+	}
+	common_last_names = {
+		Aadzam
+		Bendahara
+		Muadzam
+		Murshidul
+		Raja_Ahmad
+		Raja_Inu
+		Riayat_Shah
+		al-Khairat
+		al-Marhum
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+eng_tam={
+	color= rgb{179	154	227}
+	religion = protestant
+	traits = { south_asian_heritage anglophone }
+	obsessions = {
+		tea
+	}
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+
+#Chinese speaking
+chi_sgp={
+	color= rgb{ 247	153	89 }
+	religion = protestant
+	traits = { han_chinese east_asian_heritage}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+chi_eng={
+	color= rgb{	24	38	179 }
+	religion = protestant
+	traits = { han_chinese european_heritage }
+	male_common_first_names={
+		Algernon Alexander Adam Andrew Albert Alphonse Arthur Augustus Anthony Archibald Adolphus Abel Alfred Acton Aylmer Ambrose Austen Adrian Alan Arnold Auberon Allen
+		Bruce Benedict Beauchamp Benjamin Byron Bartholomew Barnaby Basil Bertram Bertrand
+		Charles Christopher Cecil Chichester Collingwood Cornelius Caleb Clarence Claude
+		David Daniel Donald Dudley
+		Ebenezer Edward Edmund Edgar Evelyn Egerton Edwin Eustace Eric
+		Francis Frederick Frederic Fairfax
+		George Gregory Garnet Guildford Gathorne Gerard Gipps Granville Geoffrey Gonville Godfrey
+		Harold Henry Hugh Horatio Hedworth Humphrey Harold Harcourt Hedley Herbert
+		Isambard Isaac
+		John James Jacob Jeremy Joseph Julian Josslyn Joshua
+		Kenelm
+		Laurence Leonard_2 Lyon Lionel Lewis
+		Mark Michael Matthew Massey Montague Myles Murrough Maurice Martin Maxwell
+		Nigel Nicholas Nathaniel Neville
+		Oliver Octavius Oscar Oswald
+		Peter Paul Patrick Poulett Philip Percy
+		Richard Robert Roger Rudyard Redvers Rowland Reginald Roundell Rupert Rufus Ross
+		Stephen Simon Spencer Stanley Samuel Stafford Sewallis Sackville Sutherland
+		Theodore_2 Tristan Theobald Thomas Terence Teignmouth Timothy
+		Victor Valentine_2
+		Winston Walter William Wilfred Watkin Wellwood Weston Wentworth Wilbraham Wyndham Weetman
+		Zachary
+	}
+	female_common_first_names = {
+		Alice Anne Ada Arabella Amelia Adelaide Agnes Alethea Augusta Adela Annot Amabel
+		Barbarina Bertha Beatrice Barbara
+		Catherine Charlotte Constance Clara Caroline Clementina Cecilia Christabel Camilla Christina
+		Dorothea Diana
+		Edith Emma Elizabeth Eleanor Eliza Emmeline Esther Euphemia Ella
+		Frances Flora Florence Favell Felicia
+		Georgia Gertrude Georgiana Geraldine Grace Grisell
+		Hannah Harriette Harriet Henrietta
+		Isabella Ivy
+		Jane Josephine Joanna Julia Jeanette Janet
+		Lucy Lydia Louisa Laura Laetitia Lillian
+		Mary Marianne Mathilde Margaret May Marian Madeleine Menella Mariana
+		Nona Nora
+		Olivia
+		Phoebe Pauline
+		Rachel Rhoda Rosina Rosaline Regina Ruth 
+		Sarah Sophia Selina Sibella Susan
+		Theodora
+		Victoria Violet Virginia
+		Wilhelmine
+	}
+	common_last_names={
+		Allenby Anstruther Abercromby Annesley Assheton Arkwright Acland Armistead Archdale Anderson Akroyd Adair Aytoun Amcotts Allen Amherst Ashton Aytoun
+		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen
+		Cory Chard Courtney Coward Cowell Craufurd Cave Collins Cadogan Chambers Conolly Callan Coleridge Cole Carnegie Cholmeley Clive Croft Cowper Cameron Castlerosse Clay Cogan Colthurst Colebrooke Cross Chaplin Cowen Cartwright Cardwell Corrance Cochrane Conroy Cotton Calthorpe
+		Duff Dalrymple Dixon Dalway Dilke Downing Dickson Davison Dalglish Dimsdale Dyott Dowse Dawson Dease Denison Dillwyn Dow Dunnell Despard Day Darter Selkirk
+		Edge Ennis Edwards Eaton Elliot Elcho Eastwick Eddowes
+		Fortescue Finnie Fordyce Feilden Forster Fowler Fagan Fletcher Fellowes Fothergill Fetherstonhaugh Fanshawe Flowerdew Fullteron Fleming Follows
+		Gresley Gooch Grenfell Glass Gilpin Gilbert Grosvenor Goldney Graham Grieve Goschen Gimbert Gardener Grimstead Greenwell
+		Howard Hornby Hick Hughes Hardcastle Hope Hibbert Hoare Hodgson Henderson Hanmer Hughes Hutt Holford Holms Hurst Holmesdale Holt Harris Heygate Hodgkinson Headlam Hutton Haig
+		Illingworth Ivatt Irby Inchbald Ingelow Inglis
+		Jones Johnston Jessel Jardine Jackson Jolliffe
+		Kennard Kavanagh Kekewich Keown Knox Kingscote Knightley Kinnaird Kinglake
+		Lovelace Laird Lambert Lawson Legh Lennox Lowther Lopes Lefroy Lusk Leatham Lowe Leslie Lane Letby Larwood
+		Moore Macfarlane Mellor McClure Muntz Murphy Maguire Matthews Miller Merry Moncreiff Monk Marling Mackintosh McArthur Manners Macfie McLagan Moore McEvoy Mitford McMahon Matheson Moynihan Majendie Mansfield Marindin Markham Maxse McBean McCorrie McDermond McMurdo McWheeney Mouat
+		Northcote North Nicol Norwood Nightall Notcott Newdegate Napier
+		Otway Ogilvy Onslow Ord Owens
+		Primrose Plunket Potter Plimsoll Pakington Pim Pease Playfair Price Pell Pelham Palmer Ponsonby Peppercorn Pennefather Plumptre Pitblado Pardoe Palliser Pardon
+		Rawlinson Robertson Ripley Richards Raikes Rebow Round Reed Ramsden Pennington Ross Rumbold Raines Ramage Ridley Rowlands Russell Reddish Ridding
+		Stephenson Stanhope Seymour Stronge Sullivan Shaftoe Samuelson Shaw Stapleton Sartoris Saunderson Staveley Strutt Sheridan Stacpoole Scargill Salomons Stansfeld Smith Starkie Synan Seely Shirley Sidebottom Scratchley Sargent Shields Shute Sandbach Sellon Squire Snodgrass Stanger Sibthorp Sparks
+		Tite Traill Torrens Tollemache Trehawke Taylor Talbot Tomline Tolman Trevelyan Temple Thornycroft Troubridge Templeton Teesdale Tottenhame Tremayne Titmus Tyldesley
+		Upton Underdown
+		Veitch Vance Verner Vandeleur Vivian Vicars
+		Woollcombe Wedderburn Whitbread Whitmore Willyams Whitworth Waterlow Williamson Wethered Wyllie Wheelhouse Whatman Waterhouse Walsh Winterbotham Weguelin Wedgwood Whitelaw Wheatley Wingate Willan Waugh Wisden
+		Young
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Agar-Ellis Althorp
+		Baden-Powell Brudenell-Bruce Bolingbroke Bridport Butler-Henderson Bowes-Lyon Bulwer-Lytton Bertie
+		Churchill Cromwell Cavendish Crichton-Stuart Cowell-Stepney Cowper-Temple Crum-Ewing Campbell-Bannerman Cobham Courtenay Caversham
+		Dawson-Damer Dalrymple-Hay
+		Enfield
+		FitzGerald FitzMaurice Ferguson-Davie Falmouth Fane Foley
+		Grey Gordon-Lennox Greville-Nugent Graham-Montgomery Goldsmid Green-Price Gathorne-Hardy Glencorse
+		Hamilton Haviland-Burke Hill-Trevor Hanbury-Tracy Henley Hampden Hume-Campbell
+		Jones-Parry Jervis-White-Jervis
+		Keppel
+		Loyd-Lindsay Leveson-Gower Launceston Lane
+		Maynard Manningham-Buller Meynell-Ingram Montgomery-Cuninghame Mure-Campbell
+		Newport Newark 
+		Orr-Ewing Ormsby-Gore
+		Pleydell-Bouverie Pelham-Clinton
+		Rosebery Ruggles-Brise Ramsay-Gibson-Maitland Rawdon-Hastings
+		Salisbury Salusbury-Trelawny Smith-Barry Selwin-Ibeetson Sclater-Booth Somerset Stopford-Sackville Shaw-Lefevre Spencer-Churchill
+		Thoroton-Hildyard Torrington Trevor Tadcaster Trematon Townsend
+		Walpole Williams-Wynn Wingfield-Baker Wilson-Patten Welby-Gregory Windsor-Clive Wentworth-FitzWilliam Waldegrave Withers-Lancashire
+	}
+	
+	male_regal_first_names = {
+		Alexander Albert Augustus
+		Edward Edmund
+		Frederick
+		George
+		Henry
+		Leopold
+		William
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	regal_last_names = {
+		Brydges Brudenell-Bruce
+		Child_Villiers Conroy
+		FitzClarence
+		Rawdon-Hastings
+		Seymour
+	}	
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+chi_mal={
+	color=rgb{194 192 87}
+	religion = protestant
+	traits = { southeast_asian_heritage han_chinese }
+	male_common_first_names = {
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
+	}
+	female_common_first_names = {
+		Adibah
+		Aishah
+		Faridah
+		Fatimah
+		Maimunah 
+		Nur_Maznah
+		Rafidah
+		Zaharah
+		Zaleha
+	}	
+	noble_last_names = {
+		Bendahara
+		bin_Nik
+		Jamalullail
+	}
+	common_last_names = {
+		Aadzam
+		Bendahara
+		Muadzam
+		Murshidul
+		Raja_Ahmad
+		Raja_Inu
+		Riayat_Shah
+		al-Khairat
+		al-Marhum
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+chi_tam={
+	color= rgb{182	80	226}
+	religion = protestant
+	traits = { south_asian_heritage han_chinese }
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+
+
+#Malay speaking
+mal_chi={ 
+	color= 	rgb(171 132	186)
+	religion = protestant
+	traits = { malay_culture east_asian_heritage}
+	male_common_first_names={
+		Ryan Nicholas Joshua Alex Shane Lee Joseph Darren Ian
+		Sean Lim Eric Jonathan Benjamin Jason Daniel Darryl Adriel Adrian Michael Ken Vincent Roy
+		Ayden Andrew Ethan Norman Ben Martin Christopher Timothy Xavier Eugene	Wei 
+	}
+	female_common_first_names = {
+		Chloe Luna Avery Sylvia Zoe Ashley Evelyn Amber Valerie Sarah Nicole Samantha 
+		Joyce Kim Amelia Alexis Jasmine Isabelle Emily Michelle Grace Jermaine Hazel Eunice Sofia Joanne
+		Elizabeth Amanda Yi Jia Rachael Jing Yi
+	}
+	common_last_names={
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+		
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_regal_first_names = {
+		Yusof Benjamin Devan Kim Ong Tony Alexander William John Robert Kenneth Samuel Edmund Orfeur Harry
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = asian
+	}
+}
+
+mal_eng={
+	color= rgb{82	187	207 }
+	religion = protestant
+	traits = { malay_culture european_heritage }
+	male_common_first_names={
+		Algernon Alexander Adam Andrew Albert Alphonse Arthur Augustus Anthony Archibald Adolphus Abel Alfred Acton Aylmer Ambrose Austen Adrian Alan Arnold Auberon Allen
+		Bruce Benedict Beauchamp Benjamin Byron Bartholomew Barnaby Basil Bertram Bertrand
+		Charles Christopher Cecil Chichester Collingwood Cornelius Caleb Clarence Claude
+		David Daniel Donald Dudley
+		Ebenezer Edward Edmund Edgar Evelyn Egerton Edwin Eustace Eric
+		Francis Frederick Frederic Fairfax
+		George Gregory Garnet Guildford Gathorne Gerard Gipps Granville Geoffrey Gonville Godfrey
+		Harold Henry Hugh Horatio Hedworth Humphrey Harold Harcourt Hedley Herbert
+		Isambard Isaac
+		John James Jacob Jeremy Joseph Julian Josslyn Joshua
+		Kenelm
+		Laurence Leonard_2 Lyon Lionel Lewis
+		Mark Michael Matthew Massey Montague Myles Murrough Maurice Martin Maxwell
+		Nigel Nicholas Nathaniel Neville
+		Oliver Octavius Oscar Oswald
+		Peter Paul Patrick Poulett Philip Percy
+		Richard Robert Roger Rudyard Redvers Rowland Reginald Roundell Rupert Rufus Ross
+		Stephen Simon Spencer Stanley Samuel Stafford Sewallis Sackville Sutherland
+		Theodore_2 Tristan Theobald Thomas Terence Teignmouth Timothy
+		Victor Valentine_2
+		Winston Walter William Wilfred Watkin Wellwood Weston Wentworth Wilbraham Wyndham Weetman
+		Zachary
+	}
+	female_common_first_names = {
+		Alice Anne Ada Arabella Amelia Adelaide Agnes Alethea Augusta Adela Annot Amabel
+		Barbarina Bertha Beatrice Barbara
+		Catherine Charlotte Constance Clara Caroline Clementina Cecilia Christabel Camilla Christina
+		Dorothea Diana
+		Edith Emma Elizabeth Eleanor Eliza Emmeline Esther Euphemia Ella
+		Frances Flora Florence Favell Felicia
+		Georgia Gertrude Georgiana Geraldine Grace Grisell
+		Hannah Harriette Harriet Henrietta
+		Isabella Ivy
+		Jane Josephine Joanna Julia Jeanette Janet
+		Lucy Lydia Louisa Laura Laetitia Lillian
+		Mary Marianne Mathilde Margaret May Marian Madeleine Menella Mariana
+		Nona Nora
+		Olivia
+		Phoebe Pauline
+		Rachel Rhoda Rosina Rosaline Regina Ruth 
+		Sarah Sophia Selina Sibella Susan
+		Theodora
+		Victoria Violet Virginia
+		Wilhelmine
+	}
+	common_last_names={
+		Allenby Anstruther Abercromby Annesley Assheton Arkwright Acland Armistead Archdale Anderson Akroyd Adair Aytoun Amcotts Allen Amherst Ashton Aytoun
+		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen
+		Cory Chard Courtney Coward Cowell Craufurd Cave Collins Cadogan Chambers Conolly Callan Coleridge Cole Carnegie Cholmeley Clive Croft Cowper Cameron Castlerosse Clay Cogan Colthurst Colebrooke Cross Chaplin Cowen Cartwright Cardwell Corrance Cochrane Conroy Cotton Calthorpe
+		Duff Dalrymple Dixon Dalway Dilke Downing Dickson Davison Dalglish Dimsdale Dyott Dowse Dawson Dease Denison Dillwyn Dow Dunnell Despard Day Darter Selkirk
+		Edge Ennis Edwards Eaton Elliot Elcho Eastwick Eddowes
+		Fortescue Finnie Fordyce Feilden Forster Fowler Fagan Fletcher Fellowes Fothergill Fetherstonhaugh Fanshawe Flowerdew Fullteron Fleming Follows
+		Gresley Gooch Grenfell Glass Gilpin Gilbert Grosvenor Goldney Graham Grieve Goschen Gimbert Gardener Grimstead Greenwell
+		Howard Hornby Hick Hughes Hardcastle Hope Hibbert Hoare Hodgson Henderson Hanmer Hughes Hutt Holford Holms Hurst Holmesdale Holt Harris Heygate Hodgkinson Headlam Hutton Haig
+		Illingworth Ivatt Irby Inchbald Ingelow Inglis
+		Jones Johnston Jessel Jardine Jackson Jolliffe
+		Kennard Kavanagh Kekewich Keown Knox Kingscote Knightley Kinnaird Kinglake
+		Lovelace Laird Lambert Lawson Legh Lennox Lowther Lopes Lefroy Lusk Leatham Lowe Leslie Lane Letby Larwood
+		Moore Macfarlane Mellor McClure Muntz Murphy Maguire Matthews Miller Merry Moncreiff Monk Marling Mackintosh McArthur Manners Macfie McLagan Moore McEvoy Mitford McMahon Matheson Moynihan Majendie Mansfield Marindin Markham Maxse McBean McCorrie McDermond McMurdo McWheeney Mouat
+		Northcote North Nicol Norwood Nightall Notcott Newdegate Napier
+		Otway Ogilvy Onslow Ord Owens
+		Primrose Plunket Potter Plimsoll Pakington Pim Pease Playfair Price Pell Pelham Palmer Ponsonby Peppercorn Pennefather Plumptre Pitblado Pardoe Palliser Pardon
+		Rawlinson Robertson Ripley Richards Raikes Rebow Round Reed Ramsden Pennington Ross Rumbold Raines Ramage Ridley Rowlands Russell Reddish Ridding
+		Stephenson Stanhope Seymour Stronge Sullivan Shaftoe Samuelson Shaw Stapleton Sartoris Saunderson Staveley Strutt Sheridan Stacpoole Scargill Salomons Stansfeld Smith Starkie Synan Seely Shirley Sidebottom Scratchley Sargent Shields Shute Sandbach Sellon Squire Snodgrass Stanger Sibthorp Sparks
+		Tite Traill Torrens Tollemache Trehawke Taylor Talbot Tomline Tolman Trevelyan Temple Thornycroft Troubridge Templeton Teesdale Tottenhame Tremayne Titmus Tyldesley
+		Upton Underdown
+		Veitch Vance Verner Vandeleur Vivian Vicars
+		Woollcombe Wedderburn Whitbread Whitmore Willyams Whitworth Waterlow Williamson Wethered Wyllie Wheelhouse Whatman Waterhouse Walsh Winterbotham Weguelin Wedgwood Whitelaw Wheatley Wingate Willan Waugh Wisden
+		Young
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Agar-Ellis Althorp
+		Baden-Powell Brudenell-Bruce Bolingbroke Bridport Butler-Henderson Bowes-Lyon Bulwer-Lytton Bertie
+		Churchill Cromwell Cavendish Crichton-Stuart Cowell-Stepney Cowper-Temple Crum-Ewing Campbell-Bannerman Cobham Courtenay Caversham
+		Dawson-Damer Dalrymple-Hay
+		Enfield
+		FitzGerald FitzMaurice Ferguson-Davie Falmouth Fane Foley
+		Grey Gordon-Lennox Greville-Nugent Graham-Montgomery Goldsmid Green-Price Gathorne-Hardy Glencorse
+		Hamilton Haviland-Burke Hill-Trevor Hanbury-Tracy Henley Hampden Hume-Campbell
+		Jones-Parry Jervis-White-Jervis
+		Keppel
+		Loyd-Lindsay Leveson-Gower Launceston Lane
+		Maynard Manningham-Buller Meynell-Ingram Montgomery-Cuninghame Mure-Campbell
+		Newport Newark 
+		Orr-Ewing Ormsby-Gore
+		Pleydell-Bouverie Pelham-Clinton
+		Rosebery Ruggles-Brise Ramsay-Gibson-Maitland Rawdon-Hastings
+		Salisbury Salusbury-Trelawny Smith-Barry Selwin-Ibeetson Sclater-Booth Somerset Stopford-Sackville Shaw-Lefevre Spencer-Churchill
+		Thoroton-Hildyard Torrington Trevor Tadcaster Trematon Townsend
+		Walpole Williams-Wynn Wingfield-Baker Wilson-Patten Welby-Gregory Windsor-Clive Wentworth-FitzWilliam Waldegrave Withers-Lancashire
+	}
+	
+	male_regal_first_names = {
+		Alexander Albert Augustus
+		Edward Edmund
+		Frederick
+		George
+		Henry
+		Leopold
+		William
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	regal_last_names = {
+		Brydges Brudenell-Bruce
+		Child_Villiers Conroy
+		FitzClarence
+		Rawdon-Hastings
+		Seymour
+	}	
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+mal_sgp={
+	color=rgb{97	199	60}
+	religion = protestant
+	traits = { southeast_asian_heritage malay_culture }
+	male_common_first_names = {
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
+	}
+	female_common_first_names = {
+		Adibah
+		Aishah
+		Faridah
+		Fatimah
+		Maimunah 
+		Nur_Maznah
+		Rafidah
+		Zaharah
+		Zaleha
+	}	
+	noble_last_names = {
+		Bendahara
+		bin_Nik
+		Jamalullail
+	}
+	common_last_names = {
+		Aadzam
+		Bendahara
+		Muadzam
+		Murshidul
+		Raja_Ahmad
+		Raja_Inu
+		Riayat_Shah
+		al-Khairat
+		al-Marhum
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+mal_tam={
+	color= rgb{196	232	156}
+	religion = protestant
+	traits = { south_asian_heritage malay_culture }
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+
+#Tamil speaking
+tam_chi={
+	color= rgb{	137	92	89}
+	religion = protestant
+	traits = { dravidian east_asian_heritage}
+	male_common_first_names={
+		Chen
+		Cheng
+		Deng
+		Dong
+		Gao
+		Hsia
+		Hu
+		Huang
+		Kong
+		Kwong
+		Li
+		Liang
+		Liao
+		Liu
+		Luo
+		Ma
+		Mao
+		Pan
+		Tan
+		Wang
+		Xie
+		Yang
+		Yu
+		Zhang
+		Zhu
+	}
+	female_common_first_names = {
+		Akew
+		Jin
+		Jinhong
+		Junying
+		Qingtang
+		Sanniang
+		Shanziang
+		Shih
+		Taiqing
+		Xiefen
+		Xiugu
+		Xuanjiao
+		Yu
+		Yunmei
+	}	
+	noble_last_names = {
+		Cui
+		Li
+		Nie
+		Zhang
+	}
+	common_last_names={
+		Dong
+		Fang
+		Hu
+		Jiang
+		Jin
+		Lu
+		Ma
+		Peng
+		Qiu
+		Shen
+		Sun
+		Tian
+		Ting
+		Wei
+		Wu
+		Ye
+		Zhao
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+tam_eng={
+	color= rgb{	5	37 184}
+	religion = protestant
+	traits = { dravidian european_heritage }
+	male_common_first_names={
+		Algernon Alexander Adam Andrew Albert Alphonse Arthur Augustus Anthony Archibald Adolphus Abel Alfred Acton Aylmer Ambrose Austen Adrian Alan Arnold Auberon Allen
+		Bruce Benedict Beauchamp Benjamin Byron Bartholomew Barnaby Basil Bertram Bertrand
+		Charles Christopher Cecil Chichester Collingwood Cornelius Caleb Clarence Claude
+		David Daniel Donald Dudley
+		Ebenezer Edward Edmund Edgar Evelyn Egerton Edwin Eustace Eric
+		Francis Frederick Frederic Fairfax
+		George Gregory Garnet Guildford Gathorne Gerard Gipps Granville Geoffrey Gonville Godfrey
+		Harold Henry Hugh Horatio Hedworth Humphrey Harold Harcourt Hedley Herbert
+		Isambard Isaac
+		John James Jacob Jeremy Joseph Julian Josslyn Joshua
+		Kenelm
+		Laurence Leonard_2 Lyon Lionel Lewis
+		Mark Michael Matthew Massey Montague Myles Murrough Maurice Martin Maxwell
+		Nigel Nicholas Nathaniel Neville
+		Oliver Octavius Oscar Oswald
+		Peter Paul Patrick Poulett Philip Percy
+		Richard Robert Roger Rudyard Redvers Rowland Reginald Roundell Rupert Rufus Ross
+		Stephen Simon Spencer Stanley Samuel Stafford Sewallis Sackville Sutherland
+		Theodore_2 Tristan Theobald Thomas Terence Teignmouth Timothy
+		Victor Valentine_2
+		Winston Walter William Wilfred Watkin Wellwood Weston Wentworth Wilbraham Wyndham Weetman
+		Zachary
+	}
+	female_common_first_names = {
+		Alice Anne Ada Arabella Amelia Adelaide Agnes Alethea Augusta Adela Annot Amabel
+		Barbarina Bertha Beatrice Barbara
+		Catherine Charlotte Constance Clara Caroline Clementina Cecilia Christabel Camilla Christina
+		Dorothea Diana
+		Edith Emma Elizabeth Eleanor Eliza Emmeline Esther Euphemia Ella
+		Frances Flora Florence Favell Felicia
+		Georgia Gertrude Georgiana Geraldine Grace Grisell
+		Hannah Harriette Harriet Henrietta
+		Isabella Ivy
+		Jane Josephine Joanna Julia Jeanette Janet
+		Lucy Lydia Louisa Laura Laetitia Lillian
+		Mary Marianne Mathilde Margaret May Marian Madeleine Menella Mariana
+		Nona Nora
+		Olivia
+		Phoebe Pauline
+		Rachel Rhoda Rosina Rosaline Regina Ruth 
+		Sarah Sophia Selina Sibella Susan
+		Theodora
+		Victoria Violet Virginia
+		Wilhelmine
+	}
+	common_last_names={
+		Allenby Anstruther Abercromby Annesley Assheton Arkwright Acland Armistead Archdale Anderson Akroyd Adair Aytoun Amcotts Allen Amherst Ashton Aytoun
+		Brown Buller Barrie Bright Benyon Brinckman Bathurst Bagwell Brewer Bruce Backhouse Bass Bateson Bowring Bourne Barrington Blennerhassett Bourke Beach Beaumont Brassey Bailey Biddulph Brand Baring Baines Brocklehurst Bentall Bazley Birley Bingham Bolckow Baxter Bagge Barttelot Beevor Barbauld Balfour Baillie Barnard Bayly Beerbohm Bellairs Bewick Bloomfield Blagden Borthwick Booth Bousfield Brightwell Broderip Broughton Budden Burdon Borradaile Buxton Beauclerk Bosanquet Bromhead Brightwen
+		Cory Chard Courtney Coward Cowell Craufurd Cave Collins Cadogan Chambers Conolly Callan Coleridge Cole Carnegie Cholmeley Clive Croft Cowper Cameron Castlerosse Clay Cogan Colthurst Colebrooke Cross Chaplin Cowen Cartwright Cardwell Corrance Cochrane Conroy Cotton Calthorpe
+		Duff Dalrymple Dixon Dalway Dilke Downing Dickson Davison Dalglish Dimsdale Dyott Dowse Dawson Dease Denison Dillwyn Dow Dunnell Despard Day Darter Selkirk
+		Edge Ennis Edwards Eaton Elliot Elcho Eastwick Eddowes
+		Fortescue Finnie Fordyce Feilden Forster Fowler Fagan Fletcher Fellowes Fothergill Fetherstonhaugh Fanshawe Flowerdew Fullteron Fleming Follows
+		Gresley Gooch Grenfell Glass Gilpin Gilbert Grosvenor Goldney Graham Grieve Goschen Gimbert Gardener Grimstead Greenwell
+		Howard Hornby Hick Hughes Hardcastle Hope Hibbert Hoare Hodgson Henderson Hanmer Hughes Hutt Holford Holms Hurst Holmesdale Holt Harris Heygate Hodgkinson Headlam Hutton Haig
+		Illingworth Ivatt Irby Inchbald Ingelow Inglis
+		Jones Johnston Jessel Jardine Jackson Jolliffe
+		Kennard Kavanagh Kekewich Keown Knox Kingscote Knightley Kinnaird Kinglake
+		Lovelace Laird Lambert Lawson Legh Lennox Lowther Lopes Lefroy Lusk Leatham Lowe Leslie Lane Letby Larwood
+		Moore Macfarlane Mellor McClure Muntz Murphy Maguire Matthews Miller Merry Moncreiff Monk Marling Mackintosh McArthur Manners Macfie McLagan Moore McEvoy Mitford McMahon Matheson Moynihan Majendie Mansfield Marindin Markham Maxse McBean McCorrie McDermond McMurdo McWheeney Mouat
+		Northcote North Nicol Norwood Nightall Notcott Newdegate Napier
+		Otway Ogilvy Onslow Ord Owens
+		Primrose Plunket Potter Plimsoll Pakington Pim Pease Playfair Price Pell Pelham Palmer Ponsonby Peppercorn Pennefather Plumptre Pitblado Pardoe Palliser Pardon
+		Rawlinson Robertson Ripley Richards Raikes Rebow Round Reed Ramsden Pennington Ross Rumbold Raines Ramage Ridley Rowlands Russell Reddish Ridding
+		Stephenson Stanhope Seymour Stronge Sullivan Shaftoe Samuelson Shaw Stapleton Sartoris Saunderson Staveley Strutt Sheridan Stacpoole Scargill Salomons Stansfeld Smith Starkie Synan Seely Shirley Sidebottom Scratchley Sargent Shields Shute Sandbach Sellon Squire Snodgrass Stanger Sibthorp Sparks
+		Tite Traill Torrens Tollemache Trehawke Taylor Talbot Tomline Tolman Trevelyan Temple Thornycroft Troubridge Templeton Teesdale Tottenhame Tremayne Titmus Tyldesley
+		Upton Underdown
+		Veitch Vance Verner Vandeleur Vivian Vicars
+		Woollcombe Wedderburn Whitbread Whitmore Willyams Whitworth Waterlow Williamson Wethered Wyllie Wheelhouse Whatman Waterhouse Walsh Winterbotham Weguelin Wedgwood Whitelaw Wheatley Wingate Willan Waugh Wisden
+		Young
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Agar-Ellis Althorp
+		Baden-Powell Brudenell-Bruce Bolingbroke Bridport Butler-Henderson Bowes-Lyon Bulwer-Lytton Bertie
+		Churchill Cromwell Cavendish Crichton-Stuart Cowell-Stepney Cowper-Temple Crum-Ewing Campbell-Bannerman Cobham Courtenay Caversham
+		Dawson-Damer Dalrymple-Hay
+		Enfield
+		FitzGerald FitzMaurice Ferguson-Davie Falmouth Fane Foley
+		Grey Gordon-Lennox Greville-Nugent Graham-Montgomery Goldsmid Green-Price Gathorne-Hardy Glencorse
+		Hamilton Haviland-Burke Hill-Trevor Hanbury-Tracy Henley Hampden Hume-Campbell
+		Jones-Parry Jervis-White-Jervis
+		Keppel
+		Loyd-Lindsay Leveson-Gower Launceston Lane
+		Maynard Manningham-Buller Meynell-Ingram Montgomery-Cuninghame Mure-Campbell
+		Newport Newark 
+		Orr-Ewing Ormsby-Gore
+		Pleydell-Bouverie Pelham-Clinton
+		Rosebery Ruggles-Brise Ramsay-Gibson-Maitland Rawdon-Hastings
+		Salisbury Salusbury-Trelawny Smith-Barry Selwin-Ibeetson Sclater-Booth Somerset Stopford-Sackville Shaw-Lefevre Spencer-Churchill
+		Thoroton-Hildyard Torrington Trevor Tadcaster Trematon Townsend
+		Walpole Williams-Wynn Wingfield-Baker Wilson-Patten Welby-Gregory Windsor-Clive Wentworth-FitzWilliam Waldegrave Withers-Lancashire
+	}
+	
+	male_regal_first_names = {
+		Alexander Albert Augustus
+		Edward Edmund
+		Frederick
+		George
+		Henry
+		Leopold
+		William
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	regal_last_names = {
+		Brydges Brudenell-Bruce
+		Child_Villiers Conroy
+		FitzClarence
+		Rawdon-Hastings
+		Seymour
+	}	
+	
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+tam_mal={
+	color=rgb{225	68	24}
+	religion = protestant
+	traits = { southeast_asian_heritage dravidian }
+	male_common_first_names = {
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
+	}
+	female_common_first_names = {
+		Adibah
+		Aishah
+		Faridah
+		Fatimah
+		Maimunah 
+		Nur_Maznah
+		Rafidah
+		Zaharah
+		Zaleha
+	}	
+	noble_last_names = {
+		Bendahara
+		bin_Nik
+		Jamalullail
+	}
+	common_last_names = {
+		Aadzam
+		Bendahara
+		Muadzam
+		Murshidul
+		Raja_Ahmad
+		Raja_Inu
+		Riayat_Shah
+		al-Khairat
+		al-Marhum
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+tam_sgp={
+	color= rgb{	165	245	241}
+	religion = protestant
+	traits = { south_asian_heritage dravidian }
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}
+
+#OTL
+otl_chi_sgp={ 
+	color= 	rgb(156	185	30)
+	religion = protestant
+	traits = { anglophone han_chinese east_asian_heritage}
+	
+	male_common_first_names={
+		Ryan Nicholas Joshua Alex Shane Lee Joseph Darren Ian
+		Sean Lim Eric Jonathan Benjamin Jason Daniel Darryl Adriel Adrian Michael Ken Vincent Roy
+		Ayden Andrew Ethan Norman Ben Martin Christopher Timothy Xavier Eugene	Wei 
+	}
+	female_common_first_names = {
+		Chloe Luna Avery Sylvia Zoe Ashley Evelyn Amber Valerie Sarah Nicole Samantha 
+		Joyce Kim Amelia Alexis Jasmine Isabelle Emily Michelle Grace Jermaine Hazel Eunice Sofia Joanne
+		Elizabeth Amanda Yi Jia Rachael Jing Yi
+	}
+	common_last_names={
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_noble_first_names= {
+		# populate with names here
+		
+	}
+	female_noble_first_names = {
+		# populate with names here
+	}	
+	noble_last_names = {
+		Lee
+		Ng
+		Teo
+		Wei Wee Yong Chen Chee Cy Chong Chan Kyaw Li Hong Chun Han Cheng Kai Min Md Mei Ming Meng
+		Wai Boon Lin Chin Peng Heng Yu Yan Lai Jin Myo Guan Weng Zaw Zheng Song Xu Yee Chi Wu Kian Seng
+		Huimin Choon Teck Ty Teng Chuan Ee Zhi Liew Neo Ching Weiling Kong Tingting Chao Kuan Nian Poh Goh Lei Tee Wan Sai
+	}
+	
+	male_regal_first_names = {
+		Yusof Benjamin Devan Kim Ong Tony Alexander William John Robert Kenneth Samuel Edmund Orfeur Harry
+	}
+	female_regal_first_names = {
+		Alexandrina Alice Augusta
+		Beatrice
+		Elizabeth
+		Helena
+		Louise
+		Margaret Maud Mary
+		Sophia
+		Victoria
+	}
+	
+	graphics = european
+	ethnicities = {
+		1 = asian
+	}
+}
+
+otl_mal_sgp={
+	color=rgb{	81	48	226}
+	religion = protestant
+	traits = {anglophone southeast_asian_heritage malay_culture }
+	male_common_first_names = {
+		Abdullah
+		Al-Mukammal
+		Ali
+		Aziz
+		Idris
+		Isandar
+		Ismail
+		Jaafar
+		Jalil
+		Muabidin
+		Muhammad
+		Riayat
+		Safiuddin
+		Shahabuddin
+		Tuanku
+		Yusuf
+	}
+	female_common_first_names = {
+		Adibah
+		Aishah
+		Faridah
+		Fatimah
+		Maimunah 
+		Nur_Maznah
+		Rafidah
+		Zaharah
+		Zaleha
+	}	
+	noble_last_names = {
+		Bendahara
+		bin_Nik
+		Jamalullail
+	}
+	common_last_names = {
+		Aadzam
+		Bendahara
+		Muadzam
+		Murshidul
+		Raja_Ahmad
+		Raja_Inu
+		Riayat_Shah
+		al-Khairat
+		al-Marhum
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = european
+}
+
+otl_tam_sgp={
+	color= rgb{	252	84	63}
+	religion = protestant
+	traits = { south_asian_heritage dravidian anglophone }
+	male_common_first_names={
+		Champakaraman
+		Chidambaram
+		Dheeran
+		Rajagopalachari
+		Ramaswami
+		Ramayyan
+		Ramiengar
+		Sathyamurthy
+		Seshadri
+		Seshayya
+		Shanmukham
+		Shungrasoobyer
+		Subramania
+		Vanchinathan
+	}
+	female_common_first_names = {
+		Nageswari
+		Rajini
+		Rani
+		Rasamanohari
+		Thangamma
+	}	
+	noble_last_names = {
+		Bahadur
+		Rao
+		Sethupathi
+		Tondaiman
+	}
+	common_last_names={
+		Dalawa
+		Krishnamachari
+		Mudaliar
+		Rajapopalachari
+		Sastri
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = european
+}

@@ -1,0 +1,23 @@
+﻿TRADE_ROUTES = {
+	c:SGP = {
+		create_trade_route = {
+			goods = dye
+			level = 1
+			direction = export
+			target = c:TUR.market
+		}			
+		create_trade_route = {
+			goods = dye
+			level = 1
+			direction = export
+			target = c:PRU.market
+		}
+		create_trade_route = {
+			goods = dye
+			level = 1
+			direction = export
+			target = c:AUS.market
+		}			
+			
+	}
+}

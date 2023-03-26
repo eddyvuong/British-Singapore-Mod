@@ -1,0 +1,108 @@
+﻿namespace = reform_singapore_education
+
+reform_singapore_education.1 = {
+	type = country_event
+
+	title = reform_singapore_education.1.t
+	desc = reform_singapore_education.1.d
+	flavor = reform_singapore_education.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/poor_people_moving"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = reform_singapore_education.1.a
+		default_option = yes
+		custom_tooltip = {
+			text = reform_singapore_education.1.a.a
+			set_variable = reform_singapore_education_1_c
+		}
+		add_journal_entry = {
+			type = reform_singapore_education_2
+		}
+		hidden_effect = {
+			remove_modifier=massive_uneducated_population
+		}
+		
+	}
+	
+	option = {
+		name = reform_singapore_education.1.b
+		add_modifier = {
+			name = holistic_education_system_in_progress
+		}
+		
+		add_journal_entry = {
+			type = reform_singapore_education_2
+		}
+		hidden_effect = {
+			remove_modifier=massive_uneducated_population
+		}
+		
+	}
+}
+
+reform_singapore_education.2 = {
+	type = country_event
+
+	title = reform_singapore_education.2.t
+	desc = reform_singapore_education.2.d
+	flavor = reform_singapore_education.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/poor_people_moving"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+	
+	option = {
+		name = reform_singapore_education.2.a
+		default_option = yes
+		
+		if = {
+			limit = { has_variable = reform_singapore_education_1_c}
+			remove_variable = reform_singapore_education_1_c
+			add_modifier = {
+				name = streaming_education_system
+			}
+			hidden_effect = {
+				trigger_event = {
+					id = singapore.8
+					years = 10
+					popup = yes
+				}
+			}
+		}
+		else = {
+			hidden_effect = {
+				remove_modifier=holistic_education_system_in_progress
+			}
+			add_modifier = {
+				name = holistic_education_system
+			}
+		}
+	}
+}

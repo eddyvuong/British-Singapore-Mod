@@ -1,0 +1,898 @@
+﻿namespace = merlion_outward
+
+merlion_outward.1 = {
+	type = country_event
+
+	title = merlion_outward.1.t
+	desc = merlion_outward.1.d
+	flavor = merlion_outward.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/westeners_arriving_in_east_asia" 
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		
+	}
+	
+	#Indonesia supremacy
+	option = {
+		name = merlion_outward.1.z
+		default_option = yes
+		
+		trigger = {
+			OR ={
+				country_has_primary_culture = cu:mal_sgp
+				country_has_primary_culture = cu:eng_sgp
+				country_has_primary_culture = cu:ger_sgp
+			}
+		}
+		
+		every_state_region  ={
+			limit ={
+				OR ={
+					is_homeland=cu:sumatran
+					is_homeland=cu:batak
+					is_homeland=cu:javan
+					is_homeland=cu:moluccan
+					is_homeland=cu:balinese
+					is_homeland=cu:bornean
+					is_homeland=cu:dayak
+				}
+			}
+			add_claim = ROOT 
+		}
+		
+		custom_tooltip = {
+			text = merlion_outward.1.z.tt
+			every_country = {
+				limit = {
+					NOT = { this = c:SGP }
+					OR ={
+						country_has_primary_culture = cu:sumatran
+						country_has_primary_culture = cu:batak
+						country_has_primary_culture = cu:javan
+						country_has_primary_culture = cu:moluccan
+						country_has_primary_culture = cu:balinese
+						country_has_primary_culture = cu:bornean
+						country_has_primary_culture = cu:dayak
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:dutch
+					}
+				}
+				change_relations = {
+					country = c:SGP
+					value = -25
+				}
+			}
+		}
+		
+		if = {
+			limit ={NOT = {country_has_primary_culture = cu:otl_chi_sgp}}
+			if = {
+				limit ={NOT = {country_has_primary_culture = cu:eng_sgp}}
+				add_journal_entry = {
+					type = merlion_outward_3
+				}
+			}
+			else = {
+				add_journal_entry = {
+					type = merlion_outward_3_mirror
+				}
+			}
+		}
+		
+		change_infamy = 10
+		
+		add_modifier = {
+			name = merlion_look_south 
+		}
+		
+	}
+	#Indochina supremacy
+	option = {
+		name = merlion_outward.1.y
+		
+		trigger = {
+			OR ={
+				country_has_primary_culture = cu:tam_sgp
+				country_has_primary_culture = cu:chi_sgp
+				country_has_primary_culture = cu:eng_sgp
+				country_has_primary_culture = cu:ger_sgp
+			}
+		}
+		
+		every_state_region  ={
+			limit ={
+				OR ={
+					is_homeland=cu:vietnamese
+					is_homeland=cu:khmer
+					is_homeland=cu:khmu
+					is_homeland=cu:lao
+					is_homeland=cu:thai
+					is_homeland=cu:shan
+					is_homeland=cu:mon
+					is_homeland=cu:burmese
+					is_homeland=cu:karen
+					is_homeland=cu:kachin
+				}
+			}
+			add_claim = ROOT 
+		}
+		
+		custom_tooltip = {
+			text = merlion_outward.1.y.tt
+			every_country = {
+				limit = {
+					NOT = { this = c:SGP }
+					OR ={
+						country_has_primary_culture = cu:vietnamese
+						country_has_primary_culture = cu:khmer
+						country_has_primary_culture = cu:khmu
+						country_has_primary_culture = cu:lao
+						country_has_primary_culture = cu:thai
+						country_has_primary_culture = cu:shan
+						country_has_primary_culture = cu:mon
+						country_has_primary_culture = cu:burmese
+						country_has_primary_culture = cu:karen
+						country_has_primary_culture = cu:kachin
+					}
+				}
+				change_relations = {
+					country = c:SGP
+					value = -25
+				}
+			}
+		}
+		
+		if = {
+			limit ={NOT = {country_has_primary_culture = cu:otl_chi_sgp}}
+			if = {
+				limit ={NOT = {country_has_primary_culture = cu:eng_sgp}}
+				add_journal_entry = {
+					type = merlion_outward_2
+				}
+			}
+			else = {
+				add_journal_entry = {
+					type = merlion_outward_2_mirror
+				}
+			}
+		}
+		
+		change_infamy = 10
+		
+		add_modifier = {
+			name = merlion_look_north 
+		}
+		
+	}
+	#Indo-Malaya supremacy
+	option = {
+		name = merlion_outward.1.x
+		
+		trigger = {
+			OR ={
+				country_has_primary_culture = cu:otl_chi_sgp
+			}
+		}
+		
+		every_state_region  ={
+			limit ={
+				OR ={
+					is_homeland=cu:sumatran
+					is_homeland=cu:batak
+					is_homeland=cu:javan
+					is_homeland=cu:moluccan
+					is_homeland=cu:balinese
+					is_homeland=cu:bornean
+					is_homeland=cu:dayak
+					is_homeland=cu:vietnamese
+					is_homeland=cu:khmer
+					is_homeland=cu:khmu
+					is_homeland=cu:lao
+					is_homeland=cu:thai
+					is_homeland=cu:shan
+					is_homeland=cu:mon
+					is_homeland=cu:burmese
+					is_homeland=cu:karen
+					is_homeland=cu:kachin
+				}
+			}
+			add_claim = ROOT 
+		}
+		
+		custom_tooltip = {
+			text = merlion_outward.1.y.tt
+			every_country = {
+				limit = {
+					NOT = { this = c:SGP }
+					OR ={
+						country_has_primary_culture = cu:vietnamese
+						country_has_primary_culture = cu:khmer
+						country_has_primary_culture = cu:khmu
+						country_has_primary_culture = cu:lao
+						country_has_primary_culture = cu:thai
+						country_has_primary_culture = cu:shan
+						country_has_primary_culture = cu:mon
+						country_has_primary_culture = cu:burmese
+						country_has_primary_culture = cu:karen
+						country_has_primary_culture = cu:kachin
+						country_has_primary_culture = cu:sumatran
+						country_has_primary_culture = cu:batak
+						country_has_primary_culture = cu:javan
+						country_has_primary_culture = cu:moluccan
+						country_has_primary_culture = cu:balinese
+						country_has_primary_culture = cu:bornean
+						country_has_primary_culture = cu:dayak
+						country_has_primary_culture = cu:hakka
+						country_has_primary_culture = cu:dutch
+					}
+				}
+				change_relations = {
+					country = c:SGP
+					value = -25
+				}
+			}
+		}
+		
+		change_infamy = 20
+		
+		add_modifier = {
+			name = merlion_roar_eternity
+		}
+	}
+	
+	#Peaceful
+	option = {
+		name = merlion_outward.1.v
+		
+		change_infamy = -20
+		
+	}
+}
+
+#Expand the Empire
+merlion_outward.10 = { 
+	type = country_event
+	placement = ROOT
+
+	title = merlion_outward.10.t
+	desc = merlion_outward.10.d
+	flavor = merlion_outward.10.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+		
+	}
+
+	option = { #
+		name = merlion_outward.10.z
+		
+		default_option = yes
+		
+		change_infamy = 25
+		
+		every_country = {
+			limit = {
+				NOT = { this = c:SGP }
+				OR ={
+					country_has_primary_culture = cu:manchu
+					country_has_primary_culture = cu:han
+					country_has_primary_culture = cu:hakka
+					country_has_primary_culture = cu:min
+					country_has_primary_culture = cu:yue
+					country_has_primary_culture = cu:miao
+				}
+			}
+			change_relations = {
+				country = c:SGP
+				value = -25
+			}
+		}
+		
+		# Add Claims
+		s:STATE_GUANGDONG = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SHAOZHOU = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_FUJIAN = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_FORMOSA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_ZHEJIANG = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SUZHOU = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_JIANGSU = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SHANDONG = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_HEBEI = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_BEIJING = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SHENGJING = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_OUTER_MANCHURIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+	
+	#Peaceful
+	option = {
+		name = merlion_outward.10.v
+		
+		change_infamy = -25
+		
+	}
+}
+
+
+#Reclaim the Mandate
+merlion_outward.11 = { 
+	type = country_event
+	placement = ROOT
+
+	title = merlion_outward.11.t
+	desc = merlion_outward.11.d
+	flavor = merlion_outward.11.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_before_the_battle.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/before_the_battle"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+		c:CHI = {save_scope_as = chi_name}
+	}
+
+	option = { 
+		name = merlion_outward.11.z
+		
+		default_option = yes
+		
+		change_infamy = 25
+		
+		every_country = {
+			limit = {
+				NOT = { this = c:SGP }
+				OR ={
+					country_has_primary_culture = cu:han
+					country_has_primary_culture = cu:hakka
+					country_has_primary_culture = cu:min
+					country_has_primary_culture = cu:yue
+					country_has_primary_culture = cu:miao
+				}
+			}
+			change_relations = {
+				country = c:SGP
+				value = -25
+			}
+		}
+		
+		every_state_region  ={
+			limit ={
+				OR ={
+					is_homeland=cu:han
+					is_homeland=cu:hakka
+					is_homeland=cu:min
+					is_homeland=cu:yue
+					is_homeland=cu:miao
+				}
+			}
+			add_claim = ROOT 
+		}
+	}
+	
+	#Peaceful
+	option = {
+		name = merlion_outward.11.v
+		
+		change_infamy = -25
+		
+	}
+}
+
+#All Trade Lead to Malaya
+merlion_outward.12 = { 
+	type = country_event
+	placement = ROOT
+
+	title = merlion_outward.12.t
+	desc = merlion_outward.12.d
+	flavor = merlion_outward.12.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_farmers_market.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/farmers_market"
+
+	icon = "gfx/interface/icons/event_icons/event_trade.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+
+	option = { 
+		name = merlion_outward.12.z
+		
+		default_option = yes
+		
+		change_infamy = 25
+		
+		every_country = {
+			limit = {
+				NOT = { this = c:SGP }
+				OR ={
+					country_has_primary_culture = cu:han
+					country_has_primary_culture = cu:yue
+					country_has_primary_culture = cu:min
+					country_has_primary_culture = cu:japanese
+					country_has_primary_culture = cu:korean
+					country_has_primary_culture = cu:vietnamese
+					country_has_primary_culture = cu:khmer
+					country_has_primary_culture = cu:thai
+					this = c:BIC
+					country_has_primary_culture = cu:bengali
+				}
+			}
+			change_relations = {
+				country = c:SGP
+				value = -25
+			}
+		}
+		
+		# Add Claims
+		s:STATE_GUANGDONG = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SHAOZHOU = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SEOUL = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_FORMOSA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_KANSAI = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_TONKIN = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_CAMBODIA = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_BANGKOK = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_PEGU = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_BEIJING = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_SOUTH_BENGAL = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+		s:STATE_MADRAS = { 
+			if = {
+				limit = {
+					any_scope_state = {
+						 NOT = {
+							owner = ROOT
+						}
+					}
+				}
+				add_claim = ROOT 
+			}
+		}
+	}
+	
+	#Peaceful
+	option = {
+		name = merlion_outward.12.v
+		
+		change_infamy = -25
+		
+	}
+}
+
+#Raja of India
+merlion_outward.13 = {
+	type = country_event
+	placement = ROOT
+
+	title = merlion_outward.13.t
+	desc = merlion_outward.13.d # probably want a triggered desc here
+	flavor = merlion_outward.13.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_sepoy_mutiny.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/sepoy_mutiny"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	immediate = {
+		c:GBR = {save_scope_as = gbr_name}
+	}
+
+	option = {
+		name = merlion_outward.13.z
+		default_option = yes
+		
+		change_infamy = 25
+		
+		every_country = {
+			limit = {
+				NOT = { this = c:SGP }
+				OR ={
+					country_has_primary_culture = cu:bengali
+					country_has_primary_culture = cu:bihari
+					country_has_primary_culture = cu:oriya
+					country_has_primary_culture = cu:telegu
+					country_has_primary_culture = cu:tamil
+					country_has_primary_culture = cu:sinhala
+					country_has_primary_culture = cu:malayalam
+					country_has_primary_culture = cu:kannada
+					country_has_primary_culture = cu:marathi
+					country_has_primary_culture = cu:avadhi
+					country_has_primary_culture = cu:kanauji
+					country_has_primary_culture = cu:rajput
+					country_has_primary_culture = cu:gujarati
+					country_has_primary_culture = cu:panjabi
+					country_has_primary_culture = cu:sindi
+					country_has_primary_culture = cu:kashmiri
+				}
+			}
+			change_relations = {
+				country = c:SGP
+				value = -25
+			}
+		}
+		
+		every_state_region  ={
+			limit ={
+				OR ={
+					is_homeland = cu:bengali
+					is_homeland = cu:bihari
+					is_homeland = cu:oriya
+					is_homeland = cu:telegu
+					is_homeland = cu:tamil
+					is_homeland = cu:sinhala
+					is_homeland = cu:malayalam
+					is_homeland = cu:kannada
+					is_homeland = cu:marathi
+					is_homeland = cu:avadhi
+					is_homeland = cu:kanauji
+					is_homeland = cu:rajput
+					is_homeland = cu:gujarati
+					is_homeland = cu:panjabi
+					is_homeland = cu:sindi
+					is_homeland = cu:kashmiri
+				}
+			}
+			add_claim = ROOT 
+		}
+		
+	}
+	option = {
+		name = merlion_outward.13.v
+		change_infamy = -25
+	}
+}
+
+#Neu Kaiserreich
+merlion_outward.14 = {
+	type = country_event
+	placement = ROOT
+
+	title = merlion_outward.14.t
+	desc = merlion_outward.14.d
+	flavor = merlion_outward.14.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = merlion_outward.14.z
+		default_option = yes
+		
+		change_infamy = 25
+		
+		every_country = {
+			limit = {
+				NOT = { this = c:SGP }
+				OR ={
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:north_german
+				}
+			}
+			change_relations = {
+				country = c:SGP
+				value = -25
+			}
+		}
+		
+		every_state_region  ={
+			limit ={
+				OR ={
+					is_homeland = cu:south_german
+					is_homeland = cu:north_german
+				}
+			}
+			add_claim = ROOT 
+		}
+		
+	}
+	option = {
+		name = merlion_outward.14.v
+		change_infamy = -25
+	}
+}

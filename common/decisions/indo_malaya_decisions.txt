@@ -1,0 +1,133 @@
+﻿unite_indo_malaya = {
+	is_shown = {
+		OR = {
+			country_has_primary_culture=cu:malay
+			country_has_primary_culture=cu:vietnamese
+			country_has_primary_culture=cu:khmer
+			country_has_primary_culture=cu:khmu
+			country_has_primary_culture=cu:lao
+			country_has_primary_culture=cu:thai
+			country_has_primary_culture=cu:shan
+			country_has_primary_culture=cu:mon
+			country_has_primary_culture=cu:burmese
+			country_has_primary_culture=cu:karen
+			country_has_primary_culture=cu:kachin
+			country_has_primary_culture = cu:sumatran
+			country_has_primary_culture = cu:batak
+			country_has_primary_culture = cu:javan
+			country_has_primary_culture = cu:moluccan
+			country_has_primary_culture = cu:balinese
+			country_has_primary_culture = cu:bornean
+			country_has_primary_culture = cu:dayak
+			country_has_primary_culture = cu:ger_sgp
+			country_has_primary_culture = cu:eng_sgp
+			country_has_primary_culture = cu:chi_sgp
+			country_has_primary_culture = cu:mal_sgp
+			country_has_primary_culture = cu:tam_sgp
+			c:SGP = ROOT
+		}
+		is_subject = yes
+		any_neighbouring_state = {
+			owner = {
+				OR = {
+					country_has_primary_culture=cu:malay
+					country_has_primary_culture=cu:vietnamese
+					country_has_primary_culture=cu:khmer
+					country_has_primary_culture=cu:khmu
+					country_has_primary_culture=cu:lao
+					country_has_primary_culture=cu:thai
+					country_has_primary_culture=cu:shan
+					country_has_primary_culture=cu:mon
+					country_has_primary_culture=cu:burmese
+					country_has_primary_culture=cu:karen
+					country_has_primary_culture=cu:kachin
+					country_has_primary_culture = cu:sumatran
+					country_has_primary_culture = cu:batak
+					country_has_primary_culture = cu:javan
+					country_has_primary_culture = cu:moluccan
+					country_has_primary_culture = cu:balinese
+					country_has_primary_culture = cu:bornean
+					country_has_primary_culture = cu:dayak
+					country_has_primary_culture = cu:ger_sgp
+					country_has_primary_culture = cu:eng_sgp
+					country_has_primary_culture = cu:chi_sgp
+					country_has_primary_culture = cu:mal_sgp
+					country_has_primary_culture = cu:tam_sgp
+					c:SGP = ROOT
+				}
+				is_subject = yes
+				NOT = { THIS = ROOT }
+				top_overlord = {
+					THIS = root.top_overlord
+				}
+			}
+		}
+	}
+
+	possible = {
+		is_at_war = no
+		has_technology_researched = pan-nationalism
+		top_overlord = {
+			relations:root >= relations_threshold:cordial
+		}
+		custom_tooltip = {
+			text = unite_indo_malaya_t_m_tt
+			NOT = { has_modifier = indo_malaya_test_modifier }
+		}
+		custom_tooltip = {
+			text = unite_indo_malaya_je_can_tt
+			any_neighbouring_state = {
+				owner = {
+					is_ai = yes
+					relations:root >= relations_threshold:cordial
+					OR = {
+						country_has_primary_culture=cu:malay
+						country_has_primary_culture=cu:vietnamese
+						country_has_primary_culture=cu:khmer
+						country_has_primary_culture=cu:khmu
+						country_has_primary_culture=cu:lao
+						country_has_primary_culture=cu:thai
+						country_has_primary_culture=cu:shan
+						country_has_primary_culture=cu:mon
+						country_has_primary_culture=cu:burmese
+						country_has_primary_culture=cu:karen
+						country_has_primary_culture=cu:kachin
+						country_has_primary_culture = cu:sumatran
+						country_has_primary_culture = cu:batak
+						country_has_primary_culture = cu:javan
+						country_has_primary_culture = cu:moluccan
+						country_has_primary_culture = cu:balinese
+						country_has_primary_culture = cu:bornean
+						country_has_primary_culture = cu:dayak
+						country_has_primary_culture = cu:ger_sgp
+						country_has_primary_culture = cu:eng_sgp
+						country_has_primary_culture = cu:chi_sgp
+						country_has_primary_culture = cu:mal_sgp
+						country_has_primary_culture = cu:tam_sgp
+						c:SGP = ROOT
+					}
+					is_subject = yes
+					NOT = { THIS = ROOT }
+					top_overlord = {
+						THIS = root.top_overlord
+					}
+					this.gdp < root.gdp
+				}
+			}
+		}
+	}
+	when_taken = {
+		custom_tooltip = unite_indo_malaya_tt
+		hidden_effect = {
+			trigger_event = { id = indo_malaya.1 popup = yes }
+		}
+		add_modifier = {
+			name = indo_malaya_test_modifier
+			months = short_modifier_time
+		}
+	}
+
+	ai_chance = {
+		base = 50
+	}
+}

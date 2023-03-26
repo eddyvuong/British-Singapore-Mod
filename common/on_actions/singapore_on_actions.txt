@@ -1,0 +1,35 @@
+﻿# For on_actions launched by the code itself.
+
+# Root owner Country of the Law
+# executed when the law is activated for any reason. It's usually because it
+# has been enacted, but script can activate laws directly without going through
+# the enactment process. Normally, it's immediately preceded by
+# on_law_enactment_ended, but if a law is directly set by script, thus
+# bypassing the enactment process, this will execute while
+# on_law_enactment_ended will not
+#
+# NOTE: unlike the other on_law_<something> on-actions, at the point in time
+# when this is triggered the law that was enacted is no longer considered being
+# enacted. Therefore using the `currently_enacting_law` link will return the
+# null law
+on_law_activated = {
+	effect = {
+		if = {
+			limit = {
+				exists = c:SGP
+				owner = c:SGP
+				game_date >= 1836.1.2
+			}
+			owner = {
+				trigger_event = singapore.3
+			}
+		}
+		
+	}
+}
+
+on_half_yearly_pulse_country = {
+	effect = {
+		trigger_event = mrt_events.1
+	}
+}

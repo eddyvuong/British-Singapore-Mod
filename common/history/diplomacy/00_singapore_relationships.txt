@@ -1,0 +1,9 @@
+﻿DIPLOMACY = {
+	c:GBR = {
+		### Modded
+		# Colony of Singapore
+		create_diplomatic_pact = {
+			country = c:SGP
+			type = puppet
+		}
+}

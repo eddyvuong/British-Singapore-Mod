@@ -1,0 +1,54 @@
+﻿#Reform Singapore
+a_new_singapore = {
+	icon = "gfx/interface/icons/invention_icons/central_planning.dds"
+
+	immediate = {
+		set_variable = a_new_singapore_in_progress
+		
+		set_variable = {
+				name = r_tension_ans
+				value = 0
+		}
+	}
+	
+	invalid = {
+		has_variable = a_new_singapore_done
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = a_new_singapore_language
+			has_variable = a_new_singapore_language_done
+		}
+		
+		custom_tooltip = {
+			text = a_new_singapore_culture
+			has_variable = a_new_singapore_culture_done
+		}
+		
+		custom_tooltip = {
+			text = a_new_singapore_legacy
+			has_variable = a_new_singapore_legacy_done
+		}
+		
+		custom_tooltip = {
+			text = a_new_singapore_name
+			has_variable = a_new_singapore_name_done
+		}
+		
+	}
+	
+	on_complete = {
+		trigger_event = { id = singapore.50 }
+		set_variable = a_new_singapore_done
+		remove_variable = a_new_singapore_in_progress
+		remove_variable = a_new_singapore_name_done
+		remove_variable = a_new_singapore_culture_done_2
+		remove_variable = a_new_singapore_culture_done
+		remove_variable = a_new_singapore_language_done
+		remove_variable = a_new_singapore_legacy_done	
+	}
+	
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
